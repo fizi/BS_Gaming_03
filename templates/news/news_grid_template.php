@@ -161,10 +161,10 @@ $NEWS_GRID_TEMPLATE['latest-news']['end'] = '
   </div>
 </div>';
 
-$NEWS_GRID_TEMPLATE['bootstrap-n-ews-tabs']['start'] = ' - start - ';
-$NEWS_GRID_TEMPLATE['bootstrap-n-ews-tabs']['featured'] = ' featured ';
-$NEWS_GRID_TEMPLATE['bootstrap-n-ews-tabs']['item'] = ' - item - ';
-$NEWS_GRID_TEMPLATE['bootstrap-n-ews-tabs']['end'] = ' - end - ';
+$NEWS_GRID_TEMPLATE['bootstrap-news-tabs']['start'] = ' - start - ';
+$NEWS_GRID_TEMPLATE['bootstrap-news-tabs']['featured'] = ' featured ';
+$NEWS_GRID_TEMPLATE['bootstrap-news-tabs']['item'] = ' - item - ';
+$NEWS_GRID_TEMPLATE['bootstrap-news-tabs']['end'] = ' - end - ';
 
 
 
