@@ -153,10 +153,7 @@ $LAYOUT['game_03_home'] = "
           {SETSTYLE=home-categories}
           <!-- Nav tabs -->
           <div id='news-tabs' class='news-tabs'>
-            <ul id='home-categories-tabs' class='nav nav-tabs' role='tablist'>
-              {BOOTSTRAP_NEWS_CATEGORIES} 
-            </ul>
-            {BOOTSTRAP_NEWS_BY_CATEGORIES}
+            {BOOTSTRAP_NEWS_CATEGORY_TABS} 
           </div>
           {SETSTYLE=leftcol}          
 {---}

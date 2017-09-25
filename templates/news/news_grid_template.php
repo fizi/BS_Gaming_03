@@ -161,8 +161,10 @@ $NEWS_GRID_TEMPLATE['latest-news']['end'] = '
   </div>
 </div>';
 
-
-
+$NEWS_GRID_TEMPLATE['bootstrap-n-ews-tabs']['start'] = ' - start - ';
+$NEWS_GRID_TEMPLATE['bootstrap-n-ews-tabs']['featured'] = ' featured ';
+$NEWS_GRID_TEMPLATE['bootstrap-n-ews-tabs']['item'] = ' - item - ';
+$NEWS_GRID_TEMPLATE['bootstrap-n-ews-tabs']['end'] = ' - end - ';
 
 
 

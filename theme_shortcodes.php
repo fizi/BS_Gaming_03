@@ -252,39 +252,38 @@ class theme_shortcodes extends e_shortcode {
     return $text;
 
   }
-  
-/*----------------------------------- 
+/*  ----------------------------------- 
     NEWS TABS FOR NEWS CATEGORIES 
 -------------------------------------*/
-  function sc_bootstrap_news_by_categories(){ 
+  function sc_bootstrap_news_category_tabs(){
+  
+  
+	
+    $news   = e107::getObject('e_news_category_tree');  // get news class.
+   // $sc     = e107::getScBatch('news'); // get news shortcodes.
+    $tp     = e107::getParser(); // get parser.
     
-    if (!defined('e107_INIT')) { exit; }
+    // load active news categories. ie. the correct userclass etc.
+    $data = $news->loadActive(false)->toArray();  // false to utilize the built-in cache.
 
-    $cacheString = 'nq_news_categories_menu_'.md5(serialize($parm));
-    $cached = e107::getCache()->retrieve($cacheString);
-    if(false === $cached){
-	    e107::plugLan('news');
+    
 
-	    if(is_string($parm)){
-		    parse_str($parm, $parms);
-	    }else{
-		    $parms = $parm;
-	    }
+    $text = '';
+	
+	$tab = array();
 
-	    $ctree = e107::getObject('e_news_category_tree', null, e_HANDLER.'news_class.php');
-
-	    $parms['tmpl']      = 'news_menu';
-	    $parms['tmpl_key']  = 'tabs_by_categories';
-
-	    $template = e107::getTemplate('news', $parms['tmpl'], $parms['tmpl_key']);
-
-	    $cached = $ctree->loadActive()->render($template, $parms, true);
-	    e107::getCache()->set($cacheString, $cached);
+    foreach($data as $row){
+     // $sc->setScVar('news_item', $row); // send $row values to shortcodes.
+	  
+	  $parm = array('category'=>$row['category_id'], 'featured'=>1,'layout' => 'bootstrap-news-tabs');
+		$tab[] = array('caption'=>$row['category_name'], 'text'=>e107::getObject('news')->render_newsgrid($parm));
+      
     }
 
-    echo $cached;
+    return e107::getForm()->tabs($tab);
+
   }
-  
+
 } 
  
 ?>
