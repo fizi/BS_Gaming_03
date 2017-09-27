@@ -248,7 +248,7 @@ class theme_shortcodes extends e_shortcode {
 
     foreach($data as $row){
        // $sc->setScVar('news_item', $row); // send $row values to shortcodes.	  
-	    $parm = array('category'=>$row['category_id'], 'featured'=>1, 'layout' => 'bootstrap-news-tabs');
+	    $parm = array('category'=>$row['category_id'], 'featured' => 1,'limit' => 4,'layout' => 'bootstrap-news-tabs');
 		  $tab[] = array('caption'=>$row['category_name'], 'text'=>e107::getObject('news')->render_newsgrid($parm));      
     }
     return e107::getForm()->tabs($tab);
