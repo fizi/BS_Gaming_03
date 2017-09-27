@@ -26,9 +26,10 @@ $(document).ready(function() {
 });
 
 
-// Add active to news tabs *************************************************
+// Add effect FADE to news tabs *************************************************
 $(document).ready(function() {
-  $("#news-tabs.news-tabs ul li:first-child").addClass("active");
+  $("#news-tabs .tab-content .tab-pane").addClass("fade");
+  $("#news-tabs .tab-content .tab-pane:first-child").addClass("in");
 }); 
 
 
