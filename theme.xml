@@ -8,6 +8,7 @@
   <plugins>
     <plugin name='featurebox' url='core' />
     <plugin name='social' url='core' />
+    <plugin name='pm' url='core' />
 	</plugins>
 	<keywords>
 		<word>bootstrap</word>

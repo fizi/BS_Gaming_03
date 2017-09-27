@@ -187,6 +187,7 @@ class theme_shortcodes extends e_shortcode {
     echo $text;
   
   } 
+
   
 /*----------------------------------- 
     POPULAR NEWS ON HOMEPAGE SHORTCODE 
@@ -228,37 +229,12 @@ class theme_shortcodes extends e_shortcode {
 		e107::getRender()->tablerender(LAN_PLUGIN_HITS_POPULAR, $text);
   }
   
-/*----------------------------- 
-  NEWS CATEGORIES ON TOP 
------------------------------*/  
-  function sc_bootstrap_news_categories(){
-  
-    $news   = e107::getObject('e_news_category_tree');  // get news class.
-    $sc     = e107::getScBatch('news'); // get news shortcodes.
-    $tp     = e107::getParser(); // get parser.
-    
-    // load active news categories. ie. the correct userclass etc.
-    $data = $news->loadActive(false)->toArray();  // false to utilize the built-in cache.
 
-    $TEMPLATE = "<li role='presentation'><a href='#{NEWS_CATEGORY_NAME}' aria-controls='{NEWS_CATEGORY_NAME}' role='tab' data-toggle='tab'>{NEWS_CATEGORY_NAME}</a></li>";
-
-    $text = '';
-
-    foreach($data as $row){
-      $sc->setScVar('news_item', $row); // send $row values to shortcodes.
-      $text .= $tp->parseTemplate($TEMPLATE, true, $sc); // parse news shortcodes.
-    }
-
-    return $text;
-
-  }
 /*  ----------------------------------- 
     NEWS TABS FOR NEWS CATEGORIES 
 -------------------------------------*/
   function sc_bootstrap_news_category_tabs(){
-  
-  
-	
+  	
     $news   = e107::getObject('e_news_category_tree');  // get news class.
    // $sc     = e107::getScBatch('news'); // get news shortcodes.
     $tp     = e107::getParser(); // get parser.
@@ -266,22 +242,16 @@ class theme_shortcodes extends e_shortcode {
     // load active news categories. ie. the correct userclass etc.
     $data = $news->loadActive(false)->toArray();  // false to utilize the built-in cache.
 
-    
-
     $text = '';
 	
-	$tab = array();
+	  $tab = array();
 
     foreach($data as $row){
-     // $sc->setScVar('news_item', $row); // send $row values to shortcodes.
-	  
-	  $parm = array('category'=>$row['category_id'], 'featured'=>1,'layout' => 'bootstrap-news-tabs');
-		$tab[] = array('caption'=>$row['category_name'], 'text'=>e107::getObject('news')->render_newsgrid($parm));
-      
+       // $sc->setScVar('news_item', $row); // send $row values to shortcodes.	  
+	    $parm = array('category'=>$row['category_id'], 'featured'=>1, 'layout' => 'bootstrap-news-tabs');
+		  $tab[] = array('caption'=>$row['category_name'], 'text'=>e107::getObject('news')->render_newsgrid($parm));      
     }
-
     return e107::getForm()->tabs($tab);
-
   }
 
 } 
