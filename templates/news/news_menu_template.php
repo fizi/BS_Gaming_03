@@ -22,41 +22,12 @@ $NEWS_MENU_TEMPLATE['category']['item']        = '<li><a class="e-menu-link news
 
 
 
-// MODIFIED BY FIZI - CATWGORY MENU WITH TABS
-$NEWS_MENU_TEMPLATE['tabs_by_categories']['start'] = '
-<!-- Tab panes -->
-<div id="home-categories-tabcontent" class="tab-content">';
-
-$NEWS_MENU_TEMPLATE['tabs_by_categories']['item'] = '
-  <div id="{NEWS_CATEGORY_TITLE}" class="tab-pane fade" role="tabpanel">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="news-tabpanel-item-mainimage">
-          {SETIMAGE: w=1200&h=1000&crop=1}
-          {NEWS_IMAGE: item=1}
-        </div>
-        <div class="col-xs-8 news-tabpanel-body">
-          <h4>{NEWS_TITLE: link=1}</h4>
-          {NEWSSUMMARY: limit=27}
-        </div>
-      </div>
-    </div>
-  </div>';
-
-$NEWS_MENU_TEMPLATE['tabs_by_categories']['end'] = '
-</div>';
-
-
-
 // months menu
 $NEWS_MENU_TEMPLATE['months']['start']       = '<ul class="news-menu-months">';
 $NEWS_MENU_TEMPLATE['months']['end']         = '</ul>';
 $NEWS_MENU_TEMPLATE['months']['item']        = '<li><a class="e-menu-link newsmonths{active}" href="{url}"><span class="badge">{count}</span>{month}</a></li>
 ';
 //$NEWS_MENU_TEMPLATE['months']['separator']   = '<br />';
-
-
-
 
 
 

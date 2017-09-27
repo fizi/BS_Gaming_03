@@ -31,10 +31,10 @@ $POPULAR_MENU_TEMPLATE['default']['end'] 	= "</ul>";
 
 
 /********* Modified by FIZI *****************************************************************************************************************************************************/
-$POPULAR_MENU_TEMPLATE['homepage']['start'] 	= "
+$POPULAR_MENU_TEMPLATE['homepage']['start'] = "
 <div class='row'>
 ";
-$POPULAR_MENU_TEMPLATE['homepage']['item'] 	= "
+$POPULAR_MENU_TEMPLATE['homepage']['item'] = "
   <div class='col-md-4'>
     <div class='home-popular-image'>
       {SETIMAGE: w=1000&h=750&crop=1}
@@ -46,5 +46,5 @@ $POPULAR_MENU_TEMPLATE['homepage']['item'] 	= "
 	</div>
 ";
 										
-$POPULAR_MENU_TEMPLATE['homepage']['end'] 	= "
+$POPULAR_MENU_TEMPLATE['homepage']['end'] = "
 </div>";
