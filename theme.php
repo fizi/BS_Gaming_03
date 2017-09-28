@@ -150,8 +150,6 @@ $LAYOUT['game_03_home'] = "
           {BOOTSTRAP_GRID_NEWS_LATEST}
           {SETSTYLE=home-popularnews}
           {BOOTSTRAP_POPULAR_NEWS}
-          {SETSTYLE=home-categories-tabs}
-          <!-- Nav tabs -->
           <div id='news-tabs' class='news-tabs'>
             {BOOTSTRAP_NEWS_CATEGORY_TABS} 
           </div>
@@ -255,10 +253,6 @@ define('TRACKBACKBEFORESTRING', '&nbsp;|&nbsp;');
             </div>";
     break;
     
-    case "home-categories-tabs":
-      echo "<div class='home-categories-tabs-body'>{$text}</div>";
-    break;
-    
     case "wmessage":
       echo "<div class='wmessage-box'>                             
               <div class='wmessage-title'>             		                                                      
@@ -272,7 +266,6 @@ define('TRACKBACKBEFORESTRING', '&nbsp;|&nbsp;');
       echo "<div class='leftmenu-box'>                             
               <div class='leftmenu-box-title'>             		                                                      
                 <h2>{$caption}</h2>
-                <hr />
               </div>
               <div class='leftmenu-box-body'>{$text}</div>
             </div>";
