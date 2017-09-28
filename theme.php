@@ -124,8 +124,24 @@ $LAYOUT['_footer_'] = "
 <div id='footer'>
   <div class='container'>
     <div class='row'>
-      <div class='col-md-12'>
-        <div class='site-info'>
+      <div class='footer-menus'>
+        <div class='col-md-4'>
+          {SETSTYLE=bottomcol}
+          {MENU=5}
+        </div>
+        <div class='col-md-4'>
+          {SETSTYLE=bottomcol}
+          {MENU=6}
+        </div>
+        <div class='col-md-4'>
+          {SETSTYLE=bottomcol}
+          {MENU=7}
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='site-info'>
+        <div class='col-md-12'>        
           {SITEDISCLAIMER}
           {THEME_DISCLAIMER}
         </div>
