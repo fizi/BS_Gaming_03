@@ -125,17 +125,19 @@ $LAYOUT['_footer_'] = "
   <div class='container'>
     <div class='row'>
       <div class='footer-menus'>
-        <div class='col-md-4'>
-          {SETSTYLE=bottomcol}
-          {MENU=5}
-        </div>
-        <div class='col-md-4'>
-          {SETSTYLE=bottomcol}
-          {MENU=6}
-        </div>
-        <div class='col-md-4'>
-          {SETSTYLE=bottomcol}
-          {MENU=7}
+        <div class='footer-menus-inner'>
+          <div class='col-md-4'>
+            {SETSTYLE=bottomcol}
+            {MENU=5}
+          </div>
+          <div class='col-md-4'>
+            {SETSTYLE=bottomcol}
+            {MENU=6}
+          </div>
+          <div class='col-md-4'>
+            {SETSTYLE=bottomcol}
+            {MENU=7}
+          </div>
         </div>
       </div>
     </div>
