@@ -72,24 +72,15 @@ $(window).load(function(){
 });
 
 
-$(window).load(function(){   
-  // init Isotope for Popular News on Homepage 
-  var $grid = $('.popular-isotope-grid').isotope({ 
-    itemSelector: '.popular-isotope-grid-item',
-    percentPosition: true,
-    masonry: {
-      // use element for option
-      columnWidth: '.popular-isotope-grid-sizer'
-    }, 
-    horizontalOrder: true,
-    transitionDuration: '0.2s'
-  });
-  // layout Isotope after each image loads
-  $grid.imagesLoaded().progress( function() {
-    $grid.isotope('layout');
-  });    
-});
+// matchHeigh ****************************************************************** 
+// apply your matchHeight on DOM ready (they will be automatically re-applied on load or resize)
 
+// Homesite Popular News - apply matchHeight to each item container's items
+$(document).ready(function() {
+  $(".home-popularnews-body > .row").each(function() {
+    $(this).children("div[class*='col-']").matchHeight();
+  }); 
+});
 
 // Forum Stats make responsive *************************************************
 $(document).ready(function() {
