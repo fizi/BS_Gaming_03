@@ -52,6 +52,7 @@ e107::js("theme", 			"js/isotope.pkgd.js");
 e107::js("theme", 			"js/imagesloaded.pkgd.js");
 e107::js("theme", 			"js/responsive-tabs_mod_by_fizi.js");
 e107::js("theme", 			"js/jquery.lettering.js");
+e107::js("theme", 			"js/jquery.matchHeight.js");  
 e107::js("theme", 			"js/custom.js");
                  
 
@@ -114,6 +115,11 @@ $LAYOUT['_header_'] = "
         </div>
       </div>
     </div>
+    <div class='row divider'>
+      <div class='col-md-12'>
+        <div class='divider-inner'> </div>
+      </div>
+    </div>
   </div>
 </div>
 ";
@@ -124,7 +130,7 @@ $LAYOUT['_footer_'] = "
 <div id='footer'>
   <div class='container'>
     <div class='row'>
-      <div class='footer-menus'>
+      <div class='footer-top'>
         <div class='footer-menus-inner'>
           <div class='col-md-4'>
             {SETSTYLE=bottomcol}
@@ -142,10 +148,17 @@ $LAYOUT['_footer_'] = "
       </div>
     </div>
     <div class='row'>
-      <div class='site-info'>
-        <div class='col-md-12'>        
-          {SITEDISCLAIMER}
-          {THEME_DISCLAIMER}
+      <div class='footer-bottom'>
+        <div class='col-md-6'>
+          <div class='site-info'>        
+            {SITEDISCLAIMER}
+            {THEME_DISCLAIMER}
+          </div>
+        </div>
+        <div class='col-md-6'>
+          <div class='footer-social-connected'>
+            {XURL_ICONS}
+          </div>
         </div>
       </div>
     </div>
@@ -187,6 +200,9 @@ $LAYOUT['game_03_home'] = "
       </div>
       <div class='col-md-3'>
         <div class='rightcol'>
+          <div class='search'>
+            {SEARCH}
+          </div>
           {SETSTYLE=rightcol}
           {MENU=1}
           {MENU=2}
@@ -195,7 +211,34 @@ $LAYOUT['game_03_home'] = "
     </div>
   </div>
 </div>    
-";  
+"; 
+
+
+// Game 03 theme Homepage layout 
+$LAYOUT['game_03_full_page'] = "
+<div class='container'>
+  <div class='row'>
+    <div class='page_content'>
+      <div class='col-md-12'>
+        {SETSTYLE=leftcol}
+{---}
+      </div>
+    </div>
+  </div>
+</div>  
+"; 
+
+
+// Game 03 theme Homepage layout 
+$LAYOUT['game_03_extend_news'] = "
+
+"; 
+
+
+// Game 03 theme Homepage layout 
+$LAYOUT['game_03_with_sidebar'] = "
+
+"; 
 
 
 function rand_tag(){
@@ -302,7 +345,6 @@ define('TRACKBACKBEFORESTRING', '&nbsp;|&nbsp;');
       echo "<div class='bottommenu-box'>                             
               <div class='bottommenu-box-title'>             		                                                      
                 <h2>{$caption}</h2>
-                <hr />
               </div>
               <div class='bottommenu-box-body'>{$text}</div>
             </div>";
