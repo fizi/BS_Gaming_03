@@ -32,17 +32,20 @@ $POPULAR_MENU_TEMPLATE['default']['end'] 	= "</ul>";
 
 /********* Modified by FIZI *****************************************************************************************************************************************************/
 $POPULAR_MENU_TEMPLATE['homepage']['start'] = "
-<div class='row'>
+<div class='popular-isotope-grid'>
+  <div class='popular-isotope-grid-sizer col-lg-4 col-md-4 col-sm-6 col-xs-12'></div>
 ";
 $POPULAR_MENU_TEMPLATE['homepage']['item'] = "
-  <div class='col-md-4'>
-    <div class='home-popular-image'>
-      {SETIMAGE: w=1000&h=750&crop=1}
-			<a href='{NEWS_URL}'>{NEWS_IMAGE: type=tag&class=news_image news-image img-responsive img-fluid img-rounded rounded&placeholder=1}</a>
-		</div>
-		<h4 class='home-popular-title'>{NEWS_TITLE: link=1}</a></h4>
-		<div class='home-popular-body'>{NEWS_SUMMARY: limit=60}</div>
-		<div class='home-popular-info'>{GLYPH=fa-stats} {HITS_COUNTER}</div>
+  <div class='popular-isotope-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12'>
+    <div class='home-popular-item'>
+      <div class='home-popular-image'>
+        {SETIMAGE: w=1000&h=750&crop=1}
+			  <a href='{NEWS_URL}'>{NEWS_IMAGE: type=tag&class=news_image news-image img-responsive img-fluid img-rounded rounded&placeholder=1}</a>
+		  </div>
+		  <h4 class='home-popular-title'>{NEWS_TITLE: link=1}</a></h4>
+		  <div class='home-popular-body'>{NEWS_SUMMARY: limit=60}</div>
+		  <div class='home-popular-info'>{GLYPH=fa-stats} {HITS_COUNTER}</div>
+    </div>
 	</div>
 ";
 										

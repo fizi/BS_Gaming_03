@@ -33,12 +33,7 @@ $(document).ready(function() {
 }); 
 
 
-// For Isotope *****************************************************************
-$(document).ready(function() {
-  $(".isotope-grid > .isotope-grid-item:eq(0)").addClass("isotope-grid-item2");
-}); 
-
-
+// Add Isotope effect *************************************************
 $(window).load(function(){ 	
   // init Isotope for News
   var $grid = $('.isotope-grid').isotope({ 
@@ -76,13 +71,23 @@ $(window).load(function(){
   });    
 });
 
-// Hide and Show News Items ****************************************************
-$(document).ready(function() {
-  $('.isotope-grid > .isotope-grid-item').hover(function() {
-    $(this).siblings('div').stop().fadeTo(250, 0.4);
-  }, function() {
-    $(this).siblings('div').stop().fadeTo(250, 1.0);
+
+$(window).load(function(){   
+  // init Isotope for Popular News on Homepage 
+  var $grid = $('.popular-isotope-grid').isotope({ 
+    itemSelector: '.popular-isotope-grid-item',
+    percentPosition: true,
+    masonry: {
+      // use element for option
+      columnWidth: '.popular-isotope-grid-sizer'
+    }, 
+    horizontalOrder: true,
+    transitionDuration: '0.2s'
   });
+  // layout Isotope after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.isotope('layout');
+  });    
 });
 
 
