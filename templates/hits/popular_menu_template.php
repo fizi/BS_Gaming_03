@@ -32,11 +32,10 @@ $POPULAR_MENU_TEMPLATE['default']['end'] 	= "</ul>";
 
 /********* Modified by FIZI *****************************************************************************************************************************************************/
 $POPULAR_MENU_TEMPLATE['homepage']['start'] = "
-<div class='popular-isotope-grid'>
-  <div class='popular-isotope-grid-sizer col-lg-4 col-md-4 col-sm-6 col-xs-12'></div>
+<div class='row'>
 ";
 $POPULAR_MENU_TEMPLATE['homepage']['item'] = "
-  <div class='popular-isotope-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12'>
+  <div class='col-md-4 col-sm-6 col-xs-12'>
     <div class='home-popular-item'>
       <div class='home-popular-image'>
         {SETIMAGE: w=1000&h=750&crop=1}
