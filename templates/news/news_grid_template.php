@@ -110,7 +110,7 @@
   
 /***********************************************************************************************************************************/
    
-//  fizi - This News Grid for Latest News Items - 5 News
+//  fizi - This News Grid for Latest News Items - 5 News  
 $NEWS_GRID_TEMPLATE['latest-news']['start'] = '
 <div class="home-latestnews">
   <div class="home-latestnews-title">
