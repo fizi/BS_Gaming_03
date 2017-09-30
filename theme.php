@@ -134,6 +134,7 @@ $LAYOUT['_footer_'] = "
         <div class='footer-menus-inner'>
           <div class='col-md-4'>
             {SETSTYLE=bottomcol}
+            {WMESSAGE}
             {MENU=5}
           </div>
           <div class='col-md-4'>
@@ -159,6 +160,11 @@ $LAYOUT['_footer_'] = "
           <div class='footer-social-connected'>
             {XURL_ICONS}
           </div>
+        </div>
+      </div>
+      <div class='button-up'>
+        <div class='button-up-inner'>  
+          <a href='#' class='movetotop'><span class='glyphicon glyphicon-chevron-up'></span></a>
         </div>
       </div>
     </div>
@@ -311,15 +317,6 @@ define('TRACKBACKBEFORESTRING', '&nbsp;|&nbsp;');
                 <h2>{$caption}</h2>
               </div>
               <div class='home-popularnews-body'>{$text}</div>
-            </div>";
-    break;
-    
-    case "wmessage":
-      echo "<div class='wmessage-box'>                             
-              <div class='wmessage-title'>             		                                                      
-                <h2>{$caption}</h2>
-              </div>
-              <div class='wmessage-body'>{$text}</div>
             </div>";
     break;
     

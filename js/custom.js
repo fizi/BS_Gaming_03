@@ -1,12 +1,21 @@
 
-/* SITENAME colored */
+// Scroll To top ***************************************************************  
+$(document).ready(function() {  
+  $('.movetotop').click(function() {
+    $('html, body').animate({scrollTop: 0}, 700);
+    return false;
+  });  
+});
+
+
+// SITENAME colored ************************************************************
 $(document).ready(function() {
   $(".sitename a").lettering("words");
   $(".sitetag").lettering("words");
 });
 
 
-/* MAIN NAVIGATION */
+// MAIN NAVIGATION *************************************************************
 $(document).ready(function() {
   $('.navbar a.dropdown-toggle').on('click', function(e) {
     var elmnt = $(this).parent().parent();
@@ -26,14 +35,14 @@ $(document).ready(function() {
 });
 
 
-// Add effect FADE to news tabs *************************************************
+// Add effect FADE to news tabs ************************************************
 $(document).ready(function() {
   $("#news-tabs .tab-content .tab-pane").addClass("fade");
   $("#news-tabs .tab-content .tab-pane:first-child").addClass("in");
 }); 
 
 
-// Add Isotope effect *************************************************
+// Add Isotope effect **********************************************************
 $(window).load(function(){ 	
   // init Isotope for News
   var $grid = $('.isotope-grid').isotope({ 
@@ -89,7 +98,7 @@ $(document).ready(function() {
 }); 
 
 
-// Custom page image not responsive - add class img-responsive *************************************************
+// Custom page image not responsive - add class img-responsive *****************
 $(document).ready(function() {
   $(".cpage-body .default-cpage-body img").addClass("img-responsive");
 });    
