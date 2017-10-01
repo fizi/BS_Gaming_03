@@ -115,7 +115,7 @@ $NEWS_TEMPLATE['default']['item'] = '
       </div>
       <div class="default-item-info row">
         <div class="col-sm-6 default-item-author">'.LAN_THEME_8.' {NEWS_AUTHOR}</div>  
-        <div class="col-sm-6 default-item-comments">{NEWS_COMMENT_LABEL}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;'.LAN_THEME_100.'&nbsp;{HITS_COUNTER}</div>
+        <div class="col-sm-6 default-item-comments">{NEWS_COMMENT_LABEL}&nbsp;{NEWS_COMMENT_COUNT}<br />'.LAN_THEME_100.'&nbsp;{HITS_COUNTER}</div>
       </div>
       <div class="default-item-body text-justify">{NEWS_BODY}</div>
       <div class="default-item-bottom">      
