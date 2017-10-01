@@ -45,4 +45,10 @@ define("LAN_THEME_81", "Rating");
 /* Homepage Latest News */
 define("LAN_THEME_90", "Latest News");
 
+/* Hits of News */
+define("LAN_THEME_100", "Views");
+
+/* Rate of News */
+define("LAN_THEME_110", "Rating");
+
 ?>

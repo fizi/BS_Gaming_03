@@ -45,4 +45,10 @@ define("LAN_THEME_81", "Értékelés");
 /* Homepage Latest News */
 define("LAN_THEME_90", "Legújabb hírek");
 
+/* Hits of News */
+define("LAN_THEME_100", "Megtekintés");
+
+/* Rate of News */
+define("LAN_THEME_110", "Értékelés");
+
 ?>

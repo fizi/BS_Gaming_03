@@ -45,12 +45,12 @@ $(document).ready(function() {
 // Add Isotope effect **********************************************************
 $(window).load(function(){ 	
   // init Isotope for News
-  var $grid = $('.isotope-grid').isotope({ 
-    itemSelector: '.isotope-grid-item',
+  var $grid = $('.default-news-isotope-grid').isotope({ 
+    itemSelector: '.default-news-isotope-grid-item',
     percentPosition: true, 
     masonry: {
       // use element for option
-      columnWidth: '.isotope-grid-sizer'
+      columnWidth: '.default-news-isotope-grid-sizer'
     },
     horizontalOrder: true,
     transitionDuration: '0.2s'

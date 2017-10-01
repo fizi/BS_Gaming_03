@@ -39,7 +39,10 @@ $POPULAR_MENU_TEMPLATE['homepage']['item'] = "
     <div class='home-popular-item'>
       <div class='home-popular-image'>
         {SETIMAGE: w=1000&h=750&crop=1}
-			  <a href='{NEWS_URL}'>{NEWS_IMAGE: type=tag&class=news_image news-image img-responsive img-fluid img-rounded rounded&placeholder=1}</a>
+			  <a href='{NEWS_URL}'>
+          {NEWS_IMAGE: type=tag&class=news_image news-image img-responsive img-fluid img-rounded rounded&placeholder=1}
+        </a>
+        <div class='home-popular-item-rate'>{NEWS_RATE: readonly=1&multi=1&uniqueId=popular&template= STATUS |RATE}</div>
 		  </div>
 		  <h4 class='home-popular-title'>{NEWS_TITLE: link=1}</a></h4>
 		  <div class='home-popular-body'>{NEWS_SUMMARY: limit=60}</div>

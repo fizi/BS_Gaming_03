@@ -43,7 +43,7 @@ class theme_shortcodes extends e_shortcode {
 			if($userReg==1)
 			{
 				$text .= '
-				<li class="registration"><a href="'.e_SIGNUP.'"><i class="fa fa-user-plus"></i> '.LAN_LOGINMENU_3.'</a></li>
+				<li class="registration"><a href="'.e_SIGNUP.'">'.LAN_LOGINMENU_3.'</a></li>
 				'; // Signup
 			}
 
@@ -56,7 +56,7 @@ class theme_shortcodes extends e_shortcode {
 				<li class="divider-vertical"></li>
 				<li class="login dropdown">
 			
-				<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-user"></i> '.LAN_LOGINMENU_51.'</a>
+				<a class="dropdown-toggle" href="#" data-toggle="dropdown">'.LAN_LOGINMENU_51.'</a>
 				<div class="dropdown-menu col-sm-12" style="min-width:250px;">
 				
 				{SOCIAL_LOGIN: size=2x&label=1}
@@ -143,7 +143,7 @@ class theme_shortcodes extends e_shortcode {
 		}
 		
 		$text .= '
-		<li class="logged-in dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">'.LAN_LOGINMENU_5.' <div>'.USERNAME.'</div></a>
+		<li class="logged-in dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">'.LAN_LOGINMENU_5.' '.USERNAME.'</a>
 		<ul class="dropdown-menu">
 		<li>
 			<a href="{LM_USERSETTINGS_HREF}"><span class="glyphicon glyphicon-cog"></span> '.LAN_SETTINGS.'</a>
@@ -253,7 +253,7 @@ class theme_shortcodes extends e_shortcode {
     }
     return e107::getForm()->tabs($tab);
   }
-
+  
 } 
  
 ?>

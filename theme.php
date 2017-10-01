@@ -120,6 +120,7 @@ $LAYOUT['_header_'] = "
         <div class='divider-inner'> </div>
       </div>
     </div>
+	{ALERTS} 
   </div>
 </div>
 ";
@@ -134,7 +135,7 @@ $LAYOUT['_footer_'] = "
         <div class='footer-menus-inner'>
           <div class='col-md-4'>
             {SETSTYLE=bottomcol}
-            {WMESSAGE}
+            {WMESSAGE=force}
             {MENU=5}
           </div>
           <div class='col-md-4'>
@@ -237,13 +238,22 @@ $LAYOUT['game_03_full_page'] = "
 
 // Game 03 theme Homepage layout 
 $LAYOUT['game_03_extend_news'] = "
-
+<div class='container'>
+  <div class='row'>
+    <div class='page_content'>
+      <div class='col-md-12'>
+        {SETSTYLE=leftcol}
+{---}
+      </div>
+    </div>
+  </div>
+</div>
 "; 
 
 
 // Game 03 theme Homepage layout 
 $LAYOUT['game_03_with_sidebar'] = "
-
+{---}
 "; 
 
 
@@ -272,7 +282,7 @@ function rand_tag(){
 define('COMMENTLINK', 	e107::getParser()->toGlyph('fa-comment'));
 define('COMMENTOFFSTRING', LAN_THEME_2);
 define('PRE_EXTENDEDSTRING', '');
-define('EXTENDEDSTRING', LAN_THEME_3.'&nbsp;<i class="fa fa-long-arrow-right"></i>');
+define('EXTENDEDSTRING', LAN_THEME_3);
 define('POST_EXTENDEDSTRING', '');
 define('TRACKBACKSTRING', LAN_THEME_7);
 define('TRACKBACKBEFORESTRING', '&nbsp;|&nbsp;');

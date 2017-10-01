@@ -91,32 +91,36 @@ $NEWS_TEMPLATE['default']['item'] = '
 
 $NEWS_TEMPLATE['default']['start']	= '
 <!-- Default News Template -->
-<div class="isotope-grid">
-  <div class="isotope-grid-sizer col-lg-4 col-md-4 col-sm-6 col-xs-12"></div>
+<div class="default-news-isotope-grid">
+  <div class="default-news-isotope-grid-sizer col-lg-4 col-md-4 col-sm-6 col-xs-12"></div>
 ';
 $NEWS_TEMPLATE['default']['item'] = '
-<div class="isotope-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<div class="default-news-isotope-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
   <div class="default-item news-category-{NEWS_CATEGORY_ID}">
-    <div class="default-item-mainimage">
-      <a href="{NEWSURL}">
-        {SETIMAGE: w=1200&h=1000}
-        {NEWSIMAGE: item=1&type=tag}
-        <span class="overlay"></span>
-      </a>
-      <div class="default-item-category">{NEWSCATEGORY}</div>
-      <div class="default-item-date">
-        <div class="month">{NEWSDATE=M}</div>
-        <div class="day">{NEWSDATE=dd}</div>
-      </div>
-    </div> 
-    <h2 class="default-item-title">{NEWS_TITLE: link=1}</h2>
-    <div class="default-item-info row">
-      <div class="col-sm-6 default-item-author">'.LAN_THEME_8.' {NEWS_AUTHOR}</div>  
-      <div class="default-item-comments"><i class="fa fa-comments-o"></i> {NEWS_COMMENT_COUNT}</div>
+    <div class="default-item-title">
+      <h2>{NEWS_TITLE: link=1}</h2>
     </div>
-    <div class="default-item-body text-justify">{NEWS_BODY}</div>
-    <div class="default-item-bottom">      
-      <div class="default-item-morebutton">{EXTENDED}</div>
+    <div class="default-item-content">
+      <div class="default-item-mainimage">
+        <a href="{NEWSURL}">
+          {SETIMAGE: w=1200&h=1000}
+          {NEWSIMAGE: item=1&type=tag}
+        </a>
+        <div class="default-item-category">{NEWSCATEGORY}</div>
+        <div class="default-item-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=default&template= STATUS |RATE}</div>
+        <div class="default-item-date">
+          <div class="month">{NEWSDATE=M}</div>
+          <div class="day">{NEWSDATE=dd}</div>
+        </div>
+      </div>
+      <div class="default-item-info row">
+        <div class="col-sm-6 default-item-author">'.LAN_THEME_8.' {NEWS_AUTHOR}</div>  
+        <div class="col-sm-6 default-item-comments">{NEWS_COMMENT_LABEL}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;'.LAN_THEME_100.'&nbsp;{HITS_COUNTER}</div>
+      </div>
+      <div class="default-item-body text-justify">{NEWS_BODY}</div>
+      <div class="default-item-bottom">      
+        <div class="default-item-morebutton">{EXTENDED}</div>
+      </div>
     </div>
   </div>
 </div>
@@ -182,41 +186,45 @@ $NEWS_TEMPLATE['category']['end'] = '
 $NEWS_TEMPLATE['view']['item'] = '
 <div class="view-item">
   <div class="row">
-    <div class="col-md-9"> 
-      <h2 class="view-item-title">{NEWS_TITLE: link=1}</h2>   
-	    
-      <div class="view-item-meta">
-        <span class="view-item-date">{NEWS_DATE}</span>
-        <span class="view-item-category">'.LAN_THEME_9.'&nbsp;{NEWSCATEGORY}</span>
-        <span class="view-item-author">'.LAN_THEME_8.'&nbsp;{NEWS_AUTHOR}</span> 
-        <span class="view-item-comment">{NEWSCOMMENTS}</span>
-      </div>
-      <div class="view-item-mainimage">
-        {SETIMAGE: w=1200&h=1000&crop=1}
-        {NEWS_IMAGE: item=1}
-      </div>
-      <div class="view-item-content">
-        <div class="lead">{NEWS_SUMMARY}</div>
-        <div class="view-item-body">{NEWS_BODY=body}</div>
-        <div class="row view-item-videos">
-			    <div class="col-md-6 view-video">{NEWSVIDEO: item=1}</div>
-		 	    <div class="col-md-6 view-video">{NEWSVIDEO: item=2}</div>
-		 	    <div class="col-md-6 view-video">{NEWSVIDEO: item=3}</div>
-          <div class="col-md-6 view-video">{NEWSVIDEO: item=4}</div>
-		    </div>
-        {SETIMAGE: w=1200&h=1000&crop=1}
-        <div class="row view-item-images-1">
-          <div class="col-md-6">{NEWS_IMAGE: item=2}</div>
-          <div class="col-md-6">{NEWS_IMAGE: item=3}</div>
+    <div class="col-md-9">
+      <div class="view-item-container"> 
+        <div class="view-item-title">
+          <h2>{NEWS_TITLE: link=1}</h2>   
+	      </div>
+        <div class="view-item-container-inner">
+          <div class="view-item-mainimage">
+            {SETIMAGE: w=1200&h=1000&crop=1}
+            {NEWS_IMAGE: item=1}
+          </div>
+          <div class="view-item-meta">{NEWS_DATE}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;'.LAN_THEME_9.'&nbsp;{NEWSCATEGORY}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;'.LAN_THEME_8.'&nbsp;{NEWS_AUTHOR}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{NEWSCOMMENTS}</div>
+          <div class="view-item-content">
+            <div class="lead">{NEWS_SUMMARY}</div>
+            <div class="view-item-body">{NEWS_BODY=body}</div>
+            <div class="row view-item-videos">
+			        <div class="col-md-6 view-video">{NEWSVIDEO: item=1}</div>
+		 	        <div class="col-md-6 view-video">{NEWSVIDEO: item=2}</div>
+		 	        <div class="col-md-6 view-video">{NEWSVIDEO: item=3}</div>
+              <div class="col-md-6 view-video">{NEWSVIDEO: item=4}</div>
+		        </div>
+            {SETIMAGE: w=1200&h=1000&crop=1}
+            <div class="row view-item-images-1">
+              <div class="col-md-6">{NEWS_IMAGE: item=2}</div>
+              <div class="col-md-6">{NEWS_IMAGE: item=3}</div>
+            </div>
+            <div class="row view-item-images-2">
+              <div class="col-md-6">{NEWSIMAGE: item=4}</div>
+              <div class="col-md-6">{NEWSIMAGE: item=5}</div>
+            </div>
+            <div class="view-item-extended">{NEWS_BODY=extended}</div>
+          </div>
         </div>
-        <div class="row view-item-images-2">
-          <div class="col-md-6">{NEWSIMAGE: item=4}</div>
-          <div class="col-md-6">{NEWSIMAGE: item=5}</div>
-        </div>
-        <div class="view-item-extended">{NEWS_BODY=extended}</div>
       </div>
     </div>
     <div class="col-md-3">
+      <div class="view-item-rate">
+        <h3 class="view-item-rate-title">'.LAN_THEME_110.'</h3>
+        <div class="view-item-rate-body">{NEWS_RATE}</div>
+      </div>
       <div class="view-item-tags">
         <h3 class="view-item-tags-title">'.LAN_THEME_50.'</h3>
         <div class="view-item-tags-body">{NEWSTAGS: separator=&nbsp;}</div>

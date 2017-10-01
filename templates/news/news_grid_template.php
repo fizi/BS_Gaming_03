@@ -125,9 +125,10 @@ $NEWS_GRID_TEMPLATE['latest-news']['featured'] = '
         {SETIMAGE: w=1000&h=750&crop=1}        
         <div class="home-latestnews-featured-image">
           {NEWS_IMAGE}
+          <div class="home-latestnews-featured-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=latest-news&template= STATUS |RATE}</div>
         </div>
         <h3 class="home-latestnews-featured-title">{NEWS_TITLE: link=1}</h3>
-        <div class="home-latestnews-featured-info">{NEWS_DATE=M dd, yyyy}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=fa-comments}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=eye-open}&nbsp;{HITS_UNIQUE}</div> 
+        <div class="home-latestnews-featured-info">{NEWS_DATE=M dd, yyyy}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=fa-comments}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=eye-open}&nbsp;{HITS_COUNTER}</div> 
         <div class="home-latestnews-featured-body">{NEWSSUMMARY: limit=200}</div>
       </div>
     </div> 
@@ -147,8 +148,8 @@ $NEWS_GRID_TEMPLATE['latest-news']['item'] = '
             <div class="col-md-8">
               <div class="home-latestnews-item-content">
                 <h4 class="home-latestnews-item-content-title">{NEWS_TITLE: link=1}</h4>
-                <div class="home-latestnews-item-content-info">{NEWS_DATE=M dd, yyyy}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=fa-comments}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=eye-open}&nbsp;{HITS_UNIQUE}</div>
-                <div class="home-latestnews-item-content-body">{NEWSSUMMARY: limit=35}</div>
+                <div class="home-latestnews-item-content-info">{NEWS_DATE=M dd, yyyy}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=fa-comments}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=eye-open}&nbsp;{HITS_COUNTER}</div>
+                <div class="home-latestnews-item-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=latest-news&template= STATUS |RATE}</div>
               </div>
             </div>
           </div>
@@ -172,11 +173,12 @@ $NEWS_GRID_TEMPLATE['bootstrap-news-tabs']['featured'] = '
       {SETIMAGE: w=1000&h=750&crop=1}        
       <div class="home-tab-featured-news-image">
         {NEWS_IMAGE}
+        <div class="home-tab-featured-news-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=tab&template= STATUS |RATE}</div>
       </div>
     </div>
     <div class="col-md-6">
       <h3 class="home-tab-featured-news-title">{NEWS_TITLE: link=1}</h3>
-      <div class="home-tab-featured-news-info">{NEWS_DATE=M dd, yyyy}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=fa-comments}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=eye-open}&nbsp;{HITS_UNIQUE}</div> 
+      <div class="home-tab-featured-news-info">{NEWS_DATE=M dd, yyyy}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=fa-comments}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=eye-open}&nbsp;{HITS_COUNTER}</div> 
       <div class="home-tab-featured-news-body">{NEWSSUMMARY: limit=200}</div>
     </div>
   </div> 
@@ -190,9 +192,10 @@ $NEWS_GRID_TEMPLATE['bootstrap-news-tabs']['item'] = '
           {SETIMAGE: w=1000&h=750&crop=1}
           <div class="home-tab-news-item-image">
             {NEWS_IMAGE}
+            <div class="home-tab-news-item-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=tab&template= STATUS |RATE}</div>
           </div>
           <h4 class="home-tab-news-item-title">{NEWS_TITLE: link=1}</h4>
-          <div class="home-tab-news-item-info">{NEWS_DATE=M dd, yyyy}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=fa-comments}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=eye-open}&nbsp;{HITS_UNIQUE}</div>
+          <div class="home-tab-news-item-info">{NEWS_DATE=M dd, yyyy}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=fa-comments}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=eye-open}&nbsp;{HITS_COUNTER}</div>
           <div class="home-tab-news-item-body">{NEWSSUMMARY: limit=35}</div>
         </div>
       </div>
