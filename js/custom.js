@@ -43,6 +43,11 @@ $(document).ready(function() {
 
 
 // Add Isotope effect **********************************************************
+$(document).ready(function() {
+  $(".default-news-isotope-grid > .default-news-isotope-grid-item:eq(0)").addClass("default-news-isotope-grid-item2");
+}); 
+
+
 $(window).load(function(){ 	
   // init Isotope for News
   var $grid = $('.default-news-isotope-grid').isotope({ 
