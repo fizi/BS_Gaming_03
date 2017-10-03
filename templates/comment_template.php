@@ -118,27 +118,33 @@ $COMMENT_TEMPLATE['form']	= "
 
 
 $COMMENT_TEMPLATE['item'] = '
-<span class="comment-img">
-  {SETIMAGE: w=60&h=60&crop=1}
-	{COMMENT_AVATAR}
-</span>
-<div class="comment-block">
-	<div class="row">				
-		<div class="col-xs-6 text-align">
-      <div class="comment-username">{USERNAME}</div>
-      <div class="comment-timedate">{TIMEDATE}</div>
+<div class="row">
+  <div class="col-md-2">
+    <div class="comment-img">
+      {SETIMAGE: w=100&h=100&crop=1}
+	    {COMMENT_AVATAR}
     </div>
-		<div class="col-sm-6 text-align text-right">{REPLY}</div>
-	</div>	
-	<div class="row">
-		<div class="col-xs-12 comment-text" id="{COMMENT_ITEMID}-edit" contentEditable="false">
-			<div class="comment-body">{COMMENT}</div>
-		</div>
-	</div>	
-	<div class="row">
-		<div class="comment-status col-md-6">{COMMENT_STATUS}</div>
-		<div class="comment-moderate col-md-6 text-right">{COMMENT_RATE} {COMMENTEDIT} {COMMENT_MODERATE}</div>
-	</div>
+  </div>
+  <div class="col-md-10">
+    <div class="comment-block">
+	    <div class="row">				
+		    <div class="col-sm-6 text-align">
+          <div class="comment-username">{USERNAME}</div>
+          <div class="comment-timedate">{TIMEDATE}</div>
+        </div>
+		    <div class="col-sm-6 text-align text-right">{REPLY}</div>
+	    </div>	
+	    <div class="row">
+		    <div class="col-xs-12 comment-text" id="{COMMENT_ITEMID}-edit" contentEditable="false">
+			    <div class="comment-body">{COMMENT}</div>
+		    </div>
+	    </div>	
+	    <div class="row">
+		    <div class="comment-status col-md-6">{COMMENT_STATUS}</div>
+		    <div class="comment-moderate col-md-6 text-right">{COMMENT_RATE} {COMMENTEDIT} {COMMENT_MODERATE}</div>
+	    </div>
+    </div>
+  </div>
 </div>
 ';
 	

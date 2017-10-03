@@ -46,7 +46,7 @@ $POPULAR_MENU_TEMPLATE['homepage']['item'] = "
 		  </div>
 		  <h4 class='home-popular-title'>{NEWS_TITLE: link=1}</a></h4>
 		  <div class='home-popular-body'>{NEWS_SUMMARY: limit=60}</div>
-		  <div class='home-popular-info'>{GLYPH=fa-stats} {HITS_COUNTER}</div>
+		  <div class='home-popular-info'>{GLYPH=fa-stats} {HITS_COUNTER: multi=1}</div>
     </div>
 	</div>
 ";
