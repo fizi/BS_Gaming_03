@@ -105,5 +105,5 @@ $(document).ready(function() {
 
 // Custom page image not responsive - add class img-responsive *****************
 $(document).ready(function() {
-  $(".cpage-body .default-cpage-body img").addClass("img-responsive");
+  $(".cpage-body .default-cpage-content img").addClass("img-responsive");
 });    

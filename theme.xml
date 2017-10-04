@@ -26,7 +26,7 @@
 			<custompages>FRONTPAGE</custompages>	
 		</layout>
     <layout name='game_03_full_page' title='Game 03 Full Page (no Menubar)' default='false'>
-      <custompages>forum news.php news/?</custompages>    
+      <custompages>forum news.php news/? page.php?</custompages>    
 		</layout> 
     <layout name='game_03_extend_news' title='Game 03 Extend News with Right Menubar' default='false'>
       <custompages>news/ news.php?</custompages>

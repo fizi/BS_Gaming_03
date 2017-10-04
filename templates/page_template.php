@@ -57,13 +57,9 @@ $PAGE_TEMPLATE['default']['body'] = '
           {CPAGENAV}
         </div>
       </div>
-	    <div class="default-cpage-body">  
+	    <div class="default-cpage-content"> 
         {SETIMAGE: w=1200&h=1000&crop=1}
         {CPAGEBODY}
-      </div>
-      <div class="default-cpage-comments">
-        <div class="default-cpage-comments-title">'.LAN_THEME_80.'</div>
-        <div class="default-cpage-comments-body">{PAGECOMMENTS}</div>
       </div>
     </div>
     <div class="col-md-3">	
@@ -78,12 +74,17 @@ $PAGE_TEMPLATE['default']['body'] = '
       </div>
       {CPAGERELATED:limit=5&types=page}
     </div>
+  </div>
+  <div class="default-cpage-comments">
+    <div class="default-cpage-comments-title">'.LAN_THEME_80.'</div>
+    <div class="default-cpage-comments-body">{PAGECOMMENTS}</div>
   </div>  
 ';
 
 
 // {CPAGEFIELD: name=image}
 $PAGE_WRAPPER['default']['CPAGEEDIT'] = "<div class='text-right'>{---}</div>";
+
 
 // used only when password authorization is required
 $PAGE_TEMPLATE['default']['authorize'] = '
@@ -120,6 +121,8 @@ $PAGE_TEMPLATE['default']['notfound'] = '
 $PAGE_TEMPLATE['default']['end'] = '</div>'; 
 	
 
+
+ 
 // options per template - disable table render
 //	$PAGE_TEMPLATE['default']['noTableRender'] = false; //XXX Deprecated
 	
@@ -127,7 +130,7 @@ $PAGE_TEMPLATE['default']['end'] = '</div>';
 $PAGE_TEMPLATE['default']['tableRender'] = 'cpage';
 
 $PAGE_TEMPLATE['default']['related']['start'] = '
-<h2 class="cpage-related-caption">{LAN=LAN_RELATED}</h2>
+<h2 class="cpage-related-title">{LAN=LAN_RELATED}</h2>
 <div class="row">
 ';
 $PAGE_TEMPLATE['default']['related']['item'] = '
@@ -136,13 +139,90 @@ $PAGE_TEMPLATE['default']['related']['item'] = '
       <a href="{RELATED_URL}">{RELATED_IMAGE}</a>
     </div>
     <div class="cpage-related-header">
-      <a href="{RELATED_URL}">&nbsp;<i class="fa fa-long-arrow-right"></i>&nbsp;{RELATED_TITLE}</a>
+      <h4 class="cpage-related-caption">
+      <a href="{RELATED_URL}">{RELATED_TITLE}</a>
     </div>
   </div>
 ';
 $PAGE_TEMPLATE['default']['related']['end'] = '
 </div>
 ';
+
+// -------------------------------------------------------------
+
+ $PAGE_TEMPLATE['review'] = $PAGE_TEMPLATE['default'];
+
+// always used - it's inside the {PAGE} sc from 'page' template
+$PAGE_TEMPLATE['default']['start'] = '
+<div id="{CPAGESEF}" class="cpage_body cpage-body">
+  {CHAPTER_BREADCRUMB}
+'; 
+	
+// page body
+$PAGE_TEMPLATE['review']['body'] = '
+  {CPAGEMESSAGE|default}		
+	{CPAGESUBTITLE|default}		
+  <div class="row">
+    <div class="col-md-9">
+      <div class="row">      
+        <div class="col-md-6">
+          <div class="default-cpage-meta">
+            <span class="default-cpage-meta-date">{CPAGEDATE}</span>
+            <span class="default-cpage-meta-author">'.LAN_THEME_8.'&nbsp;{CPAGEAUTHOR}</span> 
+          </div>
+        </div>
+        <div class="col-md-6">
+          {CPAGENAV}
+        </div>
+      </div>
+	    <div class="default-cpage-content"> 
+        <div class="review-scores col-md-3 pull-left">
+          {CPAGEFIELDTITLE: name=gameplay}: {CPAGEFIELD: name=gameplay}
+          {CPAGEFIELDTITLE: name=graphics}: {CPAGEFIELD: name=graphics}
+          {CPAGEFIELDTITLE: name=sound}:    {CPAGEFIELD: name=sound} 
+          {CPAGEFIELDTITLE: name=eop}:    {CPAGEFIELD: name=eop}
+          {CPAGEFIELDTITLE: name=good}:    {CPAGEFIELD: name=good}  
+          {CPAGEFIELDTITLE: name=bad}:    {CPAGEFIELD: name=bad}       
+          <div class="alert alert-danger"><h2>{CPAGEFIELD: name=score}</h2></div>        
+        </div>
+        {SETIMAGE: w=1200&h=1000&crop=1}
+        {CPAGEBODY}
+      </div>
+    </div>
+    <div class="col-md-3">	
+	    <div class="default-cpage-rating">
+        <h3 class="default-cpage-rating-title">'.LAN_THEME_81.'</h3>
+        <div class="default-cpage-rating-body">{CPAGERATING|default}</div>
+      </div>
+	    <div class="default-cpage-edit">{CPAGEEDIT}</div>
+      <div class="default-cpage-share">
+        <h3 class="default-cpage-share-title">'.LAN_THEME_60.'</h3>
+        <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{ADMINOPTIONS}{SOCIALSHARE: type=basic}</div>
+      </div>
+      {CPAGERELATED:limit=5&types=page}
+    </div>
+  </div>
+  <div class="default-cpage-comments">
+    <div class="default-cpage-comments-title">'.LAN_THEME_80.'</div>
+    <div class="default-cpage-comments-body">{PAGECOMMENTS}</div>
+  </div>  
+';
+
+
+// -------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // $PAGE_TEMPLATE['default']['editor'] = '<ul class="fa-ul"><li><i class="fa fa-li fa-edit"></i> Level 1</li><li><i class="fa fa-li fa-cog"></i> Level 2</li></ul>';
 
