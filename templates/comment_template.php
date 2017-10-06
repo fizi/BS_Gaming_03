@@ -98,18 +98,24 @@ $sc_style['MODERATE']['post']	= '</div>';
 
 $COMMENT_TEMPLATE['form']	= "
 <div class='comment-box comment-box-form'>
-	<span class='comment-form-img'>
-    {SETIMAGE: w=60&h=60&crop=1}
-	  {COMMENT_AVATAR}
-  </span>
-  <div class='comment-form-block'>
-    <div class='P10'>
-		  {AUTHOR_INPUT}
-		  {COMMENT_INPUT}
-		  <div id='commentformbutton'>
-			  {COMMENT_BUTTON}
-			  {COMMENT_SHARE}
-		  </div>
+  <div class='row'>
+    <div class='col-md-2'>
+	    <div class='comment-form-img'>
+        {SETIMAGE: w=100&h=100&crop=1}
+	      {COMMENT_AVATAR}
+      </div>
+    </div>
+    <div class='col-md-10'>      
+      <div class='comment-form-block'>
+        <div class='P10'>
+		      {AUTHOR_INPUT}
+		      {COMMENT_INPUT}
+		      <div id='commentformbutton'>
+			      {COMMENT_BUTTON}
+			      {COMMENT_SHARE}
+		      </div>
+        </div>
+      </div>        
     </div>
   </div>
 </div> 

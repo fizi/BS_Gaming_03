@@ -59,6 +59,7 @@ $PAGE_TEMPLATE['default']['body'] = '
       </div>
 	    <div class="default-cpage-content"> 
         {SETIMAGE: w=1200&h=1000&crop=1}
+        {CPAGEFIELD: name=image1}  
         {CPAGEBODY}
       </div>
     </div>
@@ -148,14 +149,17 @@ $PAGE_TEMPLATE['default']['related']['end'] = '
 </div>
 ';
 
-// -------------------------------------------------------------
+// CPAGE FOR REVIEW -------------------------------------------------------------
 
- $PAGE_TEMPLATE['review'] = $PAGE_TEMPLATE['default'];
+$PAGE_TEMPLATE['review']['page'] = '
+{PAGE}
+';
 
 // always used - it's inside the {PAGE} sc from 'page' template
-$PAGE_TEMPLATE['default']['start'] = '
+$PAGE_TEMPLATE['review']['start'] = '
 <div id="{CPAGESEF}" class="cpage_body cpage-body">
-  {CHAPTER_BREADCRUMB}
+  <div class="review-container">
+    {CHAPTER_BREADCRUMB}
 '; 
 	
 // page body
@@ -166,24 +170,35 @@ $PAGE_TEMPLATE['review']['body'] = '
     <div class="col-md-9">
       <div class="row">      
         <div class="col-md-6">
-          <div class="default-cpage-meta">
-            <span class="default-cpage-meta-date">{CPAGEDATE}</span>
-            <span class="default-cpage-meta-author">'.LAN_THEME_8.'&nbsp;{CPAGEAUTHOR}</span> 
-          </div>
+          <div class="review-cpage-meta">{CPAGEDATE}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;'.LAN_THEME_8.'&nbsp;{CPAGEAUTHOR}</div> 
         </div>
         <div class="col-md-6">
           {CPAGENAV}
         </div>
       </div>
-	    <div class="default-cpage-content"> 
-        <div class="review-scores col-md-3 pull-left">
-          {CPAGEFIELDTITLE: name=gameplay}: {CPAGEFIELD: name=gameplay}
-          {CPAGEFIELDTITLE: name=graphics}: {CPAGEFIELD: name=graphics}
-          {CPAGEFIELDTITLE: name=sound}:    {CPAGEFIELD: name=sound} 
-          {CPAGEFIELDTITLE: name=eop}:    {CPAGEFIELD: name=eop}
-          {CPAGEFIELDTITLE: name=good}:    {CPAGEFIELD: name=good}  
-          {CPAGEFIELDTITLE: name=bad}:    {CPAGEFIELD: name=bad}       
-          <div class="alert alert-danger"><h2>{CPAGEFIELD: name=score}</h2></div>        
+	    <div class="review-cpage-content">
+        <div class="review-mainimage">
+          {SETIMAGE: w=1200&h=1000&crop=1}
+          {CPAGEFIELD: name=image1}
+        </div> 
+        <div class="review-scores-wrap">
+          <div class="review-scores">
+            <ul class="progress-wrap">
+              <li><div class="review-scores-title">{CPAGEFIELDTITLE: name=gameplay}:</div>{CPAGEFIELD: name=gameplay}</li>
+              <li><div class="review-scores-title">{CPAGEFIELDTITLE: name=graphics}:</div>{CPAGEFIELD: name=graphics}</li>
+              <li><div class="review-scores-title">{CPAGEFIELDTITLE: name=sound}:</div>{CPAGEFIELD: name=sound}</li> 
+              <li><div class="review-scores-title">{CPAGEFIELDTITLE: name=eop}:</div>{CPAGEFIELD: name=eop}</li>
+            </ul>
+          </div>
+          <div class="review-scores">
+            <div class="review-scores-comments">
+              <div class="review-scores-title">{CPAGEFIELDTITLE: name=good}:</div>{CPAGEFIELD: name=good}  
+              <div class="review-scores-title">{CPAGEFIELDTITLE: name=bad}:</div>{CPAGEFIELD: name=bad}       
+              <div class="review-score-number">
+                <div class="rating-item" data-value="{CPAGEFIELD: name=score}"></div>                 
+              </div>
+            </div>
+          </div>        
         </div>
         {SETIMAGE: w=1200&h=1000&crop=1}
         {CPAGEBODY}
@@ -194,7 +209,6 @@ $PAGE_TEMPLATE['review']['body'] = '
         <h3 class="default-cpage-rating-title">'.LAN_THEME_81.'</h3>
         <div class="default-cpage-rating-body">{CPAGERATING|default}</div>
       </div>
-	    <div class="default-cpage-edit">{CPAGEEDIT}</div>
       <div class="default-cpage-share">
         <h3 class="default-cpage-share-title">'.LAN_THEME_60.'</h3>
         <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{ADMINOPTIONS}{SOCIALSHARE: type=basic}</div>
@@ -203,13 +217,35 @@ $PAGE_TEMPLATE['review']['body'] = '
     </div>
   </div>
   <div class="default-cpage-comments">
-    <div class="default-cpage-comments-title">'.LAN_THEME_80.'</div>
+    <div class="default-cpage-comments-title"><h2>'.LAN_THEME_80.'</h2></div>
     <div class="default-cpage-comments-body">{PAGECOMMENTS}</div>
   </div>  
 ';
 
+$PAGE_TEMPLATE['review']['end'] = '
+  </div>
+</div>';
 
-// -------------------------------------------
+
+$PAGE_TEMPLATE['review']['related']['start'] = '
+<h2 class="cpage-related-title">{LAN=LAN_RELATED}</h2>
+<div class="row">
+';
+$PAGE_TEMPLATE['review']['related']['item'] = '
+  <div class="col-xs-12">
+    <div class="cpage-related-image">
+      <a href="{RELATED_URL}">{RELATED_IMAGE}</a>
+    </div>
+    <div class="cpage-related-header">
+      <h4 class="cpage-related-caption">
+      <a href="{RELATED_URL}">{RELATED_TITLE}</a>
+    </div>
+  </div>
+';
+$PAGE_TEMPLATE['review']['related']['end'] = '
+</div>
+';
+// END -------------------------------------------
 
 
 

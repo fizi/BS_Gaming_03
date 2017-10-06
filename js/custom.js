@@ -106,4 +106,15 @@ $(document).ready(function() {
 // Custom page image not responsive - add class img-responsive *****************
 $(document).ready(function() {
   $(".cpage-body .default-cpage-content img").addClass("img-responsive");
-});    
+  $(".cpage-body .review-container img").addClass("img-responsive");  
+}); 
+
+ 
+$(document).ready(function() {
+  $('.review-container .rating-item').rateCircle({
+    size: 100,
+    lineWidth: 10,
+    fontSize: 30,
+    referenceValue: 10
+  });
+});   
