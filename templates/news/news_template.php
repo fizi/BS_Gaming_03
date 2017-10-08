@@ -100,10 +100,8 @@ $NEWS_TEMPLATE['default']['item'] = '
     </div>
     <div class="default-item-content">
       <div class="default-item-mainimage">
-        <a href="{NEWSURL}">
-          {SETIMAGE: w=1200&h=1000&crop=1}
-          {NEWSIMAGE: item=1&type=tag}
-        </a>
+        {SETIMAGE: w=1200&h=1000&crop=1}
+        {NEWSIMAGE: item=1}
         <div class="default-item-category">{NEWSCATEGORY}</div>
         <div class="default-item-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=default&template= STATUS |RATE}</div>
         <div class="default-item-date">
