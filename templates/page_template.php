@@ -149,8 +149,8 @@ $PAGE_TEMPLATE['default']['related']['end'] = '
 </div>
 ';
 
-// CPAGE FOR REVIEW -------------------------------------------------------------
 
+// CPAGE FOR REVIEW -------------------------------------------------------------
 $PAGE_TEMPLATE['review']['page'] = '
 {PAGE}
 ';

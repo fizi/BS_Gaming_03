@@ -31,20 +31,18 @@ $NEWS_TEMPLATE['list']['item']	= '
   <div class="row">
     <div class="col-md-6">           
       <div class="news-list-item-mainimage">
-        {SETIMAGE: w=900&h=700&crop=1}
+        {SETIMAGE: w=1200&h=1000&crop=1}
         {NEWSIMAGE: item=1}
       </div>
     </div>    
     <div class="col-md-6">
       <h3 class="news-list-item-title">{NEWS_TITLE: link=1}</h3>
-      <div class="news-list-item-meta">
-        <span class="news-list-item-date">{NEWS_DATE}</span>
-        <span class="news-list-item-category">'.LAN_THEME_9.'&nbsp;{NEWSCATEGORY}</span>
-        <span class="news-list-item-author">'.LAN_THEME_8.'&nbsp;{NEWS_AUTHOR}</span> 
-        <span class="news-list-item-comment">{NEWSCOMMENTS}</span>
-      </div>  
-      <div class="lead">{NEWS_SUMMARY}</div>
-      <div class="news-list-item-extended text-right"><a class="button btn btn-mini btn-xs" href="{NEWSURL}">'.LAN_READ_MORE.'&nbsp;<i class="fa fa-long-arrow-right"></i></a></div>
+      <div class="news-list-item-meta">{NEWS_DATE}<br />'.LAN_THEME_9.'&nbsp;{NEWSCATEGORY}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;'.LAN_THEME_8.'&nbsp;{NEWS_AUTHOR}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{NEWS_COMMENT_LABEL}&nbsp;{NEWS_COMMENT_COUNT}</div>  
+      <div class="news-list-item-content">
+        <div class="lead">{NEWS_SUMMARY}</div>
+        <div class="news-list-item-body">{NEWS_BODY}</div>
+        <div class="news-list-item-extended text-right"><a class="button btn btn-mini btn-xs" href="{NEWSURL}">'.LAN_READ_MORE.'&nbsp;<i class="fa fa-long-arrow-right"></i></a></div>
+      </div>
     </div>
   </div>
 </div>
@@ -103,7 +101,7 @@ $NEWS_TEMPLATE['default']['item'] = '
     <div class="default-item-content">
       <div class="default-item-mainimage">
         <a href="{NEWSURL}">
-          {SETIMAGE: w=1200&h=1000}
+          {SETIMAGE: w=1200&h=1000&crop=1}
           {NEWSIMAGE: item=1&type=tag}
         </a>
         <div class="default-item-category">{NEWSCATEGORY}</div>
@@ -135,7 +133,8 @@ $NEWS_TEMPLATE['default']['end']	= '
 
 $NEWS_TEMPLATE['category']['start'] = '
 <!-- Category News Template -->
-<div class="news-cat-items">
+<div class="newscatitems">
+  <div class="newscatitems-header"><h2>{NEWS_CATEGORY_NAME: link=1}</h2></div>
   <div class="row">
 ';
 
@@ -149,12 +148,7 @@ $NEWS_TEMPLATE['category']['item'] = '
   </div>
   <div class="col-sm-6">       
     <h2 class="news-cat-item-title">{NEWS_TITLE: link=1}</h2>
-    <div class="news-cat-item-meta">
-      <span class="news-cat-item-date">{NEWS_DATE}</span>
-        <span class="news-cat-item-category">'.LAN_THEME_9.'&nbsp;{NEWSCATEGORY}</span>
-        <span class="news-cat-item-author">'.LAN_THEME_8.'&nbsp;{NEWS_AUTHOR}</span> 
-        <span class="news-cat-item-comment">{NEWSCOMMENTS}</span>
-    </div>  
+    <div class="news-cat-item-meta">{NEWS_DATE}<br />'.LAN_THEME_9.'&nbsp;{NEWSCATEGORY}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;'.LAN_THEME_8.'&nbsp;{NEWS_AUTHOR}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{NEWS_COMMENT_LABEL}&nbsp;{NEWS_COMMENT_COUNT}</div>  
     <div class="news-cat-item-content">
       <div class="lead">{NEWS_SUMMARY}</div>
       <div class="news-cat-item-body">{NEWS_BODY=body}</div>

@@ -101,7 +101,7 @@ $COMMENT_TEMPLATE['form']	= "
   <div class='row'>
     <div class='col-md-2'>
 	    <div class='comment-form-img'>
-        {SETIMAGE: w=100&h=100&crop=1}
+        {SETIMAGE: w=120&h=120&crop=1}
 	      {COMMENT_AVATAR}
       </div>
     </div>
@@ -127,7 +127,7 @@ $COMMENT_TEMPLATE['item'] = '
 <div class="row">
   <div class="col-md-2">
     <div class="comment-img">
-      {SETIMAGE: w=100&h=100&crop=1}
+      {SETIMAGE: w=120&h=120&crop=1}
 	    {COMMENT_AVATAR}
     </div>
   </div>

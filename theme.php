@@ -223,7 +223,7 @@ $LAYOUT['game_03_home'] = "
 "; 
 
 
-// Game 03 theme Homepage layout 
+// Game 03 theme Fullpage layout 
 $LAYOUT['game_03_full_page'] = "
 <div class='container'>
   <div class='row'>
@@ -238,22 +238,7 @@ $LAYOUT['game_03_full_page'] = "
 "; 
 
 
-// Game 03 theme Homepage layout 
-$LAYOUT['game_03_extend_news'] = "
-<div class='container'>
-  <div class='row'>
-    <div class='page_content'>
-      <div class='col-md-12'>
-        {SETSTYLE=leftcol}
-{---}
-      </div>
-    </div>
-  </div>
-</div>
-"; 
-
-
-// Game 03 theme Homepage layout 
+// Game 03 theme SideBar layout 
 $LAYOUT['game_03_with_sidebar'] = "
 <div class='container'>
   <div class='row'>
