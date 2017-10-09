@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e107Theme name="BS Gaming 03" version="1.0" date="2017-09-22" compatibility="2.0" >
-	<author name="fizi" url="http://fizithemes.hu" email="fizi@wsb.hu"/>
+<e107Theme name='BS Gaming 03' version='1.0' date='2017-09-22' compatibility='2.0'>
+	<author name='fizi' url='http://fizithemes.hu' email='fizi@wsb.hu' />
 	<summary>BS Gaming 03 Bootstrap3 theme</summary>
 	<description>BS Gaming 03 bootstrap 3 theme with Isotope grid layout.</description>
   <category>game</category>
@@ -10,6 +10,11 @@
     <plugin name='social' url='core' />
     <plugin name='pm' url='core' />
 	</plugins>
+  <libraries> 
+    <library name='bootstrap' scope='all' /> 
+    <library name='fontawesome' scope='all' /> 
+    <library name='bootstrap.editable' scope='admin' /> 
+  </libraries>
 	<keywords>
 		<word>bootstrap</word>
 		<word>game</word>
@@ -19,7 +24,7 @@
 		<image>preview.jpg</image>
 	</screenshots>
 	<stylesheets>
-		<css file="style.css" name="Default" />
+		<css file='style.css' name='Default' />
 	</stylesheets>
 	<layouts>
     <layout name='game_03_home' title='Game 03 Homepage' default='false'>

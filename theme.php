@@ -20,8 +20,8 @@ define("BOOTSTRAP", 3);
 define("FONTAWESOME", 4);
 define('VIEWPORT', "width=device-width, initial-scale=1.0");
 
-e107::library('load', 'bootstrap');
-e107::library('load', 'fontawesome');
+// e107::library('load', 'bootstrap'); // see theme.xml 
+// e107::library('load', 'fontawesome'); // see theme.xml 
 
 // CDN provider for Bootswatch.
 $cndPref = e107::pref('theme', 'cdn', 'cdnjs');
@@ -91,7 +91,7 @@ $LAYOUT['_header_'] = "
     </div>
     <div class='row header-middle'>
       <div class='col-md-6'>
-        <div class='sitename'><a href='".e_HTTP."index.php' title='{SITENAME}' alt='".SITENAME."'>{SITENAME}</a></div>
+        <div class='sitename'><a href='".e_HTTP."index.php' title='{SITENAME}'>{SITENAME}</a></div>
         <div class='sitetag'>{SITETAG}</div>
       </div>
       <div class='col-md-6'>
@@ -275,9 +275,12 @@ $LAYOUT['game_03_with_sidebar'] = "
 "; 
 
 
-function rand_tag(){
-        $tags = file(e_BASE."files/taglines.txt");
-        return stripslashes(htmlspecialchars($tags[rand(0, count($tags))]));
+function rand_tag(){ 
+  if(!file_exists(e_BASE."files/taglines.txt")){ 
+    return null; 
+  } 
+  $tags = file(e_BASE."files/taglines.txt"); 
+  return stripslashes(htmlspecialchars($tags[rand(0, count($tags))])); 
 }
 
 
