@@ -31,7 +31,7 @@ $NEWS_TEMPLATE['list']['item']	= '
   <div class="row">
     <div class="col-md-6">           
       <div class="news-list-item-mainimage">
-        {SETIMAGE: w=1200&h=1000&crop=1}
+        {SETIMAGE: w=1000&h=750&crop=1}
         {NEWSIMAGE: item=1}
       </div>
     </div>    
@@ -100,7 +100,7 @@ $NEWS_TEMPLATE['default']['item'] = '
     </div>
     <div class="default-item-content">
       <div class="default-item-mainimage">
-        {SETIMAGE: w=1200&h=1000&crop=1}
+        {SETIMAGE: w=1000&h=750&crop=1}
         {NEWSIMAGE: item=1}
         <div class="default-item-category">{NEWSCATEGORY}</div>
         <div class="default-item-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=default&template= STATUS |RATE}</div>
@@ -140,7 +140,7 @@ $NEWS_TEMPLATE['category']['item'] = '
 <div class="news-cat-item">
   <div class="col-sm-6">
     <div class="news-cat-item-mainimage">
-      {SETIMAGE: w=1200&h=1000&crop=1}
+      {SETIMAGE: w=1000&h=750&crop=1}
       {NEWS_IMAGE: item=1}
     </div>
   </div>
@@ -185,7 +185,7 @@ $NEWS_TEMPLATE['view']['item'] = '
 	      </div>
         <div class="view-item-container-inner">
           <div class="view-item-mainimage">
-            {SETIMAGE: w=1200&h=1000&crop=1}
+            {SETIMAGE: w=1000&h=750&crop=1}
             {NEWS_IMAGE: item=1}
           </div>
           <div class="view-item-meta">{NEWS_DATE}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;'.LAN_THEME_9.'&nbsp;{NEWSCATEGORY}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;'.LAN_THEME_8.'&nbsp;{NEWS_AUTHOR}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{NEWSCOMMENTS}</div>
@@ -198,7 +198,7 @@ $NEWS_TEMPLATE['view']['item'] = '
 		 	        <div class="col-md-6 view-video">{NEWSVIDEO: item=3}</div>
               <div class="col-md-6 view-video">{NEWSVIDEO: item=4}</div>
 		        </div>
-            {SETIMAGE: w=1200&h=1000&crop=1}
+            {SETIMAGE: w=1000&h=750&crop=1}
             <div class="row view-item-images-1">
               <div class="col-md-6">{NEWS_IMAGE: item=2}</div>
               <div class="col-md-6">{NEWS_IMAGE: item=3}</div>
