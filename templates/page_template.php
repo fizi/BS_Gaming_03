@@ -37,50 +37,50 @@ $PAGE_TEMPLATE['default']['page'] = '
 // always used - it's inside the {PAGE} sc from 'page' template
 $PAGE_TEMPLATE['default']['start'] = '
 <div id="{CPAGESEF}" class="cpage_body cpage-body">
-  {CHAPTER_BREADCRUMB}
+  <div class="default-cpage-container">
+    {CHAPTER_BREADCRUMB}
 '; 
 	
 // page body
 $PAGE_TEMPLATE['default']['body'] = '
-  {CPAGEMESSAGE|default}		
-	{CPAGESUBTITLE|default}		
-  <div class="row">
-    <div class="col-md-9">
-      <div class="row">      
-        <div class="col-md-6">
-          <div class="default-cpage-meta">
-            <span class="default-cpage-meta-date">{CPAGEDATE}</span>
-            <span class="default-cpage-meta-author">'.LAN_THEME_8.'&nbsp;{CPAGEAUTHOR}</span> 
+    {CPAGEMESSAGE|default}		
+	  {CPAGESUBTITLE|default}		
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">      
+          <div class="col-md-6">
+            <div class="default-cpage-meta">{CPAGEDATE}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;'.LAN_THEME_8.'&nbsp;{CPAGEAUTHOR}</div>
+          </div>
+          <div class="col-md-6">
+            {CPAGENAV}
           </div>
         </div>
-        <div class="col-md-6">
-          {CPAGENAV}
+	      <div class="default-cpage-content">
+          <div class="default-cpage-mainimage">
+            {SETIMAGE: w=1000&h=750&crop=1}
+            {CPAGEFIELD: name=image1}
+          </div>  
+          {SETIMAGE: w=1000&h=750&crop=1}
+          {CPAGEBODY}
         </div>
       </div>
-	    <div class="default-cpage-content"> 
-        {SETIMAGE: w=1200&h=1000&crop=1}
-        {CPAGEFIELD: name=image1}  
-        {CPAGEBODY}
+      <div class="col-md-3">	
+	      <div class="default-cpage-rating">
+          <h3 class="default-cpage-rating-title">'.LAN_THEME_81.'</h3>
+          <div class="default-cpage-rating-body">{CPAGERATING|default}</div>
+        </div>
+        <div class="default-cpage-share">
+          <h3 class="default-cpage-share-title">'.LAN_THEME_60.'</h3>
+          <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{ADMINOPTIONS}{SOCIALSHARE: type=basic}</div>
+        </div>
+        {CPAGERELATED:limit=5&types=page}
       </div>
     </div>
-    <div class="col-md-3">	
-	    <div class="default-cpage-rating">
-        <h3 class="default-cpage-rating-title">'.LAN_THEME_81.'</h3>
-        <div class="default-cpage-rating-body">{CPAGERATING|default}</div>
-      </div>
-	    <div class="default-cpage-edit">{CPAGEEDIT}</div>
-      <div class="default-cpage-share">
-        <h3 class="default-cpage-share-title">'.LAN_THEME_60.'</h3>
-        <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{ADMINOPTIONS}{SOCIALSHARE: type=basic}</div>
-      </div>
-      {CPAGERELATED:limit=5&types=page}
-    </div>
-  </div>
-  <div class="default-cpage-comments">
-    <div class="default-cpage-comments-title">'.LAN_THEME_80.'</div>
-    <div class="default-cpage-comments-body">{PAGECOMMENTS}</div>
-  </div>  
-';
+    <div class="default-cpage-comments">
+      <div class="default-cpage-comments-title"><h2>'.LAN_THEME_80.'</h2></div>
+      <div class="default-cpage-comments-body">{PAGECOMMENTS}</div>
+    </div>  
+';     
 
 
 // {CPAGEFIELD: name=image}
@@ -119,7 +119,9 @@ $PAGE_TEMPLATE['default']['notfound'] = '
 ';
 	
 // always used
-$PAGE_TEMPLATE['default']['end'] = '</div>'; 
+$PAGE_TEMPLATE['default']['end'] = '
+  </div>
+</div>'; 
 	
 
 
@@ -164,62 +166,62 @@ $PAGE_TEMPLATE['review']['start'] = '
 	
 // page body
 $PAGE_TEMPLATE['review']['body'] = '
-  {CPAGEMESSAGE|default}		
-	{CPAGESUBTITLE|default}		
-  <div class="row">
-    <div class="col-md-9">
-      <div class="row">      
-        <div class="col-md-6">
-          <div class="review-cpage-meta">{CPAGEDATE}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;'.LAN_THEME_8.'&nbsp;{CPAGEAUTHOR}</div> 
-        </div>
-        <div class="col-md-6">
-          {CPAGENAV}
-        </div>
-      </div>
-	    <div class="review-cpage-content">
-        <div class="review-mainimage">
-          {SETIMAGE: w=1200&h=1000&crop=1}
-          {CPAGEFIELD: name=image1}
-        </div> 
-        <div class="review-scores-wrap">
-          <div class="review-scores">
-            <ul class="progress-wrap">
-              <li><div class="review-scores-title">{CPAGEFIELDTITLE: name=gameplay}:</div>{CPAGEFIELD: name=gameplay}</li>
-              <li><div class="review-scores-title">{CPAGEFIELDTITLE: name=graphics}:</div>{CPAGEFIELD: name=graphics}</li>
-              <li><div class="review-scores-title">{CPAGEFIELDTITLE: name=sound}:</div>{CPAGEFIELD: name=sound}</li> 
-              <li><div class="review-scores-title">{CPAGEFIELDTITLE: name=eop}:</div>{CPAGEFIELD: name=eop}</li>
-            </ul>
+    {CPAGEMESSAGE|default}		
+	  {CPAGESUBTITLE|default}		
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">      
+          <div class="col-md-6">
+            <div class="review-cpage-meta">{CPAGEDATE}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;'.LAN_THEME_8.'&nbsp;{CPAGEAUTHOR}</div> 
           </div>
-          <div class="review-scores">
-            <div class="review-scores-comments">
-              <div class="review-scores-title">{CPAGEFIELDTITLE: name=good}:</div>{CPAGEFIELD: name=good}  
-              <div class="review-scores-title">{CPAGEFIELDTITLE: name=bad}:</div>{CPAGEFIELD: name=bad}       
-              <div class="review-score-number">
-                <div class="rating-item" data-value="{CPAGEFIELD: name=score}"></div>                 
-              </div>
-            </div>
-          </div>        
+          <div class="col-md-6">
+            {CPAGENAV}
+          </div>
         </div>
-        {SETIMAGE: w=1200&h=1000&crop=1}
-        {CPAGEBODY}
+	      <div class="review-cpage-content">
+          <div class="review-mainimage">
+            {SETIMAGE: w=1000&h=750&crop=1}
+            {CPAGEFIELD: name=image1}
+          </div> 
+          <div class="review-scores-wrap">
+            <div class="review-scores">
+              <ul class="progress-wrap">
+                <li><div class="review-scores-title">{CPAGEFIELDTITLE: name=gameplay}:</div>{CPAGEFIELD: name=gameplay}</li>
+                <li><div class="review-scores-title">{CPAGEFIELDTITLE: name=graphics}:</div>{CPAGEFIELD: name=graphics}</li>
+                <li><div class="review-scores-title">{CPAGEFIELDTITLE: name=sound}:</div>{CPAGEFIELD: name=sound}</li> 
+                <li><div class="review-scores-title">{CPAGEFIELDTITLE: name=eop}:</div>{CPAGEFIELD: name=eop}</li>
+              </ul>
+            </div>
+            <div class="review-scores">
+              <div class="review-scores-comments">
+                <div class="review-scores-title">{CPAGEFIELDTITLE: name=good}:</div>{CPAGEFIELD: name=good}  
+                <div class="review-scores-title">{CPAGEFIELDTITLE: name=bad}:</div>{CPAGEFIELD: name=bad}       
+                <div class="review-score-number">
+                  <div class="rating-item" data-value="{CPAGEFIELD: name=score}"></div>                 
+                </div>
+              </div>
+            </div>        
+          </div>
+          {SETIMAGE: w=1000&h=750&crop=1}
+          {CPAGEBODY}
+        </div>
+      </div>
+      <div class="col-md-3">	
+	      <div class="default-cpage-rating">
+          <h3 class="default-cpage-rating-title">'.LAN_THEME_81.'</h3>
+          <div class="default-cpage-rating-body">{CPAGERATING|default}</div>
+        </div>
+        <div class="default-cpage-share">
+          <h3 class="default-cpage-share-title">'.LAN_THEME_60.'</h3>
+          <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{ADMINOPTIONS}{SOCIALSHARE: type=basic}</div>
+        </div>
+        {CPAGERELATED:limit=5&types=page}
       </div>
     </div>
-    <div class="col-md-3">	
-	    <div class="default-cpage-rating">
-        <h3 class="default-cpage-rating-title">'.LAN_THEME_81.'</h3>
-        <div class="default-cpage-rating-body">{CPAGERATING|default}</div>
-      </div>
-      <div class="default-cpage-share">
-        <h3 class="default-cpage-share-title">'.LAN_THEME_60.'</h3>
-        <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{ADMINOPTIONS}{SOCIALSHARE: type=basic}</div>
-      </div>
-      {CPAGERELATED:limit=5&types=page}
-    </div>
-  </div>
-  <div class="default-cpage-comments">
-    <div class="default-cpage-comments-title"><h2>'.LAN_THEME_80.'</h2></div>
-    <div class="default-cpage-comments-body">{PAGECOMMENTS}</div>
-  </div>  
+    <div class="default-cpage-comments">
+      <div class="default-cpage-comments-title"><h2>'.LAN_THEME_80.'</h2></div>
+      <div class="default-cpage-comments-body">{PAGECOMMENTS}</div>
+    </div>  
 ';
 
 $PAGE_TEMPLATE['review']['end'] = '

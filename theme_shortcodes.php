@@ -254,6 +254,30 @@ class theme_shortcodes extends e_shortcode {
     return e107::getForm()->tabs($tab);
   }
   
+  
+  
+	function sc_last_ten_newsgrid()
+	{
+		$text = '<div class="container">';
+
+		$parm = array();
+		$parm['limit'] = 9;
+		$parm['category'] = 0;
+		$parm['source'] = 'latest';
+		$parm['featured'] = 1;
+		$parm['layout'] = 'latest-news';
+
+		$text .= e107::getObject('news')->render_newsgrid($parm);
+	
+	//$text .= "Hello";
+
+		$text .= '</div>';
+
+		return $text;
+
+	}
+  
+  
 } 
  
 ?>
