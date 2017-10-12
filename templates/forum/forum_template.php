@@ -98,7 +98,7 @@ $FORUM_TRACK_END	= "<br />TRACK-END";
 */
 
 // New in v2.x - requires a bootstrap theme be loaded.  
-
+// Modifiey by fizi ************************************************************
 
 $FORUM_TEMPLATE['main']['start'] = "
 {FORUM_BREADCRUMB}

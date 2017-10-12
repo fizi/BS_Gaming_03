@@ -308,106 +308,82 @@ $FORUM_CRUMB['forum']['value'] = "<a class='forumlink' href='{FORUM_HREF}'>{FORU
 
 // {MODERATORS} {THREADSTATUS}
 
-// New in v2.x - requires a bootstrap theme be loaded.  
+// New in v2.x - requires a bootstrap theme be loaded.
+// Modified by fizi ************************************************************  
 
 $FORUM_VIEWTOPIC_TEMPLATE['caption'] 	= "";
 $FORUM_VIEWTOPIC_TEMPLATE['start'] 	= "
-
-	<div class='row-fluid'>
-		<div>{BACKLINK}</div>
-	</div>
-
-	<div class='row row-fluid'>
-		<div class='col-md-9 span9 pull-left'><h3>{THREADNAME}</h3></div><div class='col-md-3 span3 pull-right right text-right' style='padding-top:10px'>{TRACK} {BUTTONSX}</div>
-	</div>
-	
-	{MESSAGE}
-	
-											
-<ul id='forum-viewtopic' class='unstyled list-unstyled'>
-
+<div id='forum-view-topic'>
+  <div class='row'>
+	  <div>{BACKLINK}</div>
+  </div>
+  <div class='row'>
+	  <div class='col-md-9 forum-topic-title'><h3>{THREADNAME}</h3></div>
+    <div class='col-md-3 forum-topic-button text-right'>{TRACK} {BUTTONSX}</div>
+  </div>	
+  {MESSAGE}											
+  <ul class='forum-viewtopic unstyled list-unstyled'>
+    <li class='forum-viewtopic-caption'>
+      <div class='row'>
+        <div class='col-sm-2'>AUTHOR</div>
+        <div class='col-sm-10 text-center'>POSTS</div>
+      </div>
+    </li>
 ";
 
 $FORUM_VIEWTOPIC_TEMPLATE['thread'] = "
-									<li id='post-{POSTID}' class='forum-viewtopic-post'>
-										<div class='hidden-xs row row-fluid btn-navbar navbar-btn'>
-
-												{SETIMAGE: w=100&h=100&crop=1}
-												<div class='col-xs-2 span2 left text-left'>
-													<div class='row'>
-														<div class='col-xs-12 col-md-12 forum-user-combo'>{USERCOMBO}<br />{CUSTOMTITLE}</div>
-													</div>
-
-												{NEWFLAG} {ANON_IP}</div>
-												<div class='col-xs-4 col-sm-3 text-muted span4 text-muted muted'><small>{THREADDATESTAMP=relative}</small></div>
-												<div class='col-xs-5 text-muted span5 text-muted muted right text-right'><small>{LASTEDIT}{LASTEDITBY=link}</small></div>
-												<div class='col-xs-3 col-sm-2 span1 right text-right'>{POSTOPTIONS}</div>
-										
-										</div>
-
-										<div class='row row-fluid'  >
-
-											<div class='col-xs-12 col-md-2 span2 left'>
-													<div class='row'>
-
-													<div class='col-xs-3 col-md-12 text-center'>{AVATAR: shape=rounded}</div>
-													<div class='col-xs-6 visible-xs'>{USERCOMBO}<br />{CUSTOMTITLE}</div>
-														<div class='col-xs-6 col-md-12 hidden-xs'>
-															<small>
-																{LEVEL=badge} {LEVEL=glyph}
-															</small>
-														</div>
-														<div class='visible-xs col-xs-3'><div class='clearfix'>{POSTOPTIONS}</div><div class='pull-right '><br /><small class='text-muted'>{THREADDATESTAMP=relative}</small></div></div>
-													</div>
-											</div>
-											<div class='visible-xs col-xs-12'><hr /></div>
-											<div class='col-xs-12 col-md-9 span9 forum-thread-text '>
-												{POLL}
-												{THREAD_TEXT}
-												{ATTACHMENTS: modal=1}
-											</div>
-										</div>
-										
-										
-										<div class='row row-fluid'>
-											<div class='col-xs-2 span2 finfobar'>
-												&nbsp;
-											</div>
-											<div class='col-xs-9 span9  finfobar' >
-												<small> {SIGNATURE=clean}</small>
-											</div>
-											
-											<div class='col-xs-3 span3'>
-											</div>
-										</div>
-										
-										
-									</li>
-
-									";
+    <li id='post-{POSTID}' class='forum-viewtopic-post'>
+      {SETIMAGE: w=100&h=100&crop=1}
+      <div class='forum-viewtopic-postdate'>{THREADDATESTAMP}</div>
+      <div class='forum-viewtopic-postcontent'>
+        <div class='row'>
+          <div class='col-sm-2 text-center'>
+            <div class='forum-user-combo'>{USERCOMBO}<br />{CUSTOMTITLE}</div>
+				    {NEWFLAG} {ANON_IP}
+            <div class='forum-viewtopic-avatar'>{AVATAR}</div>
+					  <div class='forum-viewtopic-level'>
+              <div class='smalltext'>{LEVEL=badge}</div>
+            </div>
+            <div class='forum-viewtopic-level-icons'><small>{LEVEL=glyph}</small></div>
+            <div class='visible-xs visible-sm'>{POSTOPTIONS}</div>
+            <div class='clearfix'></div>
+            <div class='visible-xs visible-sm col-sm-12'><hr /></div>
+          </div> 
+          <div class='col-sm-10'>
+            <div class='row'>
+              <div class='col-sm-12 col-md-6 text-muted'>
+                <div class='smalltext'>{LASTEDIT}&nbsp;&nbsp;{LASTEDITBY}</div>
+              </div>
+              <div class='hidden-xs hidden-sm col-md-6 text-right'>{POSTOPTIONS}</div>
+            </div>
+            <div class='forum-viewtopic-postmessage'>
+              {POLL}
+					    {THREAD_TEXT}
+				  	  {ATTACHMENTS: modal=1}
+            </div>
+            <div class='finfobar'>{SIGNATURE=clean}</div>
+          </div>
+        </div>
+      </div>
+		</li>
+";
 
 $FORUM_VIEWTOPIC_TEMPLATE['end'] = "</ul>
-<div class='col-xs-12'>
-	<hr />
+  <div class='row'>
+	  <div class='col-xs-12 col-md-4'></div>
+	  <div class='col-xs-12 col-md-4 text-center'>
+		  {GOTOPAGES}
+	  </div>
+	  <div class='col-xs-12 col-md-4'>
+		  <div class='forum-topic-button text-right'>{BUTTONSX}</div>
+	  </div>
+  </div>
+  <div class='row'>
+	  <div class='col-xs-12 col-md-6 col-md-offset-3'>{QUICKREPLY}</div>
+  </div>
+  <div class='smalltext text-muted'>{MODERATORS}</div>
+  {THREADSTATUS}
 </div>
-<div class='row'>
-	<div class='col-xs-12 col-md-4'></div>
-	<div class='col-xs-12 col-md-4 text-center'>
-		{GOTOPAGES}
-	</div>
-	<div class='col-xs-12 col-md-4'>
-		<div class='pull-right'>
-			{BUTTONSX}
-		</div>
-	</div>
-</div>
-<div class='row'>
-	<div class='col-xs-12 col-md-6 col-md-offset-3'>
-		{QUICKREPLY}
-	</div>
-</div>
-<small class='text-muted'>{MODERATORS}</small>
-{THREADSTATUS}
 ";
 
 
@@ -417,60 +393,36 @@ $FORUM_VIEWTOPIC_TEMPLATE['replies'] = $FORUM_VIEWTOPIC_TEMPLATE['thread'];
 
 
 $FORUM_VIEWTOPIC_TEMPLATE['deleted'] = "
-									<li id='post-{POSTID}' class='forum-viewtopic-deleted forum-viewtopic-post'>
-										<div class='hidden-xs row row-fluid btn-navbar navbar-btn'>
-
-												{SETIMAGE: w=100&h=0&crop=0}
-												<div class='col-xs-2 span2 left text-left'>
-													<div class='row'>
-														<div class='col-xs-12 col-md-12 forum-user-combo'>{USERCOMBO}<br />{CUSTOMTITLE}</div>
-													</div>
-
-												{NEWFLAG} {ANON_IP}</div>
-												<div class='col-xs-4 col-sm-3 text-muted span4 text-muted muted'><small>{THREADDATESTAMP=relative}</small></div>
-												<div class='col-xs-5 text-muted span5 text-muted muted right text-right'><small>{LASTEDIT}{LASTEDITBY=link}</small></div>
-												<div class='col-xs-3 col-sm-2 span1 right text-right'>{POSTOPTIONS}</div>
-
-										</div>
-
-										<div class='row row-fluid'  >
-
-											<div class='col-xs-12 col-md-2 span2 left'>
-													<div class='row'>
-
-													<div class='col-xs-3 col-md-12 text-center'>{AVATAR: shape=rounded}</div>
-													<div class='col-xs-6 visible-xs'>{USERCOMBO}<br />{CUSTOMTITLE}</div>
-														<div class='col-xs-6 col-md-12 hidden-xs'>
-															<small>
-																{LEVEL=badge} {LEVEL=glyph}
-															</small>
-														</div>
-														<div class='visible-xs col-xs-3'><div class='clearfix'>{POSTOPTIONS}</div><div class='pull-right '><br /><small class='text-muted'>{THREADDATESTAMP=relative}</small></div></div>
-													</div>
-											</div>
-											<div class='visible-xs col-xs-12'><hr /></div>
-											<div class='col-xs-12 col-md-9 span9 forum-thread-text '>
-												{POSTDELETED}
-											</div>
-										</div>
-
-
-										<div class='row row-fluid'>
-											<div class='col-xs-2 span2 finfobar'>
-												&nbsp;
-											</div>
-											<div class='col-xs-9 span9  finfobar' >
-												<small> {SIGNATURE=clean}</small>
-											</div>
-
-											<div class='col-xs-3 span3'>
-											</div>
-										</div>
-
-
-									</li>
-
-									";
+    <li id='post-{POSTID}' class='forum-viewtopic-post'>
+      {SETIMAGE: w=100&h=100&crop=1}
+      <div class='forum-viewtopic-postdate'>{THREADDATESTAMP}</div>
+      <div class='forum-viewtopic-postcontent'>
+        <div class='row'>
+          <div class='col-sm-2 text-center'>
+            <div class='forum-user-combo'>{USERCOMBO}<br />{CUSTOMTITLE}</div>
+				    {NEWFLAG} {ANON_IP}
+            <div class='forum-viewtopic-avatar'>{AVATAR}</div>
+					  <div class='forum-viewtopic-level'>
+              <div class='smalltext'>{LEVEL=badge}</div>
+            </div>
+            <div class='forum-viewtopic-level-icons'><small>{LEVEL=glyph}</small></div>
+            <div class='visible-xs visible-sm'>{POSTOPTIONS}</div>
+            <div class='visible-xs visible-sm col-sm-12'><hr /></div>
+          </div>
+          <div class='col-sm-10'>
+            <div class='row'>
+              <div class='col-sm-12 col-md-6 text-muted'>
+                <div class='smalltext'>{LASTEDIT}&nbsp;&nbsp;{LASTEDITBY}</div>
+              </div>
+              <div class='hidden-xs hidden-sm col-md-6 text-right'>{POSTOPTIONS}</div>
+            </div>
+            <div class='forum-viewtopic-postmessage'>{POSTDELETED}</div>
+            <div class='finfobar'>{SIGNATURE=clean}</div>
+          </div>
+        </div>
+      </div>
+		</li>
+";
 
 
 

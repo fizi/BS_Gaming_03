@@ -287,6 +287,7 @@ $FORUM_CRUMB['forum']['value'] = "{FORUM_TITLE}";
 // New in v2.x - requires a bootstrap theme be loaded.  
 
 //TODO Find a good place to put a {SEARCH} dropdown.
+// Modifiey by fizi ************************************************************
 
 $FORUM_VIEWFORUM_TEMPLATE['caption'] = "";
 $FORUM_VIEWFORUM_TEMPLATE['start'] = "
@@ -311,8 +312,9 @@ $FORUM_VIEWFORUM_TEMPLATE['item'] = "
         <div class='col-xs-9 col-sm-7 forum-viewforum-item-topictitle text-left'>
           {THREADNAME}
           <div class='smalltext'>".LAN_FORUM_1004.": {POSTER} {THREADTIMELAPSE}</div>
+          <div class='smaltext'>{PAGESX}</div>
         </div>
-        <div class='col-xs-2 col-sm-1 forum-viewforum-item-replies text-center'>{PAGESX}</div>
+        <div class='col-xs-2 col-sm-1 forum-viewforum-item-replies text-center'>{REPLIESX}</div>
         <div class='hidden-xs col-sm-1 forum-viewforum-item-views text-center'>{VIEWSX}</div>
         <div class='hidden-xs col-sm-2 forum-viewforum-item-lastpost text-left'>
           <div class='smalltext pull-left'>{LASTPOSTUSER} {LASTPOSTDATE}</div>
@@ -415,21 +417,21 @@ $FORUM_VIEWFORUM_TEMPLATE['end'] = "
 </div>";
 
 // define {ICONKEY}
-$FORUM_VIEWFORUM_TEMPLATE['iconkey'] 			= "
-												<div class='row' >
-													<div class='col-sm-3 col-xs-6'>".IMAGE_new_small." ".LAN_FORUM_0039."</div>
-													<div class='col-sm-3 col-xs-6'>".IMAGE_nonew_small." ".LAN_FORUM_0040."</div>
-													<div class='col-sm-3 col-xs-6'>".IMAGE_sticky_small." ".LAN_FORUM_1011."</div>
-													<div class='col-sm-3 col-xs-6'>".IMAGE_announce_small." ".LAN_FORUM_1013."</div>
-												</div>
+$FORUM_VIEWFORUM_TEMPLATE['iconkey'] = "
+<div class='row' >
+	<div class='col-sm-3 col-xs-6'>".IMAGE_new_small." ".LAN_FORUM_0039."</div>
+	<div class='col-sm-3 col-xs-6'>".IMAGE_nonew_small." ".LAN_FORUM_0040."</div>
+	<div class='col-sm-3 col-xs-6'>".IMAGE_sticky_small." ".LAN_FORUM_1011."</div>
+	<div class='col-sm-3 col-xs-6'>".IMAGE_announce_small." ".LAN_FORUM_1013."</div>
+</div>
 
-												<div class='row' >
-													<div class='col-sm-3 col-xs-6'>".IMAGE_new_popular_small." ".LAN_FORUM_0039." ".LAN_FORUM_1010."</div>
-													<div class='col-sm-3 col-xs-6'>".IMAGE_nonew_popular_small." ".LAN_FORUM_0040." ".LAN_FORUM_1010."</div>
-													<div class='col-sm-3 col-xs-6'>".IMAGE_noreplies_small." ".LAN_FORUM_1021."</div>
-													<div class='col-sm-3 col-xs-6'>".IMAGE_closed_small." ".LAN_FORUM_1014."</div>
-												</div>
-												";
+<div class='row' >
+	<div class='col-sm-3 col-xs-6'>".IMAGE_new_popular_small." ".LAN_FORUM_0039." ".LAN_FORUM_1010."</div>
+	<div class='col-sm-3 col-xs-6'>".IMAGE_nonew_popular_small." ".LAN_FORUM_0040." ".LAN_FORUM_1010."</div>
+	<div class='col-sm-3 col-xs-6'>".IMAGE_noreplies_small." ".LAN_FORUM_1021."</div>
+	<div class='col-sm-3 col-xs-6'>".IMAGE_closed_small." ".LAN_FORUM_1014."</div>
+</div>
+";
 
 
 
