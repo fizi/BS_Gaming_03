@@ -309,13 +309,13 @@ $FORUM_VIEWFORUM_TEMPLATE['item'] = "
     <div class='forum-viewforum-item'>
       <div class='row'>
         <div class='col-xs-1 forum-viewforum-item-newflag text-center'>{ICON}</div>
-        <div class='col-xs-9 col-sm-7 forum-viewforum-item-topictitle text-left'>
+        <div class='col-xs-9 col-sm-5 forum-viewforum-item-topictitle text-left'>
           {THREADNAME}
           <div class='smalltext'>".LAN_FORUM_1004.": {POSTER} {THREADTIMELAPSE}</div>
           <div class='smaltext'>{PAGESX}</div>
         </div>
-        <div class='col-xs-2 col-sm-1 forum-viewforum-item-replies text-center'>{REPLIESX}</div>
-        <div class='hidden-xs col-sm-1 forum-viewforum-item-views text-center'>{VIEWSX}</div>
+        <div class='col-xs-2 forum-viewforum-item-replies text-center'>{REPLIESX}</div>
+        <div class='hidden-xs col-sm-2 forum-viewforum-item-views text-center'>{VIEWSX}</div>
         <div class='hidden-xs col-sm-2 forum-viewforum-item-lastpost text-left'>
           <div class='smalltext pull-left'>{LASTPOSTUSER} {LASTPOSTDATE}</div>
           <div class='forum-viewforum-item-adminoptions pull-right'>{ADMINOPTIONS}</div>
@@ -333,9 +333,9 @@ $FORUM_VIEWFORUM_TEMPLATE['sub-header']	= "
 <div class='forum-viewforum'>
   <div class='forum-viewforum-caption'>
     <div class='row'>
-      <div class='col-xs-10 col-sm-8 forum-viewforum-topics text-left'>".LAN_FORUM_1002."</div>
-      <div class='col-xs-2 col-sm-1 forum-viewforum-replies text-center'>".LAN_FORUM_0003."</div>
-      <div class='hidden-xs col-sm-1 forum-viewforum-views text-center'>".LAN_FORUM_0002."</div>
+      <div class='col-xs-10 col-sm-6 forum-viewforum-topics text-left'>".LAN_FORUM_1002."</div>
+      <div class='col-xs-2 forum-viewforum-replies text-center'>".LAN_FORUM_0003."</div>
+      <div class='hidden-xs col-sm-2 forum-viewforum-views text-center'>".LAN_FORUM_0002."</div>
       <div class='hidden-xs col-sm-2 forum-viewforum-lastpost text-center'>".LAN_FORUM_0004."</div>
     </div>
   </div>  
@@ -345,12 +345,12 @@ $FORUM_VIEWFORUM_TEMPLATE['sub-item']	= "
   <div class='forum-viewforum-item'>
     <div class='row'>
       <div class='col-xs-1 forum-viewforum-item-newflag text-center'>{NEWFLAG}</div>
-      <div class='col-xs-9 col-sm-7 forum-viewforum-item-topictitle text-left'>
+      <div class='col-xs-9 col-sm-5 forum-viewforum-item-topictitle text-left'>
         {SUB_FORUMTITLE}
         <div class='smalltext'>{SUB_DESCRIPTION}</div>
       </div>
-      <div class='col-xs-2 col-sm-1 forum-viewforum-item-replies text-center'>{SUB_REPLIESX}</div>
-      <div class='hidden-xs col-sm-1 forum-viewforum-item-views text-center'>{SUB_THREADSX}</div>
+      <div class='col-xs-2 forum-viewforum-item-replies text-center'>{SUB_REPLIESX}</div>
+      <div class='hidden-xs col-sm-2 forum-viewforum-item-views text-center'>{SUB_THREADSX}</div>
       <div class='hidden-xs col-sm-2 forum-viewforum-item-lastpost text-left'>
         <div class='smalltext'>{SUB_LASTPOSTUSER} {SUB_LASTPOSTDATE}</div>
       </div>
@@ -359,7 +359,8 @@ $FORUM_VIEWFORUM_TEMPLATE['sub-item']	= "
 ";
 
 
-$FORUM_VIEWFORUM_TEMPLATE['sub-footer']			= "";		
+$FORUM_VIEWFORUM_TEMPLATE['sub-footer']	= "
+</div>";		
 
 /* Examples top divider with shortcodes - working
 $FORUM_VIEWFORUM_TEMPLATE['divider-important']	= "<tr><th colspan='2'>".LAN_FORUM_1006." {FORUMTITLE}</th><th class='text-center'>".LAN_FORUM_0003."</th><th class='hidden-xs text-center'>".LAN_FORUM_1005."</th><th class='hidden-xs'>".LAN_FORUM_0004."</th></tr>";
@@ -369,9 +370,9 @@ $FORUM_VIEWFORUM_TEMPLATE['divider-important'] = "
 <div class='forum-viewforum'>
   <div class='forum-viewforum-caption'>
     <div class='row'>
-      <div class='col-xs-10 col-sm-8 forum-viewforum-topics text-left'>".LAN_FORUM_1006."</div>
-      <div class='col-xs-2 col-sm-1 forum-viewforum-replies text-center'>".LAN_FORUM_0003."</div>
-      <div class='hidden-xs col-sm-1 forum-viewforum-views text-center'>".LAN_FORUM_1005."</div>
+      <div class='col-xs-10 col-sm-6 forum-viewforum-topics text-left'>".LAN_FORUM_1006."</div>
+      <div class='col-xs-2 forum-viewforum-replies text-center'>".LAN_FORUM_0003."</div>
+      <div class='hidden-xs col-sm-2 forum-viewforum-views text-center'>".LAN_FORUM_1005."</div>
       <div class='hidden-xs col-sm-2 forum-viewforum-lastpost text-center'>".LAN_FORUM_0004."</div>
     </div>
   </div>  
@@ -381,9 +382,9 @@ $FORUM_VIEWFORUM_TEMPLATE['divider-normal']	= "
 <div class='forum-viewforum'>
   <div class='forum-viewforum-caption'>
     <div class='row'>
-      <div class='col-xs-10 col-sm-8 forum-viewforum-topics text-left'>".LAN_FORUM_1007."</div>
-      <div class='col-xs-2 col-sm-1 forum-viewforum-replies text-center'>".LAN_FORUM_0003."</div>
-      <div class='hidden-xs col-sm-1 forum-viewforum-views text-center'>".LAN_FORUM_1005."</div>
+      <div class='col-xs-10 col-sm-6 forum-viewforum-topics text-left'>".LAN_FORUM_1007."</div>
+      <div class='col-xs-2 forum-viewforum-replies text-center'>".LAN_FORUM_0003."</div>
+      <div class='hidden-xs col-sm-2 forum-viewforum-views text-center'>".LAN_FORUM_1005."</div>
       <div class='hidden-xs col-sm-2 forum-viewforum-lastpost text-center'>".LAN_FORUM_0004."</div>
     </div>
   </div>  

@@ -121,10 +121,9 @@ $NEWS_GRID_TEMPLATE['latest-news']['start'] = '
 
 $NEWS_GRID_TEMPLATE['latest-news']['featured'] = '
     <div class="col-md-6">
-      <div class="home-latestnews-featured-item">
-        {SETIMAGE: w=1000&h=750&crop=1}        
+      <div class="home-latestnews-featured-item">        
         <div class="home-latestnews-featured-image">
-          {NEWS_IMAGE}
+          {NEWS_IMAGE: carousel=1&w=1000&h=750&crop=1&interval=7000}
           <div class="home-latestnews-featured-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=latest-news&template= STATUS |RATE}</div>
         </div>
         <h3 class="home-latestnews-featured-title">{NEWS_TITLE: link=1}</h3>
