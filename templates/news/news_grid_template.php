@@ -128,7 +128,7 @@ $NEWS_GRID_TEMPLATE['latest-news']['featured'] = '
         </div>
         <h3 class="home-latestnews-featured-title">{NEWS_TITLE: link=1}</h3>
         <div class="home-latestnews-featured-info">{NEWS_DATE=M dd, yyyy}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=fa-comments}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=eye-open}&nbsp;{HITS_COUNTER: multi=1}</div> 
-        <div class="home-latestnews-featured-body">{NEWSSUMMARY: limit=200}</div>
+        <div class="home-latestnews-featured-body">{NEWS_BODY}</div>
       </div>
     </div> 
     <div class="col-md-6">
@@ -178,7 +178,7 @@ $NEWS_GRID_TEMPLATE['bootstrap-news-tabs']['featured'] = '
     <div class="col-md-6">
       <h3 class="home-tab-featured-news-title">{NEWS_TITLE: link=1}</h3>
       <div class="home-tab-featured-news-info">{NEWS_DATE=M dd, yyyy}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=fa-comments}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=eye-open}&nbsp;{HITS_COUNTER: multi=1}</div> 
-      <div class="home-tab-featured-news-body">{NEWSSUMMARY: limit=200}</div>
+      <div class="home-tab-featured-news-body">{NEWS_BODY}</div>
     </div>
   </div> 
   <div class="home-tab-news-items">

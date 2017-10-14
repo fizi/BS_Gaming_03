@@ -117,4 +117,9 @@ $(document).ready(function() {
     fontSize: 30,
     referenceValue: 10
   });
-});   
+});
+
+// Custom select style for FORUM ***********************************************  
+$(document).ready(function() {
+  $("select").addClass("tbox custom-select");
+});  

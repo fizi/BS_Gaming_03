@@ -33,15 +33,13 @@ if (!isset($COMMENT_MENU_TEMPLATE))
 	$COMMENT_MENU_TEMPLATE['start'] = "<div class='comment-menu'>";
 	
 	$COMMENT_MENU_TEMPLATE['item'] = "
-  <div class='row comment-menu-item'>
-    <div class='col-xs-3 comment-menu-item-image'>
-      {SETIMAGE: w=50&h=50&crop=1}
-      {CM_AUTHOR_AVATAR}
-    </div>
-    <div class='col-xs-9 comment-menu-item-block'>
+  <div class='comment-menu-item'>
+    {SETIMAGE: w=50&h=50&crop=1}
+    {CM_AUTHOR_AVATAR}
+    <div class='comment-menu-item-block'>
 	    <h4 class='comment-menu-item-title'>{CM_URL_PRE}{CM_TYPE} {CM_HEADING}{CM_URL_POST}</h4>
 	    <div class='comment-menu-item-comment'>{CM_COMMENT}</div>
-	    <small class='text-muted'> {CM_AUTHOR} {CM_DATESTAMP}</small>
+	    <div class='smalltext text-muted'>{CM_AUTHOR} {CM_DATESTAMP}</div>
     </div>
 	</div>";
 	

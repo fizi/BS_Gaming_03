@@ -309,16 +309,22 @@ $FORUM_VIEWFORUM_TEMPLATE['item'] = "
     <div class='forum-viewforum-item'>
       <div class='row'>
         <div class='col-xs-1 forum-viewforum-item-newflag text-center'>{ICON}</div>
-        <div class='col-xs-9 col-sm-5 forum-viewforum-item-topictitle text-left'>
-          {THREADNAME}
-          <div class='smalltext'>".LAN_FORUM_1004.": {POSTER} {THREADTIMELAPSE}</div>
-          <div class='smaltext'>{PAGESX}</div>
+        <div class='col-xs-9 col-sm-5 text-left'>
+          <div class='row'>
+            <div class='col-xs-10'>
+              <div class='forum-viewforum-item-topictitle'>{THREADNAME}</div>
+              <div class='smalltext'>".LAN_FORUM_1004.": {POSTER} {THREADTIMELAPSE}</div>
+              <div class='smaltext'>{PAGESX}</div>
+            </div>
+            <div class='col-xs-2 text-center'>
+              <div class='forum-viewforum-item-adminoptions'>{ADMINOPTIONS}</div>
+            </div>
+          </div>
         </div>
         <div class='col-xs-2 forum-viewforum-item-replies text-center'>{REPLIESX}</div>
         <div class='hidden-xs col-sm-2 forum-viewforum-item-views text-center'>{VIEWSX}</div>
-        <div class='hidden-xs col-sm-2 forum-viewforum-item-lastpost text-left'>
-          <div class='smalltext pull-left'>{LASTPOSTUSER} {LASTPOSTDATE}</div>
-          <div class='forum-viewforum-item-adminoptions pull-right'>{ADMINOPTIONS}</div>
+        <div class='hidden-xs col-sm-2 forum-viewforum-item-lastpost text-center'>
+          <div class='smalltext'>{LASTPOSTUSER} {LASTPOSTDATE}</div>
         </div>
       </div>
     </div>  

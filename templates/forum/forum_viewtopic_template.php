@@ -325,8 +325,8 @@ $FORUM_VIEWTOPIC_TEMPLATE['start'] 	= "
   <ul class='forum-viewtopic unstyled list-unstyled'>
     <li class='forum-viewtopic-caption'>
       <div class='row'>
-        <div class='col-sm-2'>AUTHOR</div>
-        <div class='col-sm-10 text-center'>POSTS</div>
+        <div class='col-sm-2'>".LAN_FORUM_0074."</div>
+        <div class='col-sm-10 text-center'>".LAN_FORUM_2015."</div>
       </div>
     </li>
 ";

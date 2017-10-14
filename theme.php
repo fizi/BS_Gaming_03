@@ -204,6 +204,12 @@ $LAYOUT['game_03_home'] = "
               {SETSTYLE=leftcol}
               {MENU=4}
             </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-12'>
+              {SETSTYLE=leftcol}
+              {MENU=8}
+            </div>
           </div>     
         </div>
       </div>
@@ -255,6 +261,12 @@ $LAYOUT['game_03_with_sidebar'] = "
             <div class='col-md-6'>
               {SETSTYLE=leftcol}
               {MENU=4}
+            </div>
+          </div> 
+          <div class='row'>
+            <div class='col-md-12'>
+              {SETSTYLE=leftcol}
+              {MENU=8}
             </div>
           </div>     
         </div>

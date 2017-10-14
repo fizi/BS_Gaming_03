@@ -10,85 +10,89 @@
 
 // NEWFORUMPOSTS MENU DEFAULT **************************************************
 $NEWFORUMPOSTS_MENU_TEMPLATE['default']['start'] = "
-<ul class='media-list newforumposts-menu'>
-  {SETIMAGE: w=48&h=48&crop=1}
+<div class='newforumposts-menu'>
 ";
 
 $NEWFORUMPOSTS_MENU_TEMPLATE['default']['item'] = "
-  <li class='media'>
-		<div class='media-left'>
-			<a href='{POST_URL}'>{POST_AUTHOR_AVATAR: shape=circle}</a>
-		</div>
-	  <div class='media-body'>
-			<h4 class='media-header'><a href='{POST_URL}'>{POST_TOPIC}</a></h4>
-      {POST_CONTENT}
-      <br />
-      <small class='text-muted muted'>".LAN_FORUM_MENU_001." {POST_AUTHOR_NAME} {POST_DATESTAMP}</small>
-		</div>
-  </li>
+  <div class='newforumposts-menu-item'>
+    {SETIMAGE: w=50&h=50&crop=1}
+    <a href='{POST_URL}'>{POST_AUTHOR_AVATAR: shape=circle}</a>
+    <div class='newforumposts-menu-item-block'>
+	    <h4 class='newforumposts-menu-item-title'><a href='{POST_URL}'>{POST_TOPIC}</a></h4>
+	    <div class='newforumposts-menu-item-comment'>{POST_CONTENT}</div>
+	    <div class='smalltext text-muted'>".LAN_FORUM_MENU_001." {POST_AUTHOR_NAME} {POST_DATESTAMP}</div>
+    </div>
+	</div>
 ";
 
 $NEWFORUMPOSTS_MENU_TEMPLATE['default']['end'] = "
-</ul>";
+</div>";
 
 
 // NEWFORUMPOSTS MENU MINIMAL **************************************************
 $NEWFORUMPOSTS_MENU_TEMPLATE['minimal']['start'] = "
-<ul class='media-list newforumposts-menu'>
-  {SETIMAGE: w=48&h=48&crop=1}
+<div class='newforumposts-menu'>
 ";
 	 
 $NEWFORUMPOSTS_MENU_TEMPLATE['minimal']['item'] = "
-  <li class='media'>
-		<div class='media-left'>
-			<a href='{POST_URL}'>{POST_AUTHOR_AVATAR: shape=circle}</a>
-		</div>
-	  <div class='media-body'>
-			<a href='{POST_URL}'>".LAN_FORUM_MENU_001."</a> 
-      {POST_AUTHOR_NAME} 
-      <small class='text-muted muted'>{POST_DATESTAMP}</small>
-      <br />
-      {POST_CONTENT}
-      <br />
+  <div class='newforumposts-menu-item'>
+    {SETIMAGE: w=50&h=50&crop=1}
+    <a href='{POST_URL}'>{POST_AUTHOR_AVATAR: shape=circle}</a>
+    <div class='newforumposts-menu-item-block'>
+	    <a href='{POST_URL}'>".LAN_FORUM_MENU_001."</a>
+      {POST_AUTHOR_NAME}
+      <div class='smalltext text-muted'>{POST_DATESTAMP}</div>
+	    <div class='newforumposts-menu-item-comment'>{POST_CONTENT}</div>
     </div>
-  </li>
+	</div>
 ";
 
 $NEWFORUMPOSTS_MENU_TEMPLATE['minimal']['end'] = "
-</ul>";
+</div>";
 
 
 // NEWFORUMPOST MAIN ***********************************************************
 $NEWFORUMPOSTS_MENU_TEMPLATE['main']['start'] = "
 <!-- newforumposts -->
-<table class='table table-bordered table-striped fborder'>
-	<tr>
-		<td style='width:5%' class='forumheader'>&nbsp;</td>
-		<td style='width:45%' class='forumheader'>".LAN_FORUM_1003."</td>
-		<td style='width:15%; text-align:center' class='forumheader'>".LAN_USER."</td>
-		<td style='width:5%; text-align:center' class='forumheader'>".LAN_FORUM_1005."</td>
-		<td style='width:5%; text-align:center' class='forumheader'>".LAN_FORUM_0003."</td>
-		<td style='width:25%; text-align:center' class='forumheader'>".LAN_FORUM_0004."</td>
-	</tr>
+<div id='newforumposts-main' class='newforumposts-main'>
+  <div class='newforumposts-main-caption'>
+    <div class='row'>
+      <div class='col-xs-11 col-sm-7 newforumposts-main-topic text-left'>".LAN_FORUM_1003."</div>
+      <div class='col-xs-1 newforumposts-main-user text-center'>".LAN_USER."</div>
+			<div class='hidden-xs col-sm-1 newforumposts-main-views text-center'>".LAN_FORUM_1005."</div>
+			<div class='hidden-xs col-sm-1 newforumposts-main-replies text-center'>".LAN_FORUM_0003."</div>
+      <div class='hidden-xs col-sm-2 newforumposts-main-lastpost text-center'>".LAN_FORUM_0004."</div>
+		</div>
+  </div>
 ";
 
 $NEWFORUMPOSTS_MENU_TEMPLATE['main']['item'] = "
-  <tr>
-		<td style='width:5%; text-align:center' class='forumheader3'>{TOPIC_ICON}</td>
-	  <td style='width:45%' class='forumheader3'><a href='{POST_URL}'>{TOPIC_NAME}</a> <small class='smalltext'>(<a href='{FORUM_URL}'>{FORUM_NAME}</a>)</small></td>
-		<td style='width:15%; text-align:center' class='forumheader3'>{TOPIC_AUTHOR_NAME}</td>
-		<td style='width:5%; text-align:center' class='forumheader3'>{TOPIC_VIEWS}</td>
-	  <td style='width:5%; text-align:center' class='forumheader3'>{TOPIC_REPLIES}</td>
-		<td style='width:25%; text-align:center' class='forumheader3'>{TOPIC_LASTPOST_AUTHOR}<br /><span class='smalltext'>{TOPIC_LASTPOST_DATE}&nbsp;</span></td>
-	</tr>
+  <div class='newforumposts-main-item'>
+    <div class='row'>
+      <div class='col-xs-1 newforumposts-main-item-icon text-center'>{TOPIC_ICON}</div>
+      <div class='col-xs-10 col-sm-6 newforumposts-main-item-topic text-left'>
+        <a href='{POST_URL}'>{TOPIC_NAME}</a> 
+        <div class='smalltext'>(<a href='{FORUM_URL}'>{FORUM_NAME}</a>)</div>
+      </div>
+      <div class='col-xs-1 newforumposts-main-item-user text-center'>{TOPIC_AUTHOR_NAME}</div>
+			<div class='hidden-xs col-sm-1 newforumposts-main-item-views text-center'>{TOPIC_VIEWS}</div>
+			<div class='hidden-xs col-sm-1 newforumposts-main-item-replies text-center'>{TOPIC_REPLIES}</div>
+      <div class='hidden-xs col-sm-2 newforumposts-main-lastpost text-center'>
+        {TOPIC_LASTPOST_AUTHOR}
+        <div class='smalltext'>{TOPIC_LASTPOST_DATE}</div>
+      </div>
+    </div>
+  </div>  
 ";
 
 $NEWFORUMPOSTS_MENU_TEMPLATE['main']['end'] = "
-  <tr>
-		<td colspan='6' style='text-align:center' class='forumheader2'>
-			<span class='smalltext'>".LAN_FORUM_0002.": <b>{TOTAL_TOPICS}</b> | ".LAN_FORUM_0003.": <b>{TOTAL_REPLIES}</b> | ".LAN_FORUM_1005.": <b>{TOTAL_VIEWS}</b></span>
-		</td>
-	</tr>
-</table>
+  <div class='newforumposts-main-bottom'>
+    <div class='row'>
+      <div class='col-xs-12 newforumposts-main-info text-center'> 
+        <div class='smalltext'>".LAN_FORUM_0002.": <b>{TOTAL_TOPICS}</b> | ".LAN_FORUM_0003.": <b>{TOTAL_REPLIES}</b> | ".LAN_FORUM_1005.": <b>{TOTAL_VIEWS}</b></div> 
+      </div>
+    </div>
+  </div>
+</div>
 ";
 
