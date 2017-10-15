@@ -299,8 +299,8 @@ $FORUM_VIEWFORUM_TEMPLATE['header'] = "
   <div class='col-md-12'>{BREADCRUMB}</div>
 </div>
 <div class='row'>
-	<div class='col-md-9 forum-viewforum-title'><h3>{FORUMTITLE}</h3></div>
-	<div class='col-md-3 forum-viewforum-button'>{NEWTHREADBUTTONX}</div>
+	<div class='col-xs-9 forum-viewforum-title'><h3>{FORUMTITLE}</h3></div>
+	<div class='col-xs-3 forum-viewforum-button'>{NEWTHREADBUTTONX}</div>
 </div>  
 {SUBFORUMS}
 ";
@@ -406,8 +406,8 @@ $SC_WRAPPER['VIEWABLE_BY'] = "
 $FORUM_VIEWFORUM_TEMPLATE['footer'] = "
 </div>
 <div class='row'>
-	<div class='col-md-9 forum-viewforum-pages'>{THREADPAGES}</div>
-  <div class='col-md-3 forum-viewforum-button'>{NEWTHREADBUTTONX}</div>
+	<div class='col-xs-9 forum-viewforum-pages'>{THREADPAGES}</div>
+  <div class='col-xs-3 forum-viewforum-button'>{NEWTHREADBUTTONX}</div>
 </div>
 
 <div class='panel panel-default' style='margin-top:50px'>

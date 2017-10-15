@@ -137,13 +137,13 @@ $NEWS_TEMPLATE['category']['start'] = '
 
 $NEWS_TEMPLATE['category']['item'] = '
 <div class="news-cat-item">
-  <div class="col-sm-6">
+  <div class="col-md-6">
     <div class="news-cat-item-mainimage">
       {SETIMAGE: w=1000&h=750&crop=1}
       {NEWS_IMAGE: item=1}
     </div>
   </div>
-  <div class="col-sm-6">       
+  <div class="col-md-6">       
     <h2 class="news-cat-item-title">{NEWS_TITLE: link=1}</h2>
     <div class="news-cat-item-meta">{NEWS_DATE}<br />'.LAN_THEME_9.'&nbsp;{NEWSCATEGORY}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;'.LAN_THEME_8.'&nbsp;{NEWS_AUTHOR}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{NEWS_COMMENT_LABEL}&nbsp;{NEWS_COMMENT_COUNT}</div>  
     <div class="news-cat-item-content">

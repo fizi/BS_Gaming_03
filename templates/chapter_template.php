@@ -21,7 +21,7 @@ $CHAPTER_TEMPLATE['default']['listPages']['start'] = "
 ";
 
 $CHAPTER_TEMPLATE['default']['listPages']['item'] = "
-    <div class='col-xs-12 col-sm-2 col-md-3'>
+    <div class='col-xs-12 col-sm-6 col-md-3'>
       {SETIMAGE: w=1000&h=750&crop=1}
       <div class='list-pages-image'>{CPAGEFIELD: name=image1}</div>
       <h4 class='list-pages-title'><a href='{CPAGEURL}'>{CPAGETITLE}</a></h4>

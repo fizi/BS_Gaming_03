@@ -345,16 +345,16 @@ $FORUM_VIEWTOPIC_TEMPLATE['thread'] = "
               <div class='smalltext'>{LEVEL=badge}</div>
             </div>
             <div class='forum-viewtopic-level-icons'><small>{LEVEL=glyph}</small></div>
-            <div class='visible-xs visible-sm'>{POSTOPTIONS}</div>
+            <div class='visible-xs'>{POSTOPTIONS}</div>
             <div class='clearfix'></div>
-            <div class='visible-xs visible-sm col-sm-12'><hr /></div>
+            <div class='visible-xs col-xs-12'><hr /></div>
           </div> 
           <div class='col-sm-10'>
             <div class='row'>
-              <div class='col-sm-12 col-md-6 text-muted'>
+              <div class='col-sm-6 text-muted'>
                 <div class='smalltext'>{LASTEDIT}&nbsp;&nbsp;{LASTEDITBY}</div>
               </div>
-              <div class='hidden-xs hidden-sm col-md-6 text-right'>{POSTOPTIONS}</div>
+              <div class='hidden-xs col-sm-6 text-right'>{POSTOPTIONS}</div>
             </div>
             <div class='forum-viewtopic-postmessage'>
               {POLL}
