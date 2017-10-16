@@ -141,7 +141,7 @@ $NEWS_GRID_TEMPLATE['latest-news']['item'] = '
             <div class="col-md-4">         
               {SETIMAGE: w=1000&h=750&crop=1}
               <div class="home-latestnews-item-image">
-                {NEWS_IMAGE}
+                {NEWS_IMAGE: item=1}
               </div>
             </div>
             <div class="col-md-8">
@@ -168,10 +168,10 @@ $NEWS_GRID_TEMPLATE['bootstrap-news-tabs']['start'] = '';
 
 $NEWS_GRID_TEMPLATE['bootstrap-news-tabs']['featured'] = '  
   <div class="home-tab-featured-news-item"> 
-    <div class="col-md-6">
-      {SETIMAGE: w=1000&h=750&crop=1}        
+    <div class="col-md-6">       
       <div class="home-tab-featured-news-image">
-        {NEWS_IMAGE}
+        {SETIMAGE: w=1000&h=750&crop=1} 
+        {NEWS_IMAGE: item=1}
         <div class="home-tab-featured-news-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=tab&template= STATUS |RATE}</div>
       </div>
     </div>
@@ -188,9 +188,9 @@ $NEWS_GRID_TEMPLATE['bootstrap-news-tabs']['featured'] = '
 $NEWS_GRID_TEMPLATE['bootstrap-news-tabs']['item'] = '
       <div class="col-md-4">
         <div class="home-tab-news-item">        
-          {SETIMAGE: w=1000&h=750&crop=1}
           <div class="home-tab-news-item-image">
-            {NEWS_IMAGE}
+            {SETIMAGE: w=1000&h=750&crop=1}
+            {NEWS_IMAGE: item=1}
             <div class="home-tab-news-item-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=tab&template= STATUS |RATE}</div>
           </div>
           <h4 class="home-tab-news-item-title">{NEWS_TITLE: link=1}</h4>

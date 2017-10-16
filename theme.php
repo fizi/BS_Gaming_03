@@ -111,7 +111,7 @@ $LAYOUT['_header_'] = "
               </button>
             </div>
             <div id='navbar' class='navbar-collapse collapse'>
-              {NAVIGATION=main} 
+              {NAVIGATION: type=main&layout=fizi_main} 
             </div>
           </div>
         </div>
@@ -182,8 +182,8 @@ $LAYOUT['game_03_home'] = "
   <div class='row'>
     <div class='page_content'>
       <div class='col-md-12'>
-        {SETSTYLE=slider}
-        {MENU=featurebox}
+        {SETSTYLE=slider} 
+        {VIDEOBACKGROUND}
       </div>
       <div class='col-md-9'>
         <div class='leftcol'>     

@@ -122,4 +122,28 @@ $(document).ready(function() {
 // Custom select style for FORUM ***********************************************  
 $(document).ready(function() {
   $("select").addClass("tbox custom-select");
-});  
+});
+
+
+// Header video muted and unmuted **********************************************
+window.onload = function() {
+  // Video
+  var video = document.getElementById("video-background");
+  // Buttons
+  var muteButton = document.getElementById("mute");  
+  // Event listener for the mute button
+  muteButton.addEventListener("click", function() {
+    if (video.muted == false) {
+      // Mute the video
+      video.muted = true;
+      // Update the button text
+      muteButton.innerHTML = "<i class='fa fa-volume-off'></i><i class='fa fa-volume-up'></i>";
+    } else {
+      // Unmute the video
+      video.muted = false;
+      // Update the button text
+      muteButton.innerHTML = "<i class='fa fa-volume-up'></i>";
+    }
+  }); 
+} 
+
