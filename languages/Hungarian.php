@@ -51,4 +51,7 @@ define("LAN_THEME_100", "Megtekintés");
 /* Rate of News */
 define("LAN_THEME_110", "Értékelés");
 
+/* Video Background */
+define("LAN_THEME_120", "A böngésző nem támogatja a videó tag-et. Javaslom, hogy frissítse a böngészőt.");
+
 ?>

@@ -54,7 +54,8 @@ e107::js("theme", 			"js/imagesloaded.pkgd.js");
 e107::js("theme", 			"js/responsive-tabs_mod_by_fizi.js");
 e107::js("theme", 			"js/jquery.lettering.js");
 e107::js("theme", 			"js/jquery.matchHeight.js"); 
-e107::js("theme", 			"js/jquery.rate.js"); 
+e107::js("theme", 			"js/jquery.rate.js");
+e107::js("theme", 			"js/jquery.arctext.js"); 
 e107::js("theme", 			"js/custom.js");
                  
 
@@ -182,8 +183,14 @@ $LAYOUT['game_03_home'] = "
   <div class='row'>
     <div class='page_content'>
       <div class='col-md-12'>
-        {SETSTYLE=slider} 
-        {VIDEOBACKGROUND}
+        <div id='videoDiv'> 
+          {SETIMAGE: w=1000&h=750&crop=1}
+          {VIDEOBACKGROUND}
+          {SETSTYLE=wmessage}
+          <div id='videoMessage'>
+            {WMESSAGE}
+          </div>
+        </div>
       </div>
       <div class='col-md-9'>
         <div class='leftcol'>     
@@ -348,10 +355,9 @@ define('TRACKBACKBEFORESTRING', '&nbsp;|&nbsp;');
 	
 	switch($style){
   
-    case "slider":
-      echo "<div class='slider-box'>
-              <div class='slider-box-body'>{$text}</div>
-            </div>";
+    case "wmessage":
+      echo "<h1>{$caption}</h1>
+            <h2>{$text}</h2>";
     break;
     
     case "home-popularnews":

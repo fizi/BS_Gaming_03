@@ -291,30 +291,27 @@ class theme_shortcodes extends e_shortcode {
 		if($videoposter = e107::pref('theme', 'videoposter', false)){
 			$videoposter = e107::getParser()->thumbURL($videoposter);
 		}else{
-			$videoposter = SITEURLBASE.THEME_ABS."images/background01.jpg";
+			$videoposter = SITEURLBASE.THEME_ABS."images/video_bg.jpg";
 		}
 
 		if($parm == 'file'){
 			return $videoposter;
 		}
 		
-		/* mp4 video url */
+		/* mp4 video url */ 
 		if(!$videourl = e107::pref('theme', 'videourl', false)){
-			$videourl = SITEURLBASE.THEME_ABS."images/mp4/test_video.mp4";
-		}
+			$videourl = SITEURLBASE.THEME_ABS."images/video_bg.jpg"; 
+		} 
 
-	  $text = '<div id="videoDiv"> 
-               <div id="videoBlock">
-                 <img src="'.SITEURLBASE.THEME_ABS.'images/mp4/test_video_img.jpg" id="videosubstitute" alt="" />
-                 <video preload="preload" autoplay="autoplay" loop="loop" muted="muted" poster="'.$videoposter.'" id="video-background" >
-                   <source src="'.$videourl.'" type="video/mp4">
-                 </video>
-                 <div id="video-controls">
-                   <button type="button" id="mute"><i class="fa fa-volume-off"></i></button>
-                 </div>
-                 <div id="videoMessage">
-                   {WMESSAGE}
-                 </div>
+	  $text = '<div id="videoBlock">
+               <video preload="preload" autoplay="autoplay" loop="loop" muted="muted" poster="'.$videoposter.'" id="video-background">
+                 <source src="'.$videourl.'" type="video/webm">
+                 <source src="'.$videourl.'" type="video/ogv">
+                 <source src="'.$videourl.'" type="video/mp4">'.LAN_THEME_120.'
+               </video>
+               <div id="video-controls">
+                 <button type="button" id="play-pause"><i class="fa fa-play"></i></button>
+                 <button type="button" id="mute"><i class="fa fa-volume-off"></i></button>
                </div>
              </div>';
         
@@ -323,7 +320,7 @@ class theme_shortcodes extends e_shortcode {
 
 
 	function isMobile(){
-    return preg_match("/\b(?:a(?:ndroid|vantgo)|b(?:lackberry|olt|o?ost)|cricket|do‌​como|hiptop|i(?:emob‌​ile|p[ao]d)|kitkat|m‌​(?:ini|obi)|palm|(?:‌​i|smart|windows )phone|symbian|up\.(?:browser|link)|tablet(?: browser| pc)|(?:hp-|rim |sony )tablet|w(?:ebos|indows ce|os))/i", $_SERVER["HTTP_USER_AGENT"]);
+    return preg_match("/\b(?:a(?:ndroid|vantgo)|b(?:lackberry|olt|o?ost)|cricket|do‌​como|hiptop|i(?:emob‌​ile|p[ao]d)|kitkat|m‌​(?:ini|obi)|palm|(?:‌​i|smart|windows )phone|symbian|up\.(?:browser|link)|tablet(?: browser| pc)|(?:hp-|rim |sony )tablet|w(?:ebos|indows ce|os))/i", $_SERVER["HTTP_USER_AGENT"]);   
 	}
   
 } 

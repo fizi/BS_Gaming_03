@@ -130,20 +130,42 @@ window.onload = function() {
   // Video
   var video = document.getElementById("video-background");
   // Buttons
-  var muteButton = document.getElementById("mute");  
+  var muteButton = document.getElementById("mute"); 
+  var playButton = document.getElementById("play-pause"); 
   // Event listener for the mute button
   muteButton.addEventListener("click", function() {
     if (video.muted == false) {
       // Mute the video
       video.muted = true;
       // Update the button text
-      muteButton.innerHTML = "<i class='fa fa-volume-off'></i><i class='fa fa-volume-up'></i>";
+      muteButton.innerHTML = "<i class='fa fa-volume-off'></i>";
     } else {
       // Unmute the video
       video.muted = false;
       // Update the button text
       muteButton.innerHTML = "<i class='fa fa-volume-up'></i>";
     }
+  });
+  
+  // Event listener for the play/pause button
+  playButton.addEventListener("click", function() {
+    if (video.paused == true) {
+      // Play the video
+      video.play();
+      // Update the button text to 'Pause'
+      playButton.innerHTML = "<i class='fa fa-play'></i>";
+    } else {
+      // Pause the video
+      video.pause();
+      // Update the button text to 'Play'
+      playButton.innerHTML = "<i class='fa fa-pause'></i>";
+    }
   }); 
-} 
+}
 
+// Curving text with CSS3 & jQuery
+$(document).ready(function() {
+  $('#videoMessage h1').arctext({
+    radius: 400
+  }); 
+});

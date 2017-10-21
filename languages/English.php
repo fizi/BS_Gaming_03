@@ -51,4 +51,7 @@ define("LAN_THEME_100", "Views");
 /* Rate of News */
 define("LAN_THEME_110", "Rating");
 
+/* Video Background */
+define("LAN_THEME_120", "Your browser does not support the video tag. I suggest you upgrade your browser.");
+
 ?>

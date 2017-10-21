@@ -234,7 +234,7 @@ $NEWS_TEMPLATE['view']['item'] = '
 	      <div class="view-item-author-info">{NEWS_AUTHOR_SIGNATURE}</div>
         <div class="view-item-author-articles"><a class="articles" href="{NEWS_AUTHOR_ITEMS_URL}">'.LAN_THEME_71.'</a></div>	
       </div>    
-      {NEWSRELATED: limit=4&types=news}
+      {NEWSRELATED: types=news&limit=4}
     </div>
   </div>
 </div>
