@@ -168,4 +168,5 @@ $(document).ready(function() {
   $('#videoMessage h1').arctext({
     radius: 400
   }); 
-});
+});  
+ 

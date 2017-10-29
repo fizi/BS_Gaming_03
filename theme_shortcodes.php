@@ -302,19 +302,43 @@ class theme_shortcodes extends e_shortcode {
 		if(!$videourl = e107::pref('theme', 'videourl', false)){
 			$videourl = SITEURLBASE.THEME_ABS."images/video_bg.jpg"; 
 		} 
-
-	  $text = '<div id="videoBlock">
-               <video preload="preload" autoplay="autoplay" loop="loop" muted="muted" poster="'.$videoposter.'" id="video-background">
-                 <source src="'.$videourl.'" type="video/webm">
-                 <source src="'.$videourl.'" type="video/ogv">
-                 <source src="'.$videourl.'" type="video/mp4">'.LAN_THEME_120.'
-               </video>
-               <div id="video-controls">
-                 <button type="button" id="play-pause"><i class="fa fa-play"></i></button>
-                 <button type="button" id="mute"><i class="fa fa-volume-off"></i></button>
-               </div>
-             </div>';
-        
+    
+    $text = '';
+    
+    // Check if video url is YouTube 
+    if(strpos($videourl, 'youtube') > 0) { 
+      preg_match('/[\\?\\&]v=([^\\?\\&]+)/', $videourl, $matches);
+      $id = $matches[1];
+      $width = '16';
+      $height = '9';
+      $embed_code = '<iframe class="embed-responsive-item" id="ytplayer" type="text/html" align="middle" width="'.$width.'" height="'.$height.'" src="https://www.youtube.com/embed/'.$id.'?rel=0&autoplay=1&loop=1&playlist='.$id.'&showinfo=0&mute=1&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>';
+            
+      $text = '<div class="embed-responsive embed-responsive-16by9">'.$embed_code.'</div>'; 
+            
+    }
+            
+    // if video webm, ogv, mp4   
+    $url = $videourl;    
+    $ext = pathinfo($url, PATHINFO_EXTENSION); // to get extension
+    $file_name = basename($url,".".$ext); //file name without extension  
+    $path_parts = pathinfo($url);    
+    $url2 = $path_parts['dirname'];        
+     
+    
+    
+      $text = '<div id="videoBlock">
+                 <video preload="preload" autoplay="autoplay" loop="loop" muted="muted" poster="'.$videoposter.'" id="video-background">                 
+                   <source src="'.$url2.'/'.$file_name.'.'.$ext.'" type="video/'.$ext.'">
+                   '.LAN_THEME_120.'
+                 </video>
+                 <div id="video-controls">
+                   <button type="button" id="play-pause"><i class="fa fa-play"></i></button>
+                   <button type="button" id="mute"><i class="fa fa-volume-off"></i></button>
+                 </div>
+               </div>'; 
+    
+    
+                  
 	  return $text;
 	}
 

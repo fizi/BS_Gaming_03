@@ -47,6 +47,8 @@ switch($cndPref) {
 
 e107::css("theme", 			"css/animate.css"); 
 e107::css("theme", 			"css/rate.css"); 
+e107::css("theme", 			"css/mediaelementplayer.css"); 
+
 
 
 e107::js("theme", 			"js/isotope.pkgd.js");
@@ -55,7 +57,7 @@ e107::js("theme", 			"js/responsive-tabs_mod_by_fizi.js");
 e107::js("theme", 			"js/jquery.lettering.js");
 e107::js("theme", 			"js/jquery.matchHeight.js"); 
 e107::js("theme", 			"js/jquery.rate.js");
-e107::js("theme", 			"js/jquery.arctext.js"); 
+e107::js("theme", 			"js/jquery.arctext.js");  
 e107::js("theme", 			"js/custom.js");
                  
 
