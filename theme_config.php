@@ -14,6 +14,7 @@ class theme_config implements e_theme_config {
 			'videomobilebackground' => array('title' => LAN_BS_GAMING_03_THEMEPREF_01, 'type'=>'image', 'help'=>''),
 			'videoposter'           => array('title' => LAN_BS_GAMING_03_THEMEPREF_02, 'type'=>'image', 'help'=>''),
 			'videourl'              => array('title' => LAN_BS_GAMING_03_THEMEPREF_03, 'type'=>'text', 'writeParms'=>array('size'=>'xxlarge'),'help'=>''),
+      'setvideobgonoff'       => array('title' => LAN_BS_GAMING_03_THEMEPREF_04, 'type'=>'boolean', 'help'=> LAN_BS_GAMING_03_THEMEPREF_05),  
 		);
 		return $fields;
 	}

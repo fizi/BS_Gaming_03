@@ -286,6 +286,8 @@ class theme_shortcodes extends e_shortcode {
 		if($this->isMobile()){ //|| !empty($_GET['configure'])
 			return null;
 		}
+    
+    $wmessage = e107::getParser()->parseTemplate("{SETSTYLE=wmessage}{WMESSAGE}{SETSTYLE=default}", true);
                          
 		/* first frame */ 
 		if($videoposter = e107::pref('theme', 'videoposter', false)){
@@ -313,31 +315,34 @@ class theme_shortcodes extends e_shortcode {
       $height = '9';
       $embed_code = '<iframe class="embed-responsive-item" id="ytplayer" type="text/html" align="middle" width="'.$width.'" height="'.$height.'" src="https://www.youtube.com/embed/'.$id.'?rel=0&autoplay=1&loop=1&playlist='.$id.'&showinfo=0&mute=1&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>';
             
-      $text = '<div class="embed-responsive embed-responsive-16by9">'.$embed_code.'</div>'; 
-            
-    }
-            
-    // if video webm, ogv, mp4   
-    $url = $videourl;    
-    $ext = pathinfo($url, PATHINFO_EXTENSION); // to get extension
-    $file_name = basename($url,".".$ext); //file name without extension  
-    $path_parts = pathinfo($url);    
-    $url2 = $path_parts['dirname'];        
-     
-    
-    
-      $text = '<div id="videoBlock">
-                 <video preload="preload" autoplay="autoplay" loop="loop" muted="muted" poster="'.$videoposter.'" id="video-background">                 
-                   <source src="'.$url2.'/'.$file_name.'.'.$ext.'" type="video/'.$ext.'">
-                   '.LAN_THEME_120.'
-                 </video>
-                 <div id="video-controls">
-                   <button type="button" id="play-pause"><i class="fa fa-play"></i></button>
-                   <button type="button" id="mute"><i class="fa fa-volume-off"></i></button>
-                 </div>
+      $text = '<div id="videoDiv">
+                 <div class="embed-responsive embed-responsive-16by9">'.$embed_code.'</div>
+                 <div id="videoMessage">'.$wmessage.'</div>
                </div>'; 
-    
-    
+            
+    }else{
+            
+      // if video webm, ogv, mp4   
+      $url = $videourl;    
+      $ext = pathinfo($url, PATHINFO_EXTENSION); // to get extension
+      $file_name = basename($url,".".$ext); //file name without extension  
+      $path_parts = pathinfo($url);    
+      $url2 = $path_parts['dirname'];        
+        
+      $text = '<div id="videoDiv">
+                 <div id="videoBlock">
+                   <video preload="preload" autoplay="autoplay" loop="loop" muted="muted" poster="'.$videoposter.'" id="video-background">                 
+                     <source src="'.$url2.'/'.$file_name.'.'.$ext.'" type="video/'.$ext.'">
+                     '.LAN_THEME_120.'
+                   </video>
+                   <div id="video-controls">
+                     <button type="button" id="play-pause"><i class="fa fa-play"></i></button>
+                     <button type="button" id="mute"><i class="fa fa-volume-off"></i></button>
+                   </div>
+                 </div>
+                 <div id="videoMessage">'.$wmessage.'</div>
+               </div>';     
+    } 
                   
 	  return $text;
 	}
@@ -345,8 +350,23 @@ class theme_shortcodes extends e_shortcode {
 
 	function isMobile(){
     return preg_match("/\b(?:a(?:ndroid|vantgo)|b(?:lackberry|olt|o?ost)|cricket|do‌​como|hiptop|i(?:emob‌​ile|p[ao]d)|kitkat|m‌​(?:ini|obi)|palm|(?:‌​i|smart|windows )phone|symbian|up\.(?:browser|link)|tablet(?: browser| pc)|(?:hp-|rim |sony )tablet|w(?:ebos|indows ce|os))/i", $_SERVER["HTTP_USER_AGENT"]);   
-	}
+	} 
   
+/*  ----------------------------------- 
+    SET VIDEOBACKGROUND ON-OFF
+-------------------------------------*/ 
+  function sc_videobg_on_off(){ 
+  
+    $pref = e107::pref('theme', 'setvideobgonoff');
+      if(!empty($pref)){
+        return $this->sc_videobackground($parm);
+    }
+    e107::getRender()->setStyle('slider');
+    $fb = e107::getParser()->parseTemplate("{FEATUREBOX}", true);
+    e107::getRender()->setStyle('default');
+    return $fb;  
+  }
+    
 } 
  
 ?>

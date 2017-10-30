@@ -184,15 +184,9 @@ $LAYOUT['game_03_home'] = "
 <div class='container'>
   <div class='row'>
     <div class='page_content'>
-      <div class='col-md-12'>
-        <div id='videoDiv'> 
-          {SETIMAGE: w=1000&h=750&crop=1}
-          {VIDEOBACKGROUND}
-          {SETSTYLE=wmessage}
-          <div id='videoMessage'>
-            {WMESSAGE}
-          </div>
-        </div>
+      <div class='col-md-12'> 
+        {SETIMAGE: w=1000&h=750&crop=1}
+        {VIDEOBG_ON_OFF}
       </div>
       <div class='col-md-9'>
         <div class='leftcol'>     
@@ -201,7 +195,7 @@ $LAYOUT['game_03_home'] = "
           {BOOTSTRAP_POPULAR_NEWS}
           <div id='news-tabs' class='news-tabs'>
             {BOOTSTRAP_NEWS_CATEGORY_TABS} 
-          </div>
+          </div> 
           {SETSTYLE=leftcol}          
 {---}
           <div class='row'>
@@ -360,6 +354,12 @@ define('TRACKBACKBEFORESTRING', '&nbsp;|&nbsp;');
     case "wmessage":
       echo "<h1>{$caption}</h1>
             <h2>{$text}</h2>";
+    break;
+    
+    case "slider":
+      echo "<div class='slider-box'>
+              <div class='slider-box-body'>{$text}</div>
+            </div>";
     break;
     
     case "home-popularnews":
