@@ -313,11 +313,15 @@ class theme_shortcodes extends e_shortcode {
       $id = $matches[1];
       $width = '16';
       $height = '9';
-      $embed_code = '<iframe class="embed-responsive-item" id="ytplayer" type="text/html" align="middle" width="'.$width.'" height="'.$height.'" src="https://www.youtube.com/embed/'.$id.'?rel=0&autoplay=1&loop=1&playlist='.$id.'&showinfo=0&mute=1&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>';
+      $embed_code = '<iframe class="embed-responsive-item" id="youtube-video" type="text/html" align="middle" width="'.$width.'" height="'.$height.'" src="https://www.youtube.com/embed/'.$id.'?enablejsapi=1&html5=1&rel=0&autoplay=1&loop=1&playlist='.$id.'&showinfo=0&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>';
             
       $text = '<div id="videoDiv">
                  <div class="embed-responsive embed-responsive-16by9">'.$embed_code.'</div>
                  <div id="videoMessage">'.$wmessage.'</div>
+                 <div id="video-controls">
+                   <button type="button" id="play-pause"><i class="fa fa-pause"></i></button>
+                   <button type="button" id="mute"><i class="fa fa-volume-up"></i></button>
+                 </div>
                </div>'; 
             
     }else{
@@ -337,7 +341,7 @@ class theme_shortcodes extends e_shortcode {
                    </video>
                    <div id="video-controls">
                      <button type="button" id="play-pause"><i class="fa fa-play"></i></button>
-                     <button type="button" id="mute"><i class="fa fa-volume-off"></i></button>
+                     <button type="button" id="mute"><i class="fa fa-volume-up"></i></button>
                    </div>
                  </div>
                  <div id="videoMessage">'.$wmessage.'</div>

@@ -140,7 +140,6 @@ $LAYOUT['_footer_'] = "
         <div class='footer-menus-inner'>
           <div class='col-md-4'>
             {SETSTYLE=bottomcol}
-            {WMESSAGE=force}
             {MENU=5}
           </div>
           <div class='col-md-4'>

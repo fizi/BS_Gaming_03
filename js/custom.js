@@ -125,48 +125,122 @@ $(document).ready(function() {
 });
 
 
-// Header video muted and unmuted **********************************************
+// Header video muted/unmuted play/pause **********************************************  
 window.onload = function() {
   // Video
   var video = document.getElementById("video-background");
-  // Buttons
+  video.volume = 0.5;
+  // Button
   var muteButton = document.getElementById("mute"); 
-  var playButton = document.getElementById("play-pause"); 
   // Event listener for the mute button
   muteButton.addEventListener("click", function() {
     if (video.muted == false) {
       // Mute the video
       video.muted = true;
       // Update the button text
-      muteButton.innerHTML = "<i class='fa fa-volume-off'></i>";
+      muteButton.innerHTML = "<i class='fa fa-volume-up'></i>";
     } else {
       // Unmute the video
       video.muted = false;
       // Update the button text
-      muteButton.innerHTML = "<i class='fa fa-volume-up'></i>";
+      muteButton.innerHTML = "<i class='fa fa-volume-off'></i>";
     }
-  });
+  }); 
   
+  // Button    
+  var playButton = document.getElementById("play-pause"); 
   // Event listener for the play/pause button
   playButton.addEventListener("click", function() {
-    if (video.paused == true) {
+    if(video.paused === true) {
       // Play the video
       video.play();
       // Update the button text to 'Pause'
       playButton.innerHTML = "<i class='fa fa-play'></i>";
-    } else {
+    }else{
       // Pause the video
       video.pause();
       // Update the button text to 'Play'
       playButton.innerHTML = "<i class='fa fa-pause'></i>";
     }
   }); 
+}; 
+ 
+// Header youtube video play/pause ********************************************** 
+           
+// https://developers.google.com/youtube/iframe_api_reference
+// Inject YouTube API script
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// global variable for the player
+var player;
+// this function gets called when API is ready to use
+function onYouTubeIframeAPIReady() {
+  // create the global player from the specific iframe (#video)
+  player = new YT.Player('youtube-video', {
+    events: {
+      // call this function when player is ready to use
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange      
+    }
+  });
+};
+// The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  event.target.playVideo();
+  player.setVolume(50); 
+  player.mute();  
 }
 
+
+function onPlayerStateChange(event) { 
+  // Button
+  var playButton = document.getElementById("play-pause");
+  // Event listener for the play/pause button
+  playButton.addEventListener("click", function() {
+    if(event.data == YT.PlayerState.PAUSED) {
+      // Play the video
+      player.playVideo();
+      playButton.innerHTML = "<i class='fa fa-pause'></i>";
+    }else{ 
+      // Pause the video
+      player.pauseVideo();
+      playButton.innerHTML = "<i class='fa fa-play'></i>";
+    }
+  }); 
+  
+  var muteButton = document.getElementById("mute");
+  muteButton.addEventListener("click", function() {
+    if(player.isMuted()) {
+      // unMute the audio
+      player.unMute();
+      muteButton.innerHTML = "<i class='fa fa-volume-off'></i>";
+    }else{ 
+      // mute the audio
+      player.mute();
+      muteButton.innerHTML = "<i class='fa fa-volume-up'></i>";
+    }
+  });   
+}; 
+    
+
+
+
+
+
+
+
+
+ 
+ 
+ 
 // Curving text with CSS3 & jQuery
 $(document).ready(function() {
   $('#videoMessage h1').arctext({
     radius: 400
   }); 
-});  
+}); 
+
+
  
