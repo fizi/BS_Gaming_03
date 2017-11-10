@@ -194,6 +194,9 @@ $LAYOUT['game_03_home'] = "
           {BOOTSTRAP_POPULAR_NEWS}
           <div id='news-tabs' class='news-tabs'>
             {BOOTSTRAP_NEWS_CATEGORY_TABS} 
+          </div>
+          <div class='chapter'>
+            {CHAPTER_MENUS: name=Review&class[]=info&class[]=warning&class[]=success&class[]=danger}
           </div> 
           {SETSTYLE=leftcol}          
 {---}
@@ -245,7 +248,7 @@ $LAYOUT['game_03_full_page'] = "
 </div>  
 "; 
 
-
+$themePref = e107::pref('theme');
 
 if($themePref['leftorrightmenuarea'] === 'left'){
    
@@ -336,46 +339,7 @@ if($themePref['leftorrightmenuarea'] === 'left'){
 
 
 // Game 03 theme SideBar layout 
-$LAYOUT['game_03_with_sidebar'] = "
-<div class='container'>
-  <div class='row'>
-    <div class='page_content'>
-      <div class='col-md-9'>
-        <div class='leftcol'>     
-          {SETSTYLE=leftcol} 
-{---}
-          <div class='row'>
-            <div class='col-md-6'>
-              {SETSTYLE=leftcol}
-              {MENU=3}
-            </div>
-            <div class='col-md-6'>
-              {SETSTYLE=leftcol}
-              {MENU=4}
-            </div>
-          </div> 
-          <div class='row'>
-            <div class='col-md-12'>
-              {SETSTYLE=leftcol}
-              {MENU=8}
-            </div>
-          </div>     
-        </div>
-      </div>
-      <div class='col-md-3'>
-        <div class='rightcol'>
-          <div class='search'>
-            {SEARCH}
-          </div>
-          {SETSTYLE=rightcol}
-          {MENU=1}
-          {MENU=2}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>    
-"; 
+$LAYOUT['game_03_with_sidebar'] = $sidebar; 
 
 
 

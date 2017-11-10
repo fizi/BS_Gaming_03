@@ -340,7 +340,7 @@ class theme_shortcodes extends e_shortcode {
                      '.LAN_THEME_120.'
                    </video>
                    <div id="video-controls">
-                     <button type="button" id="play-pause"><i class="fa fa-play"></i></button>
+                     <button type="button" id="play-pause"><i class="fa fa-pause"></i></button>
                      <button type="button" id="mute"><i class="fa fa-volume-up"></i></button>
                    </div>
                  </div>

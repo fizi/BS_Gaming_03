@@ -155,12 +155,12 @@ window.onload = function() {
       // Play the video
       video.play();
       // Update the button text to 'Pause'
-      playButton.innerHTML = "<i class='fa fa-play'></i>";
+      playButton.innerHTML = "<i class='fa fa-pause'></i>";
     }else{
       // Pause the video
       video.pause();
       // Update the button text to 'Play'
-      playButton.innerHTML = "<i class='fa fa-pause'></i>";
+      playButton.innerHTML = "<i class='fa fa-play'></i>";
     }
   }); 
 }; 
