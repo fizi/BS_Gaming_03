@@ -287,7 +287,8 @@ if($themePref['lefttorightmenuarea'] === 'left'){
          </div>
        </div>
      </div>
-   </div>   ";
+   </div>   
+   ";
    
 }else{
    
