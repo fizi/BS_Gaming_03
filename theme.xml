@@ -33,11 +33,10 @@
     <layout name='game_03_full_page' title='Game 03 Full Page (no Menubar)' default='false'>
       <custompages>forum news page</custompages>    
 		</layout> 
-    <layout name='game_03_with_sidebar' title='Game 03 with Right Menubar' default='true' />   
-  </layouts>
+    <layout name='game_03_with_sidebar' title='Game 03 with Sidebar' default='true' />   
   </layouts>
 	<themePrefs>
 		<pref name='setvideobgonoff'>0</pref>
 		<pref name='leftorrightmenuarea'>right</pref>
-	</themePrefs>
+	</themePrefs>      
 </e107Theme>

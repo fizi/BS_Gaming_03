@@ -247,7 +247,7 @@ $LAYOUT['game_03_full_page'] = "
 
 
 
-if($themePref['lefttorightmenuarea'] === 'left'){
+if($themePref['leftorrightmenuarea'] === 'left'){
    
    $sidebar = "
    <div class='container'>
@@ -288,8 +288,8 @@ if($themePref['lefttorightmenuarea'] === 'left'){
        </div>
      </div>
    </div>   
-   ";
-   
+   "; 
+      
 }else{
    
    $sidebar = "
