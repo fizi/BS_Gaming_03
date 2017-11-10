@@ -374,7 +374,7 @@ $LAYOUT['game_03_with_sidebar'] = "
       </div>
     </div>
   </div>
-</div    
+</div>    
 "; 
 
 

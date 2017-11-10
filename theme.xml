@@ -38,6 +38,6 @@
   </layouts>
 	<themePrefs>
 		<pref name='setvideobgonoff'>0</pref>
-		<pref name='leftorrightmenuare'>right</pref>
+		<pref name='leftorrightmenuarea'>right</pref>
 	</themePrefs>
 </e107Theme>
