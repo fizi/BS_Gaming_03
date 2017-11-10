@@ -224,16 +224,6 @@ function onPlayerStateChange(event) {
   });   
 }; 
     
-
-
-
-
-
-
-
-
- 
- 
  
 // Curving text with CSS3 & jQuery
 $(document).ready(function() {
