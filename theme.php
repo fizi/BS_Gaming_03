@@ -335,7 +335,7 @@ if($themePref['lefttorightmenuarea'] === 'left'){
 
 
 // Game 03 theme SideBar layout 
-$LAYOUT['game_03_with_sidebar_right'] = "
+$LAYOUT['game_03_with_sidebar'] = "
 <div class='container'>
   <div class='row'>
     <div class='page_content'>
@@ -376,47 +376,6 @@ $LAYOUT['game_03_with_sidebar_right'] = "
 </div>    
 "; 
 
-// Game 03 theme SideBar layout 
-$LAYOUT['game_03_with_sidebar_left'] = "
-<div class='container'>
-  <div class='row'>
-    <div class='page_content'>
-      <div class='col-md-3'>
-        <div class='rightcol'>
-          <div class='search'>
-            {SEARCH}
-          </div>
-          {SETSTYLE=rightcol}
-          {MENU=1}
-          {MENU=2}
-        </div>
-      </div>
-      <div class='col-md-9'>
-        <div class='leftcol'>     
-          {SETSTYLE=leftcol} 
-{---}
-          <div class='row'>
-            <div class='col-md-6'>
-              {SETSTYLE=leftcol}
-              {MENU=3}
-            </div>
-            <div class='col-md-6'>
-              {SETSTYLE=leftcol}
-              {MENU=4}
-            </div>
-          </div> 
-          <div class='row'>
-            <div class='col-md-12'>
-              {SETSTYLE=leftcol}
-              {MENU=8}
-            </div>
-          </div>     
-        </div>
-      </div>
-    </div>
-  </div>
-</div>    
-"; 
 
 
 function rand_tag(){ 
