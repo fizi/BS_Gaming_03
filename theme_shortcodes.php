@@ -177,7 +177,7 @@ class theme_shortcodes extends e_shortcode {
   function sc_bootstrap_grid_news_latest(){
   
     $template = "
-        <!-- News Grid Menu for PageTop Latest 4 News -->
+        <!-- News Grid Menu for Latest 5 News -->
         {MENU: path=news/news_grid&limit=5&category=0&source=latest&featured=1&layout=latest-news}
 
     ";
@@ -361,7 +361,7 @@ class theme_shortcodes extends e_shortcode {
 -------------------------------------*/ 
   function sc_videobg_on_off(){ 
   
-    $pref = e107::pref('theme', 'setvideobgonoff');
+    $pref = e107::pref('theme', 'set_videobg_on_off');
       if(!empty($pref)){
         return $this->sc_videobackground($parm);
     }

@@ -17,5 +17,6 @@ define("LAN_BS_GAMING_03_THEMEPREF_06", "Theme elrendezés beállítása<br /><s
 define("LAN_BS_GAMING_03_THEMEPREF_07", "BAL vagy JOBB Menüterület --- Beállíthatod a theme elrendezését - menüterület jobb vagy bal oldalon");
 define("LAN_BS_GAMING_03_THEMEPREF_08", "Bal");
 define("LAN_BS_GAMING_03_THEMEPREF_09", "Jobb");
+define("LAN_BS_GAMING_03_THEMEPREF_10", "Theme elrendezés beállítása a KEZDŐOLDALON (index oldal)<br /><small>Beállíthatod a theme elrendezését - menüterület jobb vagy bal oldalon</small>");
 
 ?>

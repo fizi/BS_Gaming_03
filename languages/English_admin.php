@@ -17,5 +17,6 @@ define("LAN_BS_GAMING_03_THEMEPREF_06", "Change theme layout<br /><small>you can
 define("LAN_BS_GAMING_03_THEMEPREF_07", "LEFT or RIGHT Menuarea --- You can choose how to have the theme layout - menuarea left or right");
 define("LAN_BS_GAMING_03_THEMEPREF_08", "Left");
 define("LAN_BS_GAMING_03_THEMEPREF_09", "Right");
+define("LAN_BS_GAMING_03_THEMEPREF_10", "Change theme layout on FRONTPAGE (index page)<br /><small>you can choose how to have the theme layout - menuarea left or right</small>");
 
 ?>

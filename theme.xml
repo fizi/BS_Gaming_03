@@ -30,13 +30,14 @@
     <layout name='game_03_home' title='Game 03 Homepage' default='false'>
 			<custompages>FRONTPAGE</custompages>	
 		</layout>
-    <layout name='game_03_full_page' title='Game 03 Full Page (no Menubar)' default='false'>
+    <layout name='game_03_full_page' title='Game 03 Full Page (no Sidebar)' default='false'>
       <custompages>forum news page</custompages>    
 		</layout> 
     <layout name='game_03_with_sidebar' title='Game 03 with Sidebar' default='true' />   
   </layouts>
 	<themePrefs>
-		<pref name='setvideobgonoff'>0</pref>
-		<pref name='leftorrightmenuarea'>right</pref>
+		<pref name='set_videobg_on_off'>0</pref>
+		<pref name='left_or_right_menuarea'>right</pref>
+    <pref name='left_or_right_menuarea_on_frontpage'>right</pref>
 	</themePrefs>      
 </e107Theme>

@@ -178,111 +178,157 @@ $LAYOUT['_footer_'] = "
 ";
 
 
-// Game 03 theme Homepage layout 
-$LAYOUT['game_03_home'] = "
-<div class='container'>
-  <div class='row'>
-    <div class='page_content'>
-      <div class='col-md-12'> 
-        {SETIMAGE: w=1000&h=750&crop=1}
-        {VIDEOBG_ON_OFF}
-      </div>
-      <div class='col-md-9'>
-        <div class='leftcol'>     
-          {BOOTSTRAP_GRID_NEWS_LATEST}
-          {SETSTYLE=home-popularnews}
-          {BOOTSTRAP_POPULAR_NEWS}
-          <div id='news-tabs' class='news-tabs'>
-            {BOOTSTRAP_NEWS_CATEGORY_TABS} 
-          </div>
-          <div class='chapter'>
-            {CHAPTER_MENUS: name=Review&class[]=info&class[]=warning&class[]=success&class[]=danger}
-          </div> 
-          {SETSTYLE=leftcol}          
-{---}
-          <div class='row'>
-            <div class='col-md-6'>
-              {SETSTYLE=leftcol}
-              {MENU=3}
-            </div>
-            <div class='col-md-6'>
-              {SETSTYLE=leftcol}
-              {MENU=4}
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col-md-12'>
-              {SETSTYLE=leftcol}
-              {MENU=8}
-            </div>
-          </div>     
-        </div>
-      </div>
-      <div class='col-md-3'>
-        <div class='rightcol'>
-          <div class='search'>
-            {SEARCH}
-          </div>
-          {SETSTYLE=rightcol}
-          {MENU=1}
-          {MENU=2}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>    
-"; 
-
-
-// Game 03 theme Fullpage layout 
-$LAYOUT['game_03_full_page'] = "
-<div class='container'>
-  <div class='row'>
-    <div class='page_content'>
-      <div class='col-md-12'>
-        {SETSTYLE=leftcol}
-{---}
-      </div>
-    </div>
-  </div>
-</div>  
-"; 
-
 $themePref = e107::pref('theme');
 
-if($themePref['leftorrightmenuarea'] === 'left'){
+if($themePref['left_or_right_menuarea_on_frontpage'] === 'left'){
+
+  $sidebar = "
+   <div class='container'>
+     <div class='row'>
+       <div class='page_content'>
+         <div class='col-md-12'> 
+           {SETIMAGE: w=1000&h=750&crop=1}
+           {VIDEOBG_ON_OFF}
+         </div>
+         <div class='col-md-3'>
+           <div class='sidebar'>
+             <div class='search'>
+               {SEARCH}
+             </div>
+             {SETSTYLE=sidebar}
+             {MENU=1}
+             {MENU=2}
+           </div>
+         </div>
+         <div class='col-md-9'>
+           <div class='main_content'>     
+             {BOOTSTRAP_GRID_NEWS_LATEST}
+             {SETSTYLE=home-popularnews}
+             {BOOTSTRAP_POPULAR_NEWS}
+             <div id='news-tabs' class='news-tabs'>
+               {BOOTSTRAP_NEWS_CATEGORY_TABS} 
+             </div>
+             <div class='chapter'>
+               {CHAPTER_MENUS: name=Review&class[]=info&class[]=warning&class[]=success&class[]=danger}
+             </div> 
+             {SETSTYLE=maincontent}          
+{---}
+             <div class='row'>
+               <div class='col-md-6'>
+                 {SETSTYLE=maincontent}
+                 {MENU=3}
+               </div>
+               <div class='col-md-6'>
+                 {SETSTYLE=maincontent}
+                 {MENU=4}
+               </div>
+             </div>
+             <div class='row'>
+               <div class='col-md-12'>
+                 {SETSTYLE=maincontent}
+                 {MENU=8}
+               </div>
+             </div>     
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>     
+   ";
+}else{
+   
+   $sidebar = "
+   <div class='container'>
+     <div class='row'>
+       <div class='page_content'>
+         <div class='col-md-12'> 
+           {SETIMAGE: w=1000&h=750&crop=1}
+           {VIDEOBG_ON_OFF}
+         </div>
+         <div class='col-md-9'>
+           <div class='main_content'>     
+             {BOOTSTRAP_GRID_NEWS_LATEST}
+             {SETSTYLE=home-popularnews}
+             {BOOTSTRAP_POPULAR_NEWS}
+             <div id='news-tabs' class='news-tabs'>
+               {BOOTSTRAP_NEWS_CATEGORY_TABS} 
+             </div>
+             <div class='chapter'>
+               {CHAPTER_MENUS: name=Review&class[]=info&class[]=warning&class[]=success&class[]=danger}
+             </div> 
+             {SETSTYLE=maincontent}          
+{---}
+             <div class='row'>
+               <div class='col-md-6'>
+                 {SETSTYLE=maincontent}
+                 {MENU=3}
+               </div>
+               <div class='col-md-6'>
+                 {SETSTYLE=maincontent}
+                 {MENU=4}
+               </div>
+             </div>
+             <div class='row'>
+               <div class='col-md-12'>
+                 {SETSTYLE=maincontent}
+                 {MENU=8}
+               </div>
+             </div>     
+           </div>
+         </div>
+         <div class='col-md-3'>
+           <div class='sidebar'>
+             <div class='search'>
+               {SEARCH}
+             </div>
+             {SETSTYLE=sidebar}
+             {MENU=1}
+             {MENU=2}
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>    
+   ";
+}
+
+// Game 03 theme Homepage layout 
+$LAYOUT['game_03_home'] = $sidebar;
+  
+
+if($themePref['left_or_right_menuarea'] === 'left'){
    
    $sidebar = "
    <div class='container'>
      <div class='row'>
        <div class='page_content'>
          <div class='col-md-3'>
-           <div class='rightcol'>
+           <div class='sidebar'>
              <div class='search'>
                {SEARCH}
              </div>
-             {SETSTYLE=rightcol}
+             {SETSTYLE=sidebar}
              {MENU=1}
              {MENU=2}
            </div>
          </div>
          <div class='col-md-9'>
-           <div class='leftcol'>     
-             {SETSTYLE=leftcol} 
+           <div class='main_content'>     
+             {SETSTYLE=maincontent} 
 {---}
              <div class='row'>
                <div class='col-md-6'>
-                 {SETSTYLE=leftcol}
+                 {SETSTYLE=maincontent}
                  {MENU=3}
                </div>
                <div class='col-md-6'>
-                 {SETSTYLE=leftcol}
+                 {SETSTYLE=maincontent}
                  {MENU=4}
                </div>
              </div> 
              <div class='row'>
                <div class='col-md-12'>
-                 {SETSTYLE=leftcol}
+                 {SETSTYLE=maincontent}
                  {MENU=8}
                </div>
              </div>     
@@ -300,33 +346,33 @@ if($themePref['leftorrightmenuarea'] === 'left'){
      <div class='row'>
        <div class='page_content'>
          <div class='col-md-9'>
-           <div class='leftcol'>     
-             {SETSTYLE=leftcol} 
+           <div class='main_content'>     
+             {SETSTYLE=maincontent} 
 {---}
              <div class='row'>
                <div class='col-md-6'>
-                 {SETSTYLE=leftcol}
+                 {SETSTYLE=maincontent}
                  {MENU=3}
                </div>
                <div class='col-md-6'>
-                 {SETSTYLE=leftcol}
+                 {SETSTYLE=maincontent}
                  {MENU=4}
                </div>
              </div> 
              <div class='row'>
                <div class='col-md-12'>
-                 {SETSTYLE=leftcol}
+                 {SETSTYLE=maincontent}
                  {MENU=8}
                </div>
              </div>     
            </div>
          </div>
          <div class='col-md-3'>
-           <div class='rightcol'>
+           <div class='sidebar'>
              <div class='search'>
                {SEARCH}
              </div>
-             {SETSTYLE=rightcol}
+             {SETSTYLE=sidebar}
              {MENU=1}
              {MENU=2}
            </div>
@@ -341,6 +387,20 @@ if($themePref['leftorrightmenuarea'] === 'left'){
 // Game 03 theme SideBar layout 
 $LAYOUT['game_03_with_sidebar'] = $sidebar; 
 
+
+// Game 03 theme Fullpage layout 
+$LAYOUT['game_03_full_page'] = "
+<div class='container'>
+  <div class='row'>
+    <div class='page_content'>
+      <div class='col-md-12'>
+        {SETSTYLE=maincontent}
+{---}
+      </div>
+    </div>
+  </div>
+</div>  
+"; 
 
 
 function rand_tag(){ 
@@ -424,21 +484,21 @@ define('TRACKBACKBEFORESTRING', '&nbsp;|&nbsp;');
             </div>";
     break;
     
-    case "leftcol":
-      echo "<div class='leftmenu-box'>                             
-              <div class='leftmenu-box-title'>             		                                                      
+    case "maincontent":
+      echo "<div class='maincontent-box'>                             
+              <div class='maincontent-box-title'>             		                                                      
                 <h2>{$caption}</h2>
               </div>
-              <div class='leftmenu-box-body'>{$text}</div>
+              <div class='maincontent-box-body'>{$text}</div>
             </div>";
     break;
     
-    case "rightcol":
-      echo "<div class='rightmenu-box'>
-              <div class='rightmenu-box-title'>             		                                                      
+    case "sidebar":
+      echo "<div class='sidebar-box'>
+              <div class='sidebar-box-title'>             		                                                      
                 <h2>{$caption}</h2>
               </div>
-              <div class='rightmenu-box-body'>{$text}</div>                                                     
+              <div class='sidebar-box-body'>{$text}</div>                                                     
             </div>";
     break;
     
