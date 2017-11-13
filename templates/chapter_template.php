@@ -179,6 +179,26 @@ $CHAPTER_TEMPLATE['panel']['listPages']['item'] = "
   
 $CHAPTER_TEMPLATE['panel']['listPages']['end'] = "
 </div>
+";
+
+
+// ***********************************************************************************************
+$CHAPTER_TEMPLATE['grid']['listChapters']['start'] = "
+<div class='row'>
+";
+
+$CHAPTER_TEMPLATE['grid']['listChapters']['item']	= "
+  <div class='col-xs-12 col-md-4 text-center'>
+    {SETIMAGE: w=1000&h=750&crop=1}
+		{CHAPTER_IMAGE}
+		<h2><a href='{CHAPTER_URL}'>{CHAPTER_NAME}</a></h2>
+    <p>{CHAPTER_DESCRIPTION}</p>
+    <p>{CHAPTER_BUTTON}</p>
+  </div>
+";
+
+$CHAPTER_TEMPLATE['grid']['listChapters']['end'] = "
+</div>
 ";	
 
 ?>

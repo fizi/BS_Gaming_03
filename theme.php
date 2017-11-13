@@ -208,8 +208,8 @@ if($themePref['left_or_right_menuarea_on_frontpage'] === 'left'){
              <div id='news-tabs' class='news-tabs'>
                {BOOTSTRAP_NEWS_CATEGORY_TABS} 
              </div>
-             <div class='chapter'>
-               {CHAPTER_MENUS: name=Review&class[]=info&class[]=warning&class[]=success&class[]=danger}
+             <div id='book_chapters' class='book_chapters'>
+               
              </div> 
              {SETSTYLE=maincontent}          
 {---}
@@ -253,8 +253,8 @@ if($themePref['left_or_right_menuarea_on_frontpage'] === 'left'){
              <div id='news-tabs' class='news-tabs'>
                {BOOTSTRAP_NEWS_CATEGORY_TABS} 
              </div>
-             <div class='chapter'>
-               {CHAPTER_MENUS: name=Review&class[]=info&class[]=warning&class[]=success&class[]=danger}
+             <div id='book_chapters' class='book_chapters'>
+               
              </div> 
              {SETSTYLE=maincontent}          
 {---}
