@@ -38,7 +38,7 @@ class theme_shortcodes extends e_shortcode {
 		if(!USERID) // Logged Out. 
 		{		
 			$text = '
-			<ul class="nav navbar-nav navbar-right'.$direction.'">';
+			<ul class="nav navbar-nav navbar-right'.$direction.'" data-sm-skip="true">';
 
 			if($userReg==1)
 			{
@@ -135,7 +135,7 @@ class theme_shortcodes extends e_shortcode {
 
 		$text = '
 		
-		<ul class="nav navbar-nav navbar-right'.$direction.'">';
+		<ul class="nav navbar-nav navbar-right'.$direction.'" data-sm-skip="true">';
 		
 		if( e107::isInstalled('pm') )
 		{
@@ -146,20 +146,20 @@ class theme_shortcodes extends e_shortcode {
 		<li class="logged-in dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">'.LAN_LOGINMENU_5.' '.USERNAME.'</a>
 		<ul class="dropdown-menu">
 		<li>
-			<a href="{LM_USERSETTINGS_HREF}"><span class="glyphicon glyphicon-cog"></span> '.LAN_SETTINGS.'</a>
+			<a href="{LM_USERSETTINGS_HREF}"><i class="fa fa-cog"></i> '.LAN_SETTINGS.'</a>
 		</li>
 		<li>
-			<a class="dropdown-toggle no-block" role="button" href="{LM_PROFILE_HREF}"><span class="glyphicon glyphicon-user"></span> '.LAN_LOGINMENU_13.'</a>
+			<a class="dropdown-toggle no-block" role="button" href="{LM_PROFILE_HREF}"><i class="fa fa-user"></i> '.LAN_LOGINMENU_13.'</a>
 		</li>
 		<li class="divider"></li>';
 		
 		if(ADMIN) 
 		{
-			$text .= '<li><a href="'.e_ADMIN_ABS.'"><span class="fa fa-cogs"></span> '.LAN_LOGINMENU_11.'</a></li>';	
+			$text .= '<li><a href="'.e_ADMIN_ABS.'"><i class="fa fa-cogs"></i> '.LAN_LOGINMENU_11.'</a></li>';	
 		}
 		
 		$text .= '
-		<li><a href="'.e_HTTP.'index.php?logout"><span class="glyphicon glyphicon-off"></span> '.LAN_LOGOUT.'</a></li>
+		<li><a href="'.e_HTTP.'index.php?logout"><i class="fa fa-sign-out"></i> '.LAN_LOGOUT.'</a></li>
 		</ul>
 		</li>
 		</ul>

@@ -96,34 +96,28 @@ $NAVIGATION_TEMPLATE['main']['submenu_lowerend'] = '</ul>';
 
 
 
+
 // MAIN NAVIGATION MODIFIED BY FIZI ********************************************************************************************
 // TEMPLATE FOR {NAVIGATION=main}
 $NAVIGATION_TEMPLATE['fizi_main']['start'] = '
-<ul class="nav navbar-nav nav-main">';
+<ul class="nav navbar-nav">';
 
 // Main Link
 $NAVIGATION_TEMPLATE['fizi_main']['item'] = '
-	<li>
-		<a  role="button" href="{LINK_URL}"{LINK_OPEN} title="{LINK_DESCRIPTION}">
-		 {LINK_ICON}{LINK_NAME} 
-		</a> 
-	</li>
+	<li><a href="{LINK_URL}" title="{LINK_DESCRIPTION}">{LINK_NAME}</a></li>
 ';
 
 // Main Link - active state
 $NAVIGATION_TEMPLATE['fizi_main']['item_active'] = '
-	<li class="active">
-		<a class="e-tip" role="button" data-target="#" href="{LINK_URL}"{LINK_OPEN} title="{LINK_DESCRIPTION}">
-		 {LINK_ICON} {LINK_NAME}
-		</a>
-	</li>
+	<li class="active"><a href="{LINK_URL}" title="{LINK_DESCRIPTION}">{LINK_NAME}</a></li>
 ';
 
 // Main Link which has a sub menu. 
 $NAVIGATION_TEMPLATE['fizi_main']['item_submenu'] = '
-	<li class="dropdown {LINK_IDENTIFIER}">
-		<a class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#" href="{LINK_URL}" title="{LINK_DESCRIPTION}">
-		 {LINK_ICON}{LINK_NAME} 
+	<li class="{LINK_IDENTIFIER}">
+    <a href="{LINK_URL}" title="{LINK_DESCRIPTION}">
+		  {LINK_NAME}
+      <span class="caret"></span> 
 		</a> 
 		{LINK_SUB}
 	</li>
@@ -131,9 +125,10 @@ $NAVIGATION_TEMPLATE['fizi_main']['item_submenu'] = '
 
 // Main Link which has a sub menu - active state.
 $NAVIGATION_TEMPLATE['fizi_main']['item_submenu_active'] = '
-	<li class="dropdown active {LINK_IDENTIFIER}">
-		<a class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#" href="{LINK_URL}">
-		 {LINK_ICON}{LINK_NAME}
+	<li class="active {LINK_IDENTIFIER}">
+		<a href="{LINK_URL}">
+		  {LINK_NAME}
+      <span class="caret"></span>
 		</a>
 		{LINK_SUB}
 	</li>
@@ -145,51 +140,49 @@ $NAVIGATION_TEMPLATE['fizi_main']['end'] = '
 
 // Sub menu 
 $NAVIGATION_TEMPLATE['fizi_main']['submenu_start'] = '
-		<ul class="dropdown-menu submenu-start submenu-level-{LINK_DEPTH}" role="menu">
+		<ul class="dropdown-menu submenu-level-{LINK_DEPTH}">
 ';
 
 // Sub menu Link 
 $NAVIGATION_TEMPLATE['fizi_main']['submenu_item'] = '
-			<li role="menuitem" class="link-depth-{LINK_DEPTH}">
-				<a href="{LINK_URL}"{LINK_OPEN}>{LINK_ICON}{LINK_NAME}</a>
-			</li>
+			<li class="link-depth-{LINK_DEPTH}"><a href="{LINK_URL}">{LINK_NAME}</a></li>
 ';
 
 // Sub menu Link - active state
 $NAVIGATION_TEMPLATE['fizi_main']['submenu_item_active'] = '
-			<li role="menuitem" class="active link-depth-{LINK_DEPTH}">
-				<a href="{LINK_URL}"{LINK_OPEN}>{LINK_ICON}{LINK_NAME}</a>
-			</li>
+			<li class="active link-depth-{LINK_DEPTH}"><a href="{LINK_URL}">{LINK_NAME}</a></li>
 ';
 $NAVIGATION_TEMPLATE['fizi_main']['submenu_end'] = '
     </ul>';
 
 // Sub menu
 $NAVIGATION_TEMPLATE['fizi_main']['submenu_lowerstart'] = '
-		<ul class="dropdown-menu submenu-start lower submenu-level-{LINK_DEPTH}" role="menu">
+		<ul class="dropdown-menu submenu-level-{LINK_DEPTH}">
 ';
 
 // Sub Menu Link which has a sub menu. 
 $NAVIGATION_TEMPLATE['fizi_main']['submenu_loweritem'] = '
-			<li role="menuitem" class="dropdown-submenu lower">
-        <a class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#" href="{LINK_URL}">
-          {LINK_ICON}{LINK_NAME}
+			<li class="dropdown-submenu">
+        <a href="{LINK_URL}">
+          {LINK_NAME}
+          <span class="caret"></span>
         </a>
 				{LINK_SUB}
 			</li>
 ';
 
 $NAVIGATION_TEMPLATE['fizi_main']['submenu_loweritem_active'] = '
-			<li role="menuitem" class="dropdown-submenu active">
-				<a class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#" href="{LINK_URL}">
-          {LINK_ICON}{LINK_NAME}
+			<li class="dropdown-submenu active">
+				<a href="{LINK_URL}">
+          {LINK_NAME}
+          <span class="caret"></span>
         </a>
 				{LINK_SUB}
 			</li>
 ';
 
-$NAVIGATION_TEMPLATE['main']['submenu_lowerend'] = '
-    </ul>';
+$NAVIGATION_TEMPLATE['fizi_main']['submenu_lowerend'] = '
+    </ul>';    
 
 // ***********************************************************************************************************************
 

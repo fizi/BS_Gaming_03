@@ -123,8 +123,10 @@ $NEWS_GRID_TEMPLATE['latest-news']['featured'] = '
     <div class="col-md-6">
       <div class="home-latestnews-featured-item">        
         <div class="home-latestnews-featured-image">
-          {NEWS_IMAGE: carousel=1&w=1000&h=750&crop=1&interval=7000}
-          <div class="home-latestnews-featured-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=latest-news&template= STATUS |RATE}</div>
+          <a href="{NEWS_URL}">
+            {NEWS_IMAGE: carousel=1&w=1000&h=750&crop=1&interval=7000&type=tag}
+            <div class="home-latestnews-featured-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=latest-news&template= STATUS |RATE}</div>
+          </a>
         </div>
         <h3 class="home-latestnews-featured-title">{NEWS_TITLE: link=1}</h3>
         <div class="home-latestnews-featured-info">{NEWS_DATE=M dd, yyyy}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=fa-comments}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=eye-open}&nbsp;{HITS_COUNTER: multi=1}</div> 
@@ -141,7 +143,7 @@ $NEWS_GRID_TEMPLATE['latest-news']['item'] = '
             <div class="col-md-4">         
               {SETIMAGE: w=1000&h=750&crop=1}
               <div class="home-latestnews-item-image">
-                {NEWS_IMAGE: item=1}
+                <a href="{NEWS_URL}">{NEWS_IMAGE: item=1&type=tag}</a>
               </div>
             </div>
             <div class="col-md-8">
@@ -171,8 +173,10 @@ $NEWS_GRID_TEMPLATE['bootstrap-news-tabs']['featured'] = '
     <div class="col-md-6">       
       <div class="home-tab-featured-news-image">
         {SETIMAGE: w=1000&h=750&crop=1} 
-        {NEWS_IMAGE: item=1}
-        <div class="home-tab-featured-news-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=tab&template= STATUS |RATE}</div>
+        <a href="{NEWS_URL}">
+          {NEWS_IMAGE: item=1&type=tag}
+          <div class="home-tab-featured-news-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=tab&template= STATUS |RATE}</div>
+        </a>
       </div>
     </div>
     <div class="col-md-6">
@@ -190,8 +194,10 @@ $NEWS_GRID_TEMPLATE['bootstrap-news-tabs']['item'] = '
         <div class="home-tab-news-item">        
           <div class="home-tab-news-item-image">
             {SETIMAGE: w=1000&h=750&crop=1}
-            {NEWS_IMAGE: item=1}
-            <div class="home-tab-news-item-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=tab&template= STATUS |RATE}</div>
+            <a href="{NEWS_URL}">
+              {NEWS_IMAGE: item=1&type=tag}
+              <div class="home-tab-news-item-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=tab&template= STATUS |RATE}</div>
+            </a>
           </div>
           <h4 class="home-tab-news-item-title">{NEWS_TITLE: link=1}</h4>
           <div class="home-tab-news-item-info">{NEWS_DATE=M dd, yyyy}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=fa-comments}&nbsp;{NEWS_COMMENT_COUNT}&nbsp;&nbsp;&#9702;&nbsp;&nbsp;{GLYPH=eye-open}&nbsp;{HITS_COUNTER: multi=1}</div>

@@ -15,26 +15,6 @@ $(document).ready(function() {
 });
 
 
-// MAIN NAVIGATION *************************************************************
-$(document).ready(function() {
-  $('.navbar a.dropdown-toggle').on('click', function(e) {
-    var elmnt = $(this).parent().parent();
-    if (!elmnt.hasClass('nav')) {
-      var li = $(this).parent();
-      var heightParent = parseInt(elmnt.css('height').replace('px', '')) / 2;
-      var widthParent = parseInt(elmnt.css('width').replace('px', '')) - 10;
-            
-      if(!li.hasClass('open')) li.addClass('open')
-      else li.removeClass('open');
-      $(this).next().css('top', heightParent + 'px');
-      $(this).next().css('left', widthParent + 'px');
-            
-      return false;
-    }
-  });
-});
-
-
 // Add effect FADE to news tabs ************************************************
 $(document).ready(function() {
   $("#news-tabs .tab-content .tab-pane").addClass("fade");
@@ -91,7 +71,7 @@ $(window).load(function(){
 
 // Homesite Popular News - apply matchHeight to each item container's items
 $(document).ready(function() {
-  $(".home-popularnews-body > .row").each(function() {
+  $(".home-popularnews-body > .row, .home-chapter-box-body > .row").each(function() {
     $(this).children("div[class*='col-']").matchHeight();
   }); 
 });
@@ -233,4 +213,19 @@ $(document).ready(function() {
 }); 
 
 
+// FeatureBox wrap carousel indicators *************************************************
+$(document).ready(function() {
+  $(".featurebox > .carousel-indicators").wrap("<div class='wrap-carousel-indicators'></div>");
+}); 
+
+// FeatureBox carousel indicators - replace numbered list*************************************************
+$(document).ready(function() {
+  $(".wrap-carousel-indicators ol.carousel-indicators").each(function() {
+    $("li", this).prepend(function(i) {
+        return $("<span />", {text: i+1 });
+     });
+  });
+  
+  
+}); 
  

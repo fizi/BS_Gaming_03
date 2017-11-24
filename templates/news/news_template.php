@@ -100,7 +100,7 @@ $NEWS_TEMPLATE['default']['item'] = '
     </div>
     <div class="default-item-content">
       <div class="default-item-mainimage">
-        {NEWS_IMAGE: carousel=1&w=1000&h=750&crop=1&interval=7000}
+        <a href="{NEWS_URL}">{NEWS_IMAGE: carousel=1&w=1000&h=750&crop=1&interval=7000}</a>
         <div class="default-item-category">{NEWSCATEGORY}</div>
         <div class="default-item-rate">{NEWS_RATE: readonly=1&multi=1&uniqueId=default&template= STATUS |RATE}</div>
         <div class="default-item-date">

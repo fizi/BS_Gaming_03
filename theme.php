@@ -48,7 +48,7 @@ switch($cndPref) {
 e107::css("theme", 			"css/animate.css"); 
 e107::css("theme", 			"css/rate.css"); 
 e107::css("theme", 			"css/mediaelementplayer.css"); 
-
+e107::css("theme", 			"css/jquery.smartmenus.bootstrap.css");
 
 
 e107::js("theme", 			"js/isotope.pkgd.js");
@@ -57,7 +57,9 @@ e107::js("theme", 			"js/responsive-tabs_mod_by_fizi.js");
 e107::js("theme", 			"js/jquery.lettering.js");
 e107::js("theme", 			"js/jquery.matchHeight.js"); 
 e107::js("theme", 			"js/jquery.rate.js");
-e107::js("theme", 			"js/jquery.arctext.js");  
+e107::js("theme", 			"js/jquery.arctext.js");
+e107::js("theme", 			"js/jquery.smartmenus.js");  
+e107::js("theme", 			"js/jquery.smartmenus.bootstrap.js");
 e107::js("theme", 			"js/custom.js");
                  
 
@@ -106,14 +108,14 @@ $LAYOUT['_header_'] = "
         <div id='top-mainmenu'>    
           <div class='navbar navbar-default' role='navigation'>
             <div class='navbar-header'>
-              <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#navbar'>
+              <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
                 <span class='sr-only'>Toggle navigation</span>
                 <span class='icon-bar'></span>
                 <span class='icon-bar'></span>
                 <span class='icon-bar'></span>
               </button>
             </div>
-            <div id='navbar' class='navbar-collapse collapse'>
+            <div class='navbar-collapse collapse'>
               {NAVIGATION: type=main&layout=fizi_main} 
             </div>
           </div>
@@ -209,7 +211,7 @@ if($themePref['left_or_right_menuarea_on_frontpage'] === 'left'){
                {BOOTSTRAP_NEWS_CATEGORY_TABS} 
              </div>
              <div id='book_chapters' class='book_chapters'>
-               
+               {CHAPTER_MENUS: name=games-review&limit=3}   
              </div> 
              {SETSTYLE=maincontent}          
 {---}
@@ -253,8 +255,8 @@ if($themePref['left_or_right_menuarea_on_frontpage'] === 'left'){
              <div id='news-tabs' class='news-tabs'>
                {BOOTSTRAP_NEWS_CATEGORY_TABS} 
              </div>
-             <div id='book_chapters' class='book_chapters'>
-               
+             <div id='book_chapters' class='book_chapters'> 
+               {CHAPTER_MENUS: name=games-review&limit=3}   
              </div> 
              {SETSTYLE=maincontent}          
 {---}

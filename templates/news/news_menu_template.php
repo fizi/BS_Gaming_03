@@ -39,7 +39,7 @@ $NEWS_MENU_TEMPLATE['latest']['item'] = '
   <div class="row">
     <div class="col-xs-4 latest-image">
       {SETIMAGE: w=400&h=400&crop=1}
-      {NEWSIMAGE: item=1}
+      <a href="{NEWSURL}">{NEWSIMAGE: item=1&type=tag}</a>
     </div>
     <div class="col-xs-8 latest-body">
       <h4>{NEWS_TITLE: link=1}</h4>
