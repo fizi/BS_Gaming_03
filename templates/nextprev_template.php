@@ -164,10 +164,10 @@ $NEXTPREV_TEMPLATE['dropdown_separator'] = '';
  */
 $NEXTPREV_TEMPLATE['page_start'] = '
 <!-- Start of Next/Prev -->
-<div class="cpage-nav">
+<div class="cpage-nav"> 
 ';
 
-$NEXTPREV_TEMPLATE['page_end'] = '
+$NEXTPREV_TEMPLATE['page_end'] = ' 
 </div>
 <!-- End of Next/Prev -->
 ';

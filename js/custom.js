@@ -225,7 +225,5 @@ $(document).ready(function() {
         return $("<span />", {text: i+1 });
      });
   });
-  
-  
 }); 
  
