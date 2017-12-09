@@ -3,7 +3,7 @@
 	<author name='fizi' url='http://fizithemes.hu' email='fizi@wsb.hu' />
 	<summary>BS Gaming 03 Bootstrap3 theme</summary>
 	<description>BS Gaming 03 bootstrap 3 theme with Isotope grid layout.</description>
-  <category>game</category>
+  <category>gaming</category>
   <copyright>Theme by: FIZI THEMES</copyright>
   <plugins>
     <plugin name='featurebox' url='core' />
