@@ -9,6 +9,14 @@
     <plugin name='featurebox' url='core' />
     <plugin name='social' url='core' />
     <plugin name='pm' url='core' />
+	<plugin name='chatbox_menu' url='core' />
+	<plugin name='poll' url='core' />
+	<plugin name='gallery' url='core' />
+	<plugin name='forum' url='core' />
+	<plugin name='hits' url='core' />
+	<plugin name='list_new' url='core' />
+	<plugin name='tagcloud' url='core' />
+	<plugin name='calendar_menu' url='core' />
 	</plugins>
   <libraries> 
     <library name='bootstrap' scope='all' /> 

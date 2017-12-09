@@ -1,13 +1,178 @@
 <?xml version='1.0' encoding='utf-8' ?>
-<e107Export version="2.1.7 (git)" timestamp="1512585896" >
+<e107Export version="2.1.7 (git)" timestamp="1512854758" >
 	<prefs>
+		<core name="admin_page_perpage">0</core>
+		<core name="admincode">1</core>
+		<core name="adminpwordchange">1</core>
+		<core name="allowCommentEdit">1</core>
+		<core name="avatar_upload">1</core>
+		<core name="cb_emote">1</core>
+		<core name="cb_layer">2</core>
+		<core name="cb_layer_height">200</core>
+		<core name="cb_mod">254</core>
+		<core name="cb_user_addon">1</core>
+		<core name="cb_wordwrap">20</core>
+		<core name="chatbox_posts">5</core>
+		<core name="comments_moderate">254</core>
+		<core name="contact_visibility">253</core>
+		<core name="developer">1</core>
+		<core name="fb_active">1</core>
+		<core name="force_userupdate">1</core>
+		<core name="fpwcode">1</core>
+		<core name="im_height">120</core>
+		<core name="im_width">120</core>
+		<core name="lan_log_list"><![CDATA[array (
+  'calendar_menu' => 'calendar_menu',
+  'log' => 'log',
+  'pm' => 'pm',
+)]]></core>
+		<core name="link_replace">1</core>
+		<core name="linkpage_screentip">1</core>
+		<core name="listBooks">1</core>
+		<core name="listBooksTemplate">default</core>
+		<core name="listPages">1</core>
+		<core name="logcode">1</core>
+		<core name="make_clickable">1</core>
+		<core name="nfp_amount">5</core>
+		<core name="nfp_caption">Latest Forum Posts</core>
+		<core name="nfp_display">2</core>
+		<core name="nfp_layer">1</core>
+		<core name="nfp_layer_height">160</core>
+		<core name="nfp_posts">1</core>
+		<core name="passwordEncoding">3</core>
+		<core name="photo_upload">1</core>
+		<core name="profile_rate">1</core>
+		<core name="signature_access">253</core>
+		<core name="signcode">1</core>
+		<core name="signup_option_image">1</core>
+		<core name="signup_option_signature">1</core>
+		<core name="sitecontactinfo">[b]My Company[/b]
+13 My Address St.
+City, State, Country
+[b]Phone:[/b] 555-555-5555
+[b]Email:[/b] sales@mydomain.com</core>
+
+		<core name="sitedisclaimer">FIZI Themes Gaming </core>
+		<core name="sitelinks_expandsub">1</core>
+		<core name="sitelogo">{e_THEME}BS_Gaming_03/install/logo.png</core>
+		<core name="sitename">Fizi Gaming III</core>
+		<core name="sitetheme">BS_Gaming_03</core>
+		<core name="sitetheme_custompages"><![CDATA[array (
+  'game_03_home' => 
+  array (
+    0 => 'FRONTPAGE',
+  ),
+  'game_03_full_page' => 
+  array (
+    0 => 'forum',
+    1 => 'news',
+    2 => 'page',
+  ),
+)]]></core>
+		<core name="sitetheme_deflayout">game_03_with_sidebar</core>
+		<core name="sitetheme_layouts"><![CDATA[array (
+  'game_03_home' => 
+  array (
+    '@attributes' => 
+    array (
+      'title' => 'Game 03 Homepage',
+      'default' => 'false',
+    ),
+    'custompages' => 'FRONTPAGE',
+  ),
+  'game_03_full_page' => 
+  array (
+    '@attributes' => 
+    array (
+      'title' => 'Game 03 Full Page (no Sidebar)',
+      'default' => 'false',
+    ),
+    'custompages' => 'forum news page',
+  ),
+  'game_03_with_sidebar' => 
+  array (
+    '@attributes' => 
+    array (
+      'title' => 'Game 03 with Sidebar',
+      'default' => 'true',
+    ),
+    '@value' => '',
+  ),
+)]]></core>
+		<core name="url_config"><![CDATA[array (
+  'gallery' => 'plugin',
+  'index' => 'core',
+  'news' => 'core',
+  'page' => 'core',
+  'search' => 'core',
+  'system' => 'core',
+  'user' => 'core',
+)]]></core>
+		<core name="url_locations"><![CDATA[array (
+  'index' => 
+  array (
+    0 => 'core',
+  ),
+  'news' => 
+  array (
+    0 => 'core',
+    1 => 'core/sef_full',
+    2 => 'core/sef_noid',
+    3 => 'core/sef',
+  ),
+  'page' => 
+  array (
+    0 => 'core',
+    1 => 'core/sef_chapters',
+    2 => 'core/sef_noid',
+    3 => 'core/sef',
+  ),
+  'search' => 
+  array (
+    0 => 'core',
+    1 => 'core/rewrite',
+  ),
+  'system' => 
+  array (
+    0 => 'core',
+    1 => 'core/rewrite',
+  ),
+  'user' => 
+  array (
+    0 => 'core',
+    1 => 'core/rewrite',
+  ),
+  'gallery' => 
+  array (
+    0 => 'plugin',
+    1 => 'plugin/rewrite',
+  ),
+)]]></core>
+		<core name="user_new_period">0</core>
+		<core name="user_reg_secureveri">0</core>
+		<core name="user_reg_veri">2</core>
+		<core name="version">2.1.7 (git)</core>
+		<core name="wysiwyg">0</core>
+		<core name="xurl"><![CDATA[array (
+  'facebook' => 'https://www.facebook.com/FIZI-Themes-166042100108785/?ref=hl',
+  'twitter' => 'https://twitter.com/fizi_themes',
+  'youtube' => '#',
+  'google' => '#',
+  'linkedin' => '',
+  'github' => '',
+  'flickr' => '',
+  'instagram' => '',
+  'pinterest' => '',
+  'steam' => '',
+  'vimeo' => '',
+)]]></core>
 		<menu name="clock_caption">Date / Time</menu>
 		<menu name="comment_caption"><![CDATA[array (
   'English' => 'Latest Comments',
 )]]></menu>
-		<menu name="comment_characters">50</menu>
+		<menu name="comment_characters">30</menu>
 		<menu name="comment_display">4</menu>
-		<menu name="comment_postfix">[more ...]</menu>
+		<menu name="comment_postfix">...</menu>
 		<menu name="comment_title">1</menu>
 		<menu name="forum_no_characters">20</menu>
 		<menu name="forum_postfix">[more ...]</menu>
@@ -20,6 +185,24 @@
 		<menu name="update_menu">Update menu Settings</menu>
 	</prefs>
 	<database>
+	<dbTable name="chatbox">
+		<item>
+			<field name="cb_id">1</field>
+			<field name="cb_nick">1.admin</field>
+			<field name="cb_message">This is the test message. :)</field>
+			<field name="cb_datestamp">1506628681</field>
+			<field name="cb_blocked">0</field>
+			<field name="cb_ip">0000:0000:0000:0000:0000:0000:0000:0001</field>
+		</item>
+		<item>
+			<field name="cb_id">2</field>
+			<field name="cb_nick">1.admin</field>
+			<field name="cb_message">This is a 2. test message.</field>
+			<field name="cb_datestamp">1510411873</field>
+			<field name="cb_blocked">0</field>
+			<field name="cb_ip">0000:0000:0000:0000:0000:0000:0000:0001</field>
+		</item>
+	</dbTable>
 	<dbTable name="comments">
 		<item>
 			<field name="comment_id">1</field>
@@ -148,1272 +331,6 @@
 			<field name="comment_type">page</field>
 			<field name="comment_lock">0</field>
 			<field name="comment_share">0</field>
-		</item>
-	</dbTable>
-	<dbTable name="core_media">
-		<item>
-			<field name="media_id">7</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news1.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506402893</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news1.jpg</field>
-			<field name="media_size">603252</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">8</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news2.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506403027</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news2.jpg</field>
-			<field name="media_size">978261</field>
-			<field name="media_dimensions">1366 x 768</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">9</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">feature1.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">featurebox_image</field>
-			<field name="media_datestamp">1506403201</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/feature1.jpg</field>
-			<field name="media_size">300726</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">10</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">feature2.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">featurebox_image</field>
-			<field name="media_datestamp">1506403553</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/feature2.jpg</field>
-			<field name="media_size">921004</field>
-			<field name="media_dimensions">2880 x 1800</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">38</field>
-			<field name="media_type">image/png</field>
-			<field name="media_name">logo.png</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">_common_image</field>
-			<field name="media_datestamp">1506430024</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/logo.png</field>
-			<field name="media_size">46995</field>
-			<field name="media_dimensions">240 x 230</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">39</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">feature3.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">featurebox_image</field>
-			<field name="media_datestamp">1506431300</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/feature3.jpg</field>
-			<field name="media_size">175040</field>
-			<field name="media_dimensions">1080 x 608</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">40</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news3.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506431584</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news3.jpg</field>
-			<field name="media_size">187288</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">41</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news4.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506431674</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news4.jpg</field>
-			<field name="media_size">517663</field>
-			<field name="media_dimensions">1920 x 1200</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">42</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news5.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506431864</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news5.jpg</field>
-			<field name="media_size">1023614</field>
-			<field name="media_dimensions">1600 x 1020</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">43</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news6.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506431988</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news6.jpg</field>
-			<field name="media_size">386718</field>
-			<field name="media_dimensions">1920 x 1200</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">44</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news7.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506432110</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news7.jpg</field>
-			<field name="media_size">46028</field>
-			<field name="media_dimensions">800 x 450</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">45</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news8.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506432210</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news8.jpg</field>
-			<field name="media_size">1569730</field>
-			<field name="media_dimensions">2560 x 1600</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">46</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news9.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506432306</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news9.jpg</field>
-			<field name="media_size">2127988</field>
-			<field name="media_dimensions">2880 x 1800</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">47</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news10.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506432396</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news10.jpg</field>
-			<field name="media_size">427491</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">48</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news11.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506432449</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news11.jpg</field>
-			<field name="media_size">498909</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">49</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news12.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506432548</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news12.jpg</field>
-			<field name="media_size">409123</field>
-			<field name="media_dimensions">1600 x 1000</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">50</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news13.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506432594</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news13.jpg</field>
-			<field name="media_size">451379</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">51</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news14.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506432682</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news14.jpg</field>
-			<field name="media_size">356306</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">52</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news15.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506432747</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news15.jpg</field>
-			<field name="media_size">830675</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">53</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news16.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506432834</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news16.jpg</field>
-			<field name="media_size">176532</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">54</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news17.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506537073</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news17.jpg</field>
-			<field name="media_size">625331</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">55</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news18.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506537256</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news18.jpg</field>
-			<field name="media_size">370545</field>
-			<field name="media_dimensions">1366 x 768</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">56</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news19.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506537534</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news19.jpg</field>
-			<field name="media_size">607266</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">57</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news20.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1506547368</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news20.jpg</field>
-			<field name="media_size">1251297</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">58</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">acs_join_the_family.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507140923</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/acs_join_the_family.jpg</field>
-			<field name="media_size">296381</field>
-			<field name="media_dimensions">800 x 712</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">59</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">2864175_assassins_creed_syndicate_thames_river.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507141022</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/2864175_assassins_creed_syndicate_thames_river.jpg</field>
-			<field name="media_size">51267</field>
-			<field name="media_dimensions">320 x 447</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">60</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">assassin_creed_syndicate_evie_gamescom_6.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507141079</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/assassin_creed_syndicate_evie_gamescom_6.jpg</field>
-			<field name="media_size">142584</field>
-			<field name="media_dimensions">800 x 535</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">61</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">dq_770x500.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507143131</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/dq_770x500.jpg</field>
-			<field name="media_size">132503</field>
-			<field name="media_dimensions">770 x 500</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">62</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">2947931_0001d.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507143182</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/2947931_0001d.jpg</field>
-			<field name="media_size">190038</field>
-			<field name="media_dimensions">1273 x 712</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">63</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">2947928_0003.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507143256</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/2947928_0003.jpg</field>
-			<field name="media_size">213301</field>
-			<field name="media_dimensions">1280 x 720</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">64</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">3297901_header00.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507307005</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/3297901_header00.jpg</field>
-			<field name="media_size">141548</field>
-			<field name="media_dimensions">1280 x 720</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">65</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">3297906_3297855_capture0007.mov.00_04_04_57.still002.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507307075</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/3297906_3297855_capture0007.mov.00_04_04_57.still002.jpg</field>
-			<field name="media_size">418418</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">66</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">3297912_3297836_capture0000.mov.00_04_33_31.still002.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507307294</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/3297912_3297836_capture0000.mov.00_04_33_31.still002.jpg</field>
-			<field name="media_size">78814</field>
-			<field name="media_dimensions">1280 x 720</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">67</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">3297946_3297841_capture0000.mov.00_23_24_16.still001.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507307770</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/3297946_3297841_capture0000.mov.00_23_24_16.still001.jpg</field>
-			<field name="media_size">363096</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">68</field>
-			<field name="media_type">image/png</field>
-			<field name="media_name">3297232_0001.png</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507474576</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/3297232_0001.png</field>
-			<field name="media_size">926504</field>
-			<field name="media_dimensions">1280 x 717</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">69</field>
-			<field name="media_type">image/png</field>
-			<field name="media_name">3297234_0003.png</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507474649</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/3297234_0003.png</field>
-			<field name="media_size">1093029</field>
-			<field name="media_dimensions">1430 x 800</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">70</field>
-			<field name="media_type">image/png</field>
-			<field name="media_name">3297243_0022.png</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507474735</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/3297243_0022.png</field>
-			<field name="media_size">1041812</field>
-			<field name="media_dimensions">1280 x 719</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">71</field>
-			<field name="media_type">image/png</field>
-			<field name="media_name">3297248_0016.png</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507474862</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/3297248_0016.png</field>
-			<field name="media_size">1473863</field>
-			<field name="media_dimensions">1434 x 804</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">74</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">Games_Wallpaper_Full_HD2.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507710852</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/Games_Wallpaper_Full_HD2.jpg</field>
-			<field name="media_size">372950</field>
-			<field name="media_dimensions">1280 x 800</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">75</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">battlefield_4_game_ea_digital_illusions_ce_93159_1366x768.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507710942</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/battlefield_4_game_ea_digital_illusions_ce_93159_1366x768.jpg</field>
-			<field name="media_size">457010</field>
-			<field name="media_dimensions">1366 x 768</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">76</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">game_wallpapers_9046_9389_hd_wallpapers.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507711020</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/game_wallpapers_9046_9389_hd_wallpapers.jpg</field>
-			<field name="media_size">1450529</field>
-			<field name="media_dimensions">1920 x 1200</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">77</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">fc0ea34eabda5eaf8c8394849037aff4.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507713031</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/fc0ea34eabda5eaf8c8394849037aff4.jpg</field>
-			<field name="media_size">255464</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">78</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">e08008c19c8e9e1b0074baf36d699407.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507713109</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/e08008c19c8e9e1b0074baf36d699407.jpg</field>
-			<field name="media_size">406074</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">79</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">Assassins_Creed_Revelations.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507715042</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/Assassins_Creed_Revelations.jpg</field>
-			<field name="media_size">1074985</field>
-			<field name="media_dimensions">3840 x 2160</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">80</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">ecdf8ddb3aafe0356408b715e9191ea0.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">page</field>
-			<field name="media_datestamp">1507716079</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/ecdf8ddb3aafe0356408b715e9191ea0.jpg</field>
-			<field name="media_size">2643495</field>
-			<field name="media_dimensions">2880 x 1800</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">81</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">image_slide_news1.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1507913603</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/image_slide_news1.jpg</field>
-			<field name="media_size">836201</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">82</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">image_slide_news2.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1507913629</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/image_slide_news2.jpg</field>
-			<field name="media_size">355590</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">83</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">image_slide_news3.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1507913650</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/image_slide_news3.jpg</field>
-			<field name="media_size">625331</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">84</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">image_slide_news4.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1507913712</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/image_slide_news4.jpg</field>
-			<field name="media_size">1569730</field>
-			<field name="media_dimensions">2560 x 1600</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">85</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">image_slide_news2_.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1507914342</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/image_slide_news2_.jpg</field>
-			<field name="media_size">476942</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">86</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">image_slide_news4_.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1507914458</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/image_slide_news4_.jpg</field>
-			<field name="media_size">1732902</field>
-			<field name="media_dimensions">1920 x 1200</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">87</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">image_slide_news1_.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1507914604</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/image_slide_news1_.jpg</field>
-			<field name="media_size">1827348</field>
-			<field name="media_dimensions">3840 x 2400</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">88</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news1.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1507925163</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news1.jpg</field>
-			<field name="media_size">551574</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">89</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">feature1.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">_common_image</field>
-			<field name="media_datestamp">1508005796</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/feature1.jpg</field>
-			<field name="media_size">300726</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">90</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">feature3.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">_common_image</field>
-			<field name="media_datestamp">1508005956</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/feature3.jpg</field>
-			<field name="media_size">175040</field>
-			<field name="media_dimensions">1080 x 608</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">91</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">feature2.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">_common_image</field>
-			<field name="media_datestamp">1508006008</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/feature2.jpg</field>
-			<field name="media_size">921004</field>
-			<field name="media_dimensions">2880 x 1800</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">92</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news10</field>
-			<field name="media_caption">news10</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006130</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news10.jpg</field>
-			<field name="media_size">427491</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">93</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news11</field>
-			<field name="media_caption">news11</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006133</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news11.jpg</field>
-			<field name="media_size">498909</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">94</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news12</field>
-			<field name="media_caption">news12</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006135</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news12.jpg</field>
-			<field name="media_size">409123</field>
-			<field name="media_dimensions">1600 x 1000</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">95</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news13</field>
-			<field name="media_caption">news13</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006137</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news13.jpg</field>
-			<field name="media_size">451379</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">96</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news14</field>
-			<field name="media_caption">news14</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006139</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news14.jpg</field>
-			<field name="media_size">356306</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">97</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news15</field>
-			<field name="media_caption">news15</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006142</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news15.jpg</field>
-			<field name="media_size">830675</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">98</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news16</field>
-			<field name="media_caption">news16</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006144</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news16.jpg</field>
-			<field name="media_size">176532</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">99</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news17</field>
-			<field name="media_caption">news17</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006146</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news17.jpg</field>
-			<field name="media_size">625331</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">100</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news18</field>
-			<field name="media_caption">news18</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006148</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news18.jpg</field>
-			<field name="media_size">370545</field>
-			<field name="media_dimensions">1366 x 768</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">101</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news19</field>
-			<field name="media_caption">news19</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006151</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news19.jpg</field>
-			<field name="media_size">607266</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">102</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news2</field>
-			<field name="media_caption">news2</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006106</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news2.jpg</field>
-			<field name="media_size">978261</field>
-			<field name="media_dimensions">1366 x 768</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">103</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news20</field>
-			<field name="media_caption">news20</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006155</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news20.jpg</field>
-			<field name="media_size">1251297</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">104</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news3</field>
-			<field name="media_caption">news3</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006108</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news3.jpg</field>
-			<field name="media_size">187288</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">105</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news4</field>
-			<field name="media_caption">news4</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006110</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news4.jpg</field>
-			<field name="media_size">517663</field>
-			<field name="media_dimensions">1920 x 1200</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">106</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news5</field>
-			<field name="media_caption">news5</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006112</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news5.jpg</field>
-			<field name="media_size">1023614</field>
-			<field name="media_dimensions">1600 x 1020</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">107</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news6</field>
-			<field name="media_caption">news6</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006115</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news6.jpg</field>
-			<field name="media_size">386718</field>
-			<field name="media_dimensions">1920 x 1200</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">108</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news7</field>
-			<field name="media_caption">news7</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006117</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news7.jpg</field>
-			<field name="media_size">46028</field>
-			<field name="media_dimensions">800 x 450</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">109</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news8</field>
-			<field name="media_caption">news8</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006122</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news8.jpg</field>
-			<field name="media_size">1569730</field>
-			<field name="media_dimensions">2560 x 1600</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">110</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news9</field>
-			<field name="media_caption">news9</field>
-			<field name="media_description"></field>
-			<field name="media_category">gallery_image_2</field>
-			<field name="media_datestamp">1508006128</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news9.jpg</field>
-			<field name="media_size">2127988</field>
-			<field name="media_dimensions">2880 x 1800</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">111</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">test_video_img.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">_common_image</field>
-			<field name="media_datestamp">1508515461</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/test_video_img.jpg</field>
-			<field name="media_size">176532</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">112</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news20.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">_common_image</field>
-			<field name="media_datestamp">1510352485</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news20.jpg</field>
-			<field name="media_size">1251297</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">113</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news14.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">_common_image</field>
-			<field name="media_datestamp">1510352561</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news14.jpg</field>
-			<field name="media_size">356306</field>
-			<field name="media_dimensions">1920 x 1080</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
-		</item>
-		<item>
-			<field name="media_id">114</field>
-			<field name="media_type">image/jpeg</field>
-			<field name="media_name">news10.jpg</field>
-			<field name="media_caption"></field>
-			<field name="media_description"></field>
-			<field name="media_category">news</field>
-			<field name="media_datestamp">1511560262</field>
-			<field name="media_author">1</field>
-			<field name="media_url">{e_THEME}BS_Gaming_03/install/news10.jpg</field>
-			<field name="media_size">338038</field>
-			<field name="media_dimensions">1668 x 938</field>
-			<field name="media_userclass">0</field>
-			<field name="media_usedby"></field>
-			<field name="media_tags"></field>
 		</item>
 	</dbTable>
 	<dbTable name="core_media_cat">
@@ -1616,6 +533,48 @@
 			<field name="media_cat_order">0</field>
 		</item>
 	</dbTable>
+	<dbTable name="event_cat">
+		<item>
+			<field name="event_cat_id">1</field>
+			<field name="event_cat_name">Default</field>
+			<field name="event_cat_icon"></field>
+			<field name="event_cat_class">0</field>
+			<field name="event_cat_subs">0</field>
+			<field name="event_cat_ahead">5</field>
+			<field name="event_cat_msg1">Forthcoming event:
+
+{EC_MAIL_CATEGORY}
+
+{EC_MAIL_TITLE} on {EC_MAIL_HEADING_DATE}{EC_MAIL_TIME_START}
+
+
+{EC_MAIL_DETAILS}
+
+For further details: {EC_EVENT_LINK=Click Here}
+
+or {EC_MAIL_CONTACT} for further information.</field>
+			<field name="event_cat_msg2">Calendar event imminent:
+
+{EC_MAIL_CATEGORY}
+
+{EC_MAIL_TITLE} on {EC_MAIL_HEADING_DATE}{EC_MAIL_TIME_START}
+
+{EC_MAIL_DETAILS}
+
+
+For further details see the calendar entry on the web site:
+{EC_MAIL_LINK=Click Here}
+
+ {EC_MAIL_CONTACT} for further details</field>
+			<field name="event_cat_notify">0</field>
+			<field name="event_cat_last">0</field>
+			<field name="event_cat_today">0</field>
+			<field name="event_cat_lastupdate">1506428453</field>
+			<field name="event_cat_addclass">0</field>
+			<field name="event_cat_description">Default category - mailout messages are used if none defined for any other category</field>
+			<field name="event_cat_force_class">0</field>
+		</item>
+	</dbTable>
 	<dbTable name="featurebox">
 		<item>
 			<field name="fb_id">4</field>
@@ -1691,182 +650,304 @@
 			<field name="fb_category_parms"></field>
 		</item>
 	</dbTable>
-	<dbTable name="hits">
+	<dbTable name="forum">
 		<item>
-			<field name="hits_id">1</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">1</field>
-			<field name="hits_counter">0</field>
-			<field name="hits_unique">0</field>
-			<field name="hits_lastupdated">0</field>
+			<field name="forum_id">1</field>
+			<field name="forum_name">Forum parent 1</field>
+			<field name="forum_description">Enim sit amet venenatis urna cursus eget nunc.</field>
+			<field name="forum_parent">0</field>
+			<field name="forum_sub">0</field>
+			<field name="forum_datestamp">0</field>
+			<field name="forum_moderators">254</field>
+			<field name="forum_threads">0</field>
+			<field name="forum_replies">0</field>
+			<field name="forum_lastpost_user">0</field>
+			<field name="forum_lastpost_user_anon"></field>
+			<field name="forum_lastpost_info"></field>
+			<field name="forum_class">0</field>
+			<field name="forum_order">1</field>
+			<field name="forum_postclass">253</field>
+			<field name="forum_threadclass">253</field>
+			<field name="forum_options"></field>
+			<field name="forum_sef">forum-parent-1</field>
 		</item>
 		<item>
-			<field name="hits_id">2</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">2</field>
-			<field name="hits_counter">0</field>
-			<field name="hits_unique">0</field>
-			<field name="hits_lastupdated">0</field>
+			<field name="forum_id">2</field>
+			<field name="forum_name">Forum child 1.1</field>
+			<field name="forum_description">Ut aliquam purus sit amet luctus.</field>
+			<field name="forum_parent">1</field>
+			<field name="forum_sub">0</field>
+			<field name="forum_datestamp">0</field>
+			<field name="forum_moderators">254</field>
+			<field name="forum_threads">2</field>
+			<field name="forum_replies">5</field>
+			<field name="forum_lastpost_user">1</field>
+			<field name="forum_lastpost_user_anon"></field>
+			<field name="forum_lastpost_info">1507793875.2</field>
+			<field name="forum_class">0</field>
+			<field name="forum_order">11</field>
+			<field name="forum_postclass">253</field>
+			<field name="forum_threadclass">253</field>
+			<field name="forum_options"></field>
+			<field name="forum_sef">forum-child-1-1</field>
 		</item>
 		<item>
-			<field name="hits_id">3</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">3</field>
-			<field name="hits_counter">0</field>
-			<field name="hits_unique">0</field>
-			<field name="hits_lastupdated">0</field>
+			<field name="forum_id">3</field>
+			<field name="forum_name">Forum child 1.2</field>
+			<field name="forum_description">A cras semper auctor neque vitae tempus quam pellentesque.</field>
+			<field name="forum_parent">1</field>
+			<field name="forum_sub">0</field>
+			<field name="forum_datestamp">0</field>
+			<field name="forum_moderators">254</field>
+			<field name="forum_threads">0</field>
+			<field name="forum_replies">0</field>
+			<field name="forum_lastpost_user">0</field>
+			<field name="forum_lastpost_user_anon"></field>
+			<field name="forum_lastpost_info"></field>
+			<field name="forum_class">0</field>
+			<field name="forum_order">12</field>
+			<field name="forum_postclass">253</field>
+			<field name="forum_threadclass">253</field>
+			<field name="forum_options"></field>
+			<field name="forum_sef">forum-child-1-2</field>
 		</item>
 		<item>
-			<field name="hits_id">4</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">4</field>
-			<field name="hits_counter">0</field>
-			<field name="hits_unique">0</field>
-			<field name="hits_lastupdated">0</field>
+			<field name="forum_id">4</field>
+			<field name="forum_name">Forum parent 2</field>
+			<field name="forum_description">Massa tincidunt nunc pulvinar sapien et ligula. Imperdiet proin fermentum leo vel. </field>
+			<field name="forum_parent">0</field>
+			<field name="forum_sub">0</field>
+			<field name="forum_datestamp">0</field>
+			<field name="forum_moderators">254</field>
+			<field name="forum_threads">0</field>
+			<field name="forum_replies">0</field>
+			<field name="forum_lastpost_user">0</field>
+			<field name="forum_lastpost_user_anon"></field>
+			<field name="forum_lastpost_info"></field>
+			<field name="forum_class">0</field>
+			<field name="forum_order">2</field>
+			<field name="forum_postclass">253</field>
+			<field name="forum_threadclass">253</field>
+			<field name="forum_options"></field>
+			<field name="forum_sef">forum-parent-2</field>
 		</item>
 		<item>
-			<field name="hits_id">5</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">5</field>
-			<field name="hits_counter">0</field>
-			<field name="hits_unique">0</field>
-			<field name="hits_lastupdated">0</field>
+			<field name="forum_id">5</field>
+			<field name="forum_name">Forum child 2.1</field>
+			<field name="forum_description">Sed euismod nisi porta lorem mollis aliquam ut porttitor leo.</field>
+			<field name="forum_parent">4</field>
+			<field name="forum_sub">0</field>
+			<field name="forum_datestamp">0</field>
+			<field name="forum_moderators">254</field>
+			<field name="forum_threads">0</field>
+			<field name="forum_replies">0</field>
+			<field name="forum_lastpost_user">0</field>
+			<field name="forum_lastpost_user_anon"></field>
+			<field name="forum_lastpost_info"></field>
+			<field name="forum_class">0</field>
+			<field name="forum_order">21</field>
+			<field name="forum_postclass">253</field>
+			<field name="forum_threadclass">253</field>
+			<field name="forum_options"></field>
+			<field name="forum_sef">forum-child-2-1</field>
 		</item>
 		<item>
-			<field name="hits_id">6</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">6</field>
-			<field name="hits_counter">0</field>
-			<field name="hits_unique">0</field>
-			<field name="hits_lastupdated">0</field>
+			<field name="forum_id">6</field>
+			<field name="forum_name">Forum child 2.2</field>
+			<field name="forum_description">Elementum eu facilisis sed odio.</field>
+			<field name="forum_parent">4</field>
+			<field name="forum_sub">0</field>
+			<field name="forum_datestamp">0</field>
+			<field name="forum_moderators">254</field>
+			<field name="forum_threads">0</field>
+			<field name="forum_replies">0</field>
+			<field name="forum_lastpost_user">0</field>
+			<field name="forum_lastpost_user_anon"></field>
+			<field name="forum_lastpost_info"></field>
+			<field name="forum_class">0</field>
+			<field name="forum_order">22</field>
+			<field name="forum_postclass">253</field>
+			<field name="forum_threadclass">253</field>
+			<field name="forum_options"></field>
+			<field name="forum_sef">forum-child-2-2</field>
 		</item>
 		<item>
-			<field name="hits_id">7</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">7</field>
-			<field name="hits_counter">0</field>
-			<field name="hits_unique">0</field>
-			<field name="hits_lastupdated">0</field>
+			<field name="forum_id">7</field>
+			<field name="forum_name">Subforum 1</field>
+			<field name="forum_description">Placerat in egestas erat imperdiet sed euismod nisi porta lorem. </field>
+			<field name="forum_parent">1</field>
+			<field name="forum_sub">0</field>
+			<field name="forum_datestamp">0</field>
+			<field name="forum_moderators">254</field>
+			<field name="forum_threads">0</field>
+			<field name="forum_replies">0</field>
+			<field name="forum_lastpost_user">0</field>
+			<field name="forum_lastpost_user_anon"></field>
+			<field name="forum_lastpost_info"></field>
+			<field name="forum_class">0</field>
+			<field name="forum_order">51</field>
+			<field name="forum_postclass">253</field>
+			<field name="forum_threadclass">253</field>
+			<field name="forum_options"></field>
+			<field name="forum_sef">subforum-1</field>
+		</item>
+	</dbTable>
+	<dbTable name="forum_post">
+		<item>
+			<field name="post_id">1</field>
+			<field name="post_entry">Maecenas volutpat blandit aliquam etiam erat. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Eget gravida cum sociis natoque penatibus. A arcu cursus vitae congue. Eget nunc scelerisque viverra mauris. Id porta nibh venenatis cras sed felis eget velit. Mauris nunc congue nisi vitae. Consectetur adipiscing elit duis tristique sollicitudin. Risus feugiat in ante metus dictum at. Massa placerat duis ultricies lacus sed turpis tincidunt. Congue eu consequat ac felis donec et. Mattis vulputate enim nulla aliquet porttitor.</field>
+			<field name="post_thread">1</field>
+			<field name="post_forum">2</field>
+			<field name="post_status">0</field>
+			<field name="post_datestamp">1507723753</field>
+			<field name="post_user">1</field>
+			<field name="post_edit_datestamp"></field>
+			<field name="post_edit_user"></field>
+			<field name="post_ip">0000:0000:0000:0000:0000:0000:0000:0001</field>
+			<field name="post_user_anon"></field>
+			<field name="post_attachments"></field>
+			<field name="post_options"></field>
 		</item>
 		<item>
-			<field name="hits_id">8</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">8</field>
-			<field name="hits_counter">1</field>
-			<field name="hits_unique">1</field>
-			<field name="hits_lastupdated">1506547285</field>
+			<field name="post_id">2</field>
+			<field name="post_entry">Turpis egestas pretium aenean pharetra magna ac placerat. Auctor elit sed vulputate mi. Auctor elit sed vulputate mi sit. Aliquam sem et tortor consequat id porta nibh. Consequat mauris nunc congue nisi vitae suscipit. Velit ut tortor pretium viverra suspendisse potenti. Amet dictum sit amet justo donec. Commodo sed egestas egestas fringilla. Aliquam ut porttitor leo a.</field>
+			<field name="post_thread">1</field>
+			<field name="post_forum">2</field>
+			<field name="post_status">0</field>
+			<field name="post_datestamp">1507723792</field>
+			<field name="post_user">1</field>
+			<field name="post_edit_datestamp"></field>
+			<field name="post_edit_user"></field>
+			<field name="post_ip">0000:0000:0000:0000:0000:0000:0000:0001</field>
+			<field name="post_user_anon"></field>
+			<field name="post_attachments"></field>
+			<field name="post_options"></field>
 		</item>
 		<item>
-			<field name="hits_id">9</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">9</field>
-			<field name="hits_counter">0</field>
-			<field name="hits_unique">0</field>
-			<field name="hits_lastupdated">0</field>
+			<field name="post_id">3</field>
+			<field name="post_entry">Tempus quam pellentesque nec nam aliquam sem. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Mi ipsum faucibus vitae aliquet. Nibh tellus molestie nunc non blandit massa enim nec dui. Cras semper auctor neque vitae tempus quam pellentesque nec. Ipsum consequat nisl vel pretium lectus. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Justo eget magna fermentum iaculis eu non. Montes nascetur ridiculus mus mauris. Fermentum odio eu feugiat pretium nibh ipsum consequat. Tincidunt praesent semper feugiat nibh. In egestas erat imperdiet sed euismod. At lectus urna duis convallis convallis.</field>
+			<field name="post_thread">1</field>
+			<field name="post_forum">2</field>
+			<field name="post_status">0</field>
+			<field name="post_datestamp">1507723831</field>
+			<field name="post_user">1</field>
+			<field name="post_edit_datestamp"></field>
+			<field name="post_edit_user"></field>
+			<field name="post_ip">0000:0000:0000:0000:0000:0000:0000:0001</field>
+			<field name="post_user_anon"></field>
+			<field name="post_attachments"></field>
+			<field name="post_options"></field>
 		</item>
 		<item>
-			<field name="hits_id">10</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">10</field>
-			<field name="hits_counter">0</field>
-			<field name="hits_unique">0</field>
-			<field name="hits_lastupdated">0</field>
+			<field name="post_id">4</field>
+			<field name="post_entry">Vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Velit euismod in pellentesque massa. Gravida neque convallis a cras semper auctor neque vitae tempus. Sed euismod nisi porta lorem mollis. Accumsan sit amet nulla facilisi morbi tempus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Odio eu feugiat pretium nibh ipsum consequat nisl vel pretium. Sit amet porttitor eget dolor. Venenatis lectus magna fringilla urna. Morbi tristique senectus et netus et malesuada ac turpis.</field>
+			<field name="post_thread">2</field>
+			<field name="post_forum">2</field>
+			<field name="post_status">0</field>
+			<field name="post_datestamp">1507792428</field>
+			<field name="post_user">1</field>
+			<field name="post_edit_datestamp">1507818946</field>
+			<field name="post_edit_user">1</field>
+			<field name="post_ip">0000:0000:0000:0000:0000:0000:0000:0001</field>
+			<field name="post_user_anon"></field>
+			<field name="post_attachments"></field>
+			<field name="post_options"></field>
 		</item>
 		<item>
-			<field name="hits_id">11</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">11</field>
-			<field name="hits_counter">9</field>
-			<field name="hits_unique">6</field>
-			<field name="hits_lastupdated">1508175519</field>
+			<field name="post_id">5</field>
+			<field name="post_entry">Malesuada fames ac turpis egestas sed. Malesuada fames ac turpis egestas. At urna condimentum mattis pellentesque id nibh. Nec ultrices dui sapien eget mi proin sed libero enim. Et tortor at risus viverra adipiscing at. Massa ultricies mi quis hendrerit dolor magna eget est. Diam volutpat commodo sed egestas egestas. In mollis nunc sed id semper risus in. Urna et pharetra pharetra massa massa. Eget aliquet nibh praesent tristique magna sit. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. </field>
+			<field name="post_thread">2</field>
+			<field name="post_forum">2</field>
+			<field name="post_status">0</field>
+			<field name="post_datestamp">1507792461</field>
+			<field name="post_user">1</field>
+			<field name="post_edit_datestamp"></field>
+			<field name="post_edit_user"></field>
+			<field name="post_ip">0000:0000:0000:0000:0000:0000:0000:0001</field>
+			<field name="post_user_anon"></field>
+			<field name="post_attachments"></field>
+			<field name="post_options"></field>
 		</item>
 		<item>
-			<field name="hits_id">12</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">12</field>
-			<field name="hits_counter">5</field>
-			<field name="hits_unique">2</field>
-			<field name="hits_lastupdated">1511560370</field>
+			<field name="post_id">6</field>
+			<field name="post_entry">Massa tempor nec feugiat nisl pretium fusce. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Fermentum odio eu feugiat pretium nibh. Aliquet bibendum enim facilisis gravida neque convallis. Etiam sit amet nisl purus in mollis nunc sed id. Imperdiet dui accumsan sit amet nulla. Pharetra vel turpis nunc eget lorem.</field>
+			<field name="post_thread">2</field>
+			<field name="post_forum">2</field>
+			<field name="post_status">0</field>
+			<field name="post_datestamp">1507792508</field>
+			<field name="post_user">1</field>
+			<field name="post_edit_datestamp"></field>
+			<field name="post_edit_user"></field>
+			<field name="post_ip">0000:0000:0000:0000:0000:0000:0000:0001</field>
+			<field name="post_user_anon"></field>
+			<field name="post_attachments"></field>
+			<field name="post_options"></field>
 		</item>
 		<item>
-			<field name="hits_id">13</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">13</field>
-			<field name="hits_counter">0</field>
-			<field name="hits_unique">0</field>
-			<field name="hits_lastupdated">0</field>
+			<field name="post_id">7</field>
+			<field name="post_entry">Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla. Consequat id porta nibh venenatis. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Id interdum velit laoreet id donec ultrices tincidunt arcu. Eget velit aliquet sagittis id consectetur purus ut faucibus. </field>
+			<field name="post_thread">2</field>
+			<field name="post_forum">2</field>
+			<field name="post_status">0</field>
+			<field name="post_datestamp">1507793875</field>
+			<field name="post_user">1</field>
+			<field name="post_edit_datestamp"></field>
+			<field name="post_edit_user"></field>
+			<field name="post_ip">0000:0000:0000:0000:0000:0000:0000:0001</field>
+			<field name="post_user_anon"></field>
+			<field name="post_attachments"></field>
+			<field name="post_options"></field>
+		</item>
+	</dbTable>
+	<dbTable name="forum_thread">
+		<item>
+			<field name="thread_id">1</field>
+			<field name="thread_name">Et tortor at risus viverra adipiscing at in</field>
+			<field name="thread_forum_id">2</field>
+			<field name="thread_views">6</field>
+			<field name="thread_active">1</field>
+			<field name="thread_lastpost">1507723831</field>
+			<field name="thread_sticky">0</field>
+			<field name="thread_datestamp">1507723753</field>
+			<field name="thread_user">1</field>
+			<field name="thread_user_anon"></field>
+			<field name="thread_lastuser">1</field>
+			<field name="thread_lastuser_anon"></field>
+			<field name="thread_total_replies">2</field>
+			<field name="thread_options"></field>
 		</item>
 		<item>
-			<field name="hits_id">14</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">14</field>
-			<field name="hits_counter">0</field>
-			<field name="hits_unique">0</field>
-			<field name="hits_lastupdated">0</field>
+			<field name="thread_id">2</field>
+			<field name="thread_name">Vulputate sapien nec sagittis aliquam malesuada bibendum arcu</field>
+			<field name="thread_forum_id">2</field>
+			<field name="thread_views">78</field>
+			<field name="thread_active">1</field>
+			<field name="thread_lastpost">1507793875</field>
+			<field name="thread_sticky">0</field>
+			<field name="thread_datestamp">1507792428</field>
+			<field name="thread_user">1</field>
+			<field name="thread_user_anon"></field>
+			<field name="thread_lastuser">1</field>
+			<field name="thread_lastuser_anon"></field>
+			<field name="thread_total_replies">3</field>
+			<field name="thread_options"></field>
 		</item>
+	</dbTable>
+	<dbTable name="forum_track">
 		<item>
-			<field name="hits_id">15</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">15</field>
-			<field name="hits_counter">1</field>
-			<field name="hits_unique">1</field>
-			<field name="hits_lastupdated">1506872690</field>
+			<field name="track_userid">1</field>
+			<field name="track_thread">1</field>
 		</item>
+	</dbTable>
+	<dbTable name="generic">
 		<item>
-			<field name="hits_id">16</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">16</field>
-			<field name="hits_counter">4</field>
-			<field name="hits_unique">1</field>
-			<field name="hits_lastupdated">1506883554</field>
-		</item>
-		<item>
-			<field name="hits_id">17</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">17</field>
-			<field name="hits_counter">12</field>
-			<field name="hits_unique">6</field>
-			<field name="hits_lastupdated">1507925189</field>
-		</item>
-		<item>
-			<field name="hits_id">18</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">18</field>
-			<field name="hits_counter">0</field>
-			<field name="hits_unique">0</field>
-			<field name="hits_lastupdated">0</field>
-		</item>
-		<item>
-			<field name="hits_id">19</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">20</field>
-			<field name="hits_counter">11</field>
-			<field name="hits_unique">4</field>
-			<field name="hits_lastupdated">1507310757</field>
-		</item>
-		<item>
-			<field name="hits_id">22</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">21</field>
-			<field name="hits_counter">203</field>
-			<field name="hits_unique">19</field>
-			<field name="hits_lastupdated">1510808017</field>
-		</item>
-		<item>
-			<field name="hits_id">25</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">19</field>
-			<field name="hits_counter">4</field>
-			<field name="hits_unique">4</field>
-			<field name="hits_lastupdated">1507670092</field>
-		</item>
-		<item>
-			<field name="hits_id">27</field>
-			<field name="hits_type">news</field>
-			<field name="hits_itemid">22</field>
-			<field name="hits_counter">10</field>
-			<field name="hits_unique">4</field>
-			<field name="hits_lastupdated">1512293715</field>
+			<field name="gen_id">1</field>
+			<field name="gen_type">wmessage</field>
+			<field name="gen_datestamp">1145848343</field>
+			<field name="gen_user_id">1</field>
+			<field name="gen_ip">WELCOME</field>
+			<field name="gen_intdata">0</field>
+			<field name="gen_chardata">A sem condimentum, sed vel sit cumque suspendisse.</field>
 		</item>
 	</dbTable>
 	<dbTable name="menus">
@@ -2372,20 +1453,9 @@
 			<field name="menu_parms"></field>
 		</item>
 		<item>
-			<field name="menu_id">68</field>
-			<field name="menu_name">tagcloud_menu</field>
-			<field name="menu_location">7</field>
-			<field name="menu_order">1</field>
-			<field name="menu_class">0</field>
-			<field name="menu_pages"></field>
-			<field name="menu_path">tagcloud/</field>
-			<field name="menu_layout">game_03_home</field>
-			<field name="menu_parms"></field>
-		</item>
-		<item>
-			<field name="menu_id">66</field>
+			<field name="menu_id">129</field>
 			<field name="menu_name">newforumposts_menu</field>
-			<field name="menu_location">4</field>
+			<field name="menu_location">8</field>
 			<field name="menu_order">1</field>
 			<field name="menu_class">0</field>
 			<field name="menu_pages"></field>
@@ -2393,18 +1463,18 @@
 			<field name="menu_layout">game_03_home</field>
 			<field name="menu_parms">{
     "caption": {
-        "English": "Latestposts"
+        "English": "Latest forumposts"
     },
-    "display": "4",
-    "maxage": "0",
-    "characters": "30",
-    "postfix": "...",
+    "display": "",
+    "maxage": "",
+    "characters": "",
+    "postfix": "",
     "scroll": "",
-    "layout": "default"
+    "layout": "main"
 }</field>
 		</item>
 		<item>
-			<field name="menu_id">67</field>
+			<field name="menu_id">130</field>
 			<field name="menu_name">search_menu</field>
 			<field name="menu_location">6</field>
 			<field name="menu_order">1</field>
@@ -2415,7 +1485,39 @@
 			<field name="menu_parms"></field>
 		</item>
 		<item>
-			<field name="menu_id">61</field>
+			<field name="menu_id">131</field>
+			<field name="menu_name">tagcloud_menu</field>
+			<field name="menu_location">7</field>
+			<field name="menu_order">1</field>
+			<field name="menu_class">0</field>
+			<field name="menu_pages"></field>
+			<field name="menu_path">tagcloud/</field>
+			<field name="menu_layout">game_03_home</field>
+			<field name="menu_parms"></field>
+		</item>
+		<item>
+			<field name="menu_id">128</field>
+			<field name="menu_name">newforumposts_menu</field>
+			<field name="menu_location">4</field>
+			<field name="menu_order">1</field>
+			<field name="menu_class">0</field>
+			<field name="menu_pages"></field>
+			<field name="menu_path">forum/</field>
+			<field name="menu_layout">game_03_home</field>
+			<field name="menu_parms">{
+    "caption": {
+        "English": "Latest Forumposts"
+    },
+    "display": "4",
+    "maxage": "",
+    "characters": "30",
+    "postfix": "...",
+    "scroll": "",
+    "layout": "default"
+}</field>
+		</item>
+		<item>
+			<field name="menu_id">123</field>
 			<field name="menu_name">latestnews_menu</field>
 			<field name="menu_location">2</field>
 			<field name="menu_order">2</field>
@@ -2425,25 +1527,14 @@
 			<field name="menu_layout">game_03_home</field>
 			<field name="menu_parms">{
     "caption": {
-        "English": ""
+        "English": "Latest News"
     },
     "count": "4",
     "category": ""
 }</field>
 		</item>
 		<item>
-			<field name="menu_id">62</field>
-			<field name="menu_name">news_categories_menu</field>
-			<field name="menu_location">2</field>
-			<field name="menu_order">4</field>
-			<field name="menu_class">0</field>
-			<field name="menu_pages"></field>
-			<field name="menu_path">news/</field>
-			<field name="menu_layout">game_03_home</field>
-			<field name="menu_parms"></field>
-		</item>
-		<item>
-			<field name="menu_id">63</field>
+			<field name="menu_id">124</field>
 			<field name="menu_name">news_months_menu</field>
 			<field name="menu_location">2</field>
 			<field name="menu_order">5</field>
@@ -2454,7 +1545,18 @@
 			<field name="menu_parms"></field>
 		</item>
 		<item>
-			<field name="menu_id">64</field>
+			<field name="menu_id">125</field>
+			<field name="menu_name">news_categories_menu</field>
+			<field name="menu_location">2</field>
+			<field name="menu_order">4</field>
+			<field name="menu_class">0</field>
+			<field name="menu_pages"></field>
+			<field name="menu_path">news/</field>
+			<field name="menu_layout">game_03_home</field>
+			<field name="menu_parms"></field>
+		</item>
+		<item>
+			<field name="menu_id">126</field>
 			<field name="menu_name">comment_menu</field>
 			<field name="menu_location">2</field>
 			<field name="menu_order">7</field>
@@ -2465,7 +1567,7 @@
 			<field name="menu_parms"></field>
 		</item>
 		<item>
-			<field name="menu_id">65</field>
+			<field name="menu_id">127</field>
 			<field name="menu_name">poll_menu</field>
 			<field name="menu_location">3</field>
 			<field name="menu_order">1</field>
@@ -2476,18 +1578,7 @@
 			<field name="menu_parms"></field>
 		</item>
 		<item>
-			<field name="menu_id">60</field>
-			<field name="menu_name">blogcalendar_menu</field>
-			<field name="menu_location">1</field>
-			<field name="menu_order">6</field>
-			<field name="menu_class">0</field>
-			<field name="menu_pages"></field>
-			<field name="menu_path">blogcalendar_menu/</field>
-			<field name="menu_layout">game_03_home</field>
-			<field name="menu_parms"></field>
-		</item>
-		<item>
-			<field name="menu_id">59</field>
+			<field name="menu_id">122</field>
 			<field name="menu_name">chatbox_menu</field>
 			<field name="menu_location">1</field>
 			<field name="menu_order">4</field>
@@ -2495,28 +1586,6 @@
 			<field name="menu_pages"></field>
 			<field name="menu_path">chatbox_menu/</field>
 			<field name="menu_layout">game_03_home</field>
-			<field name="menu_parms"></field>
-		</item>
-		<item>
-			<field name="menu_id">58</field>
-			<field name="menu_name">calendar_menu</field>
-			<field name="menu_location">1</field>
-			<field name="menu_order">2</field>
-			<field name="menu_class">0</field>
-			<field name="menu_pages"></field>
-			<field name="menu_path">calendar_menu/</field>
-			<field name="menu_layout">game_03_home</field>
-			<field name="menu_parms"></field>
-		</item>
-		<item>
-			<field name="menu_id">57</field>
-			<field name="menu_name">assassins</field>
-			<field name="menu_location">0</field>
-			<field name="menu_order">0</field>
-			<field name="menu_class">0</field>
-			<field name="menu_pages"></field>
-			<field name="menu_path">1</field>
-			<field name="menu_layout"></field>
 			<field name="menu_parms"></field>
 		</item>
 		<item>
@@ -2596,101 +1665,24 @@
 			<field name="menu_parms"></field>
 		</item>
 		<item>
-			<field name="menu_id">80</field>
-			<field name="menu_name">dragon-quest-heroes</field>
-			<field name="menu_location">0</field>
-			<field name="menu_order">0</field>
+			<field name="menu_id">121</field>
+			<field name="menu_name">calendar_menu</field>
+			<field name="menu_location">1</field>
+			<field name="menu_order">2</field>
 			<field name="menu_class">0</field>
 			<field name="menu_pages"></field>
-			<field name="menu_path">2</field>
-			<field name="menu_layout"></field>
+			<field name="menu_path">calendar_menu/</field>
+			<field name="menu_layout">game_03_home</field>
 			<field name="menu_parms"></field>
 		</item>
 		<item>
-			<field name="menu_id">81</field>
-			<field name="menu_name">search_menu</field>
-			<field name="menu_location">6</field>
-			<field name="menu_order">4</field>
-			<field name="menu_class">0</field>
-			<field name="menu_pages"></field>
-			<field name="menu_path">search_menu/</field>
-			<field name="menu_layout">game_03_extend_news</field>
-			<field name="menu_parms"></field>
-		</item>
-		<item>
-			<field name="menu_id">82</field>
-			<field name="menu_name">tagcloud_menu</field>
-			<field name="menu_location">7</field>
-			<field name="menu_order">4</field>
-			<field name="menu_class">0</field>
-			<field name="menu_pages"></field>
-			<field name="menu_path">tagcloud/</field>
-			<field name="menu_layout">game_03_extend_news</field>
-			<field name="menu_parms"></field>
-		</item>
-		<item>
-			<field name="menu_id">83</field>
-			<field name="menu_name">tagcloud_menu</field>
-			<field name="menu_location">7</field>
-			<field name="menu_order">3</field>
-			<field name="menu_class">0</field>
-			<field name="menu_pages"></field>
-			<field name="menu_path">tagcloud/</field>
-			<field name="menu_layout">game_03_full_page</field>
-			<field name="menu_parms"></field>
-		</item>
-		<item>
-			<field name="menu_id">84</field>
-			<field name="menu_name">search_menu</field>
-			<field name="menu_location">6</field>
-			<field name="menu_order">3</field>
-			<field name="menu_class">0</field>
-			<field name="menu_pages"></field>
-			<field name="menu_path">search_menu/</field>
-			<field name="menu_layout">game_03_full_page</field>
-			<field name="menu_parms"></field>
-		</item>
-		<item>
-			<field name="menu_id">85</field>
-			<field name="menu_name">middle-earth-shadow-of-war</field>
-			<field name="menu_location">0</field>
-			<field name="menu_order">0</field>
-			<field name="menu_class">0</field>
-			<field name="menu_pages"></field>
-			<field name="menu_path">3</field>
-			<field name="menu_layout"></field>
-			<field name="menu_parms"></field>
-		</item>
-		<item>
-			<field name="menu_id">86</field>
-			<field name="menu_name">forza-motorsport-7</field>
-			<field name="menu_location">0</field>
-			<field name="menu_order">0</field>
-			<field name="menu_class">0</field>
-			<field name="menu_pages"></field>
-			<field name="menu_path">4</field>
-			<field name="menu_layout"></field>
-			<field name="menu_parms"></field>
-		</item>
-		<item>
-			<field name="menu_id">88</field>
+			<field name="menu_id">139</field>
 			<field name="menu_name"></field>
 			<field name="menu_location">0</field>
 			<field name="menu_order">0</field>
 			<field name="menu_class">0</field>
 			<field name="menu_pages"></field>
-			<field name="menu_path">5</field>
-			<field name="menu_layout"></field>
-			<field name="menu_parms"></field>
-		</item>
-		<item>
-			<field name="menu_id">89</field>
-			<field name="menu_name"></field>
-			<field name="menu_location">0</field>
-			<field name="menu_order">0</field>
-			<field name="menu_class">0</field>
-			<field name="menu_pages"></field>
-			<field name="menu_path">6</field>
+			<field name="menu_path">12</field>
 			<field name="menu_layout"></field>
 			<field name="menu_parms"></field>
 		</item>
@@ -2716,7 +1708,7 @@
 			<field name="menu_layout"></field>
 			<field name="menu_parms">{
     "caption": {
-        "English": "Latest f\u00f3rumposts"
+        "English": "Latest forumposts"
     },
     "display": "",
     "maxage": "",
@@ -2727,25 +1719,26 @@
 }</field>
 		</item>
 		<item>
-			<field name="menu_id">92</field>
-			<field name="menu_name">newforumposts_menu</field>
-			<field name="menu_location">8</field>
-			<field name="menu_order">2</field>
+			<field name="menu_id">138</field>
+			<field name="menu_name"></field>
+			<field name="menu_location">0</field>
+			<field name="menu_order">0</field>
 			<field name="menu_class">0</field>
 			<field name="menu_pages"></field>
-			<field name="menu_path">forum/</field>
+			<field name="menu_path">11</field>
+			<field name="menu_layout"></field>
+			<field name="menu_parms"></field>
+		</item>
+		<item>
+			<field name="menu_id">120</field>
+			<field name="menu_name">blogcalendar_menu</field>
+			<field name="menu_location">1</field>
+			<field name="menu_order">6</field>
+			<field name="menu_class">0</field>
+			<field name="menu_pages"></field>
+			<field name="menu_path">blogcalendar_menu/</field>
 			<field name="menu_layout">game_03_home</field>
-			<field name="menu_parms">{
-    "caption": {
-        "English": "Latest forumposts"
-    },
-    "display": "",
-    "maxage": "",
-    "characters": "",
-    "postfix": "",
-    "scroll": "",
-    "layout": "main"
-}</field>
+			<field name="menu_parms"></field>
 		</item>
 		<item>
 			<field name="menu_id">95</field>
@@ -2759,25 +1752,69 @@
 			<field name="menu_parms"></field>
 		</item>
 		<item>
-			<field name="menu_id">97</field>
-			<field name="menu_name">counter_menu</field>
-			<field name="menu_location">5</field>
-			<field name="menu_order">2</field>
-			<field name="menu_class">0</field>
-			<field name="menu_pages"></field>
-			<field name="menu_path">siteinfo/</field>
-			<field name="menu_layout">game_03_home</field>
-			<field name="menu_parms"></field>
-		</item>
-		<item>
-			<field name="menu_id">99</field>
-			<field name="menu_name">counter_menu</field>
-			<field name="menu_location">5</field>
+			<field name="menu_id">132</field>
+			<field name="menu_name">search_menu</field>
+			<field name="menu_location">6</field>
 			<field name="menu_order">3</field>
 			<field name="menu_class">0</field>
 			<field name="menu_pages"></field>
-			<field name="menu_path">siteinfo/</field>
+			<field name="menu_path">search_menu/</field>
 			<field name="menu_layout">game_03_full_page</field>
+			<field name="menu_parms"></field>
+		</item>
+		<item>
+			<field name="menu_id">133</field>
+			<field name="menu_name">tagcloud_menu</field>
+			<field name="menu_location">7</field>
+			<field name="menu_order">3</field>
+			<field name="menu_class">0</field>
+			<field name="menu_pages"></field>
+			<field name="menu_path">tagcloud/</field>
+			<field name="menu_layout">game_03_full_page</field>
+			<field name="menu_parms"></field>
+		</item>
+		<item>
+			<field name="menu_id">134</field>
+			<field name="menu_name">assassins</field>
+			<field name="menu_location">0</field>
+			<field name="menu_order">0</field>
+			<field name="menu_class">0</field>
+			<field name="menu_pages"></field>
+			<field name="menu_path">7</field>
+			<field name="menu_layout"></field>
+			<field name="menu_parms"></field>
+		</item>
+		<item>
+			<field name="menu_id">135</field>
+			<field name="menu_name">dragon-quest-heroes</field>
+			<field name="menu_location">0</field>
+			<field name="menu_order">0</field>
+			<field name="menu_class">0</field>
+			<field name="menu_pages"></field>
+			<field name="menu_path">8</field>
+			<field name="menu_layout"></field>
+			<field name="menu_parms"></field>
+		</item>
+		<item>
+			<field name="menu_id">136</field>
+			<field name="menu_name">forza-motorsport-7</field>
+			<field name="menu_location">0</field>
+			<field name="menu_order">0</field>
+			<field name="menu_class">0</field>
+			<field name="menu_pages"></field>
+			<field name="menu_path">9</field>
+			<field name="menu_layout"></field>
+			<field name="menu_parms"></field>
+		</item>
+		<item>
+			<field name="menu_id">137</field>
+			<field name="menu_name">middle-earth-shadow-of-war</field>
+			<field name="menu_location">0</field>
+			<field name="menu_order">0</field>
+			<field name="menu_class">0</field>
+			<field name="menu_pages"></field>
+			<field name="menu_path">10</field>
+			<field name="menu_layout"></field>
 			<field name="menu_parms"></field>
 		</item>
 	</dbTable>
@@ -3201,7 +2238,7 @@ Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies. Tempus imper
 			<field name="news_render_type">0</field>
 			<field name="news_comment_total">0</field>
 			<field name="news_summary"></field>
-			<field name="news_thumbnail">{e_THEME}BS_Gaming_03/install/news1.jpg,,,,</field>
+			<field name="news_thumbnail">{e_THEME}BS_Gaming_03/install/feature3.jpg,,,,</field>
 			<field name="news_sticky">0</field>
 			<field name="news_template">default</field>
 		</item>
@@ -3349,193 +2386,64 @@ Dui accumsan sit amet nulla facilisi morbi tempus iaculis. Amet nulla facilisi m
 	</dbTable>
 	<dbTable name="page">
 		<item>
-			<field name="page_id">1</field>
-			<field name="page_title">Assassin’s Creed Syndicate Review</field>
-			<field name="page_sef">assassins-creed-syndicate-review</field>
-			<field name="page_chapter">2</field>
-			<field name="page_metakeys">review,game,assassins</field>
-			<field name="page_metadscr"></field>
-			<field name="page_text">As I made my way across Westminster, zipping between rooftops with my rope launcher, a notice popped up indicating I was approaching a bounty hunt. The objective was simple–kill an important member of my rival gang–and I decided the children could wait a bit longer. I was in and out of the mission in under a minute after dropping hanging barrels on gang members, throwing down a smoke bomb and taking out the leader with a gun to the head. I ziplined out, stopping only once more to change my outfit to one that held more throwing knives, before dropping by a black market stall for a refill and dashing towards the factory. The children of London needed me.
-His three boats stove around him, and oars and men both whirling in the eddies; one captain, seizing the line-knife from his broken prow, had dashed at the whale, as an Arkansas duellist at his foe, blindly seeking with a six inch blade to reach the fathom-deep life of the whale. That captain was Ahab. And then it was, that suddenly sweeping his sickle-shaped lower jaw beneath him, Moby Dick had reaped away Ahab’s leg, as a mower a blade of grass in the field. No turbaned Turk, no hired Venetian or Malay, could have smote him with more seeming malice. Small reason was there to doubt, then, that ever since that almost fatal encounter, Ahab had cherished a wild vindictiveness against the whale, all the more fell for that in his frantic morbidness he at last came to identify with him, not only all his bodily woes, but all his intellectual and spiritual exasperations.
-It is not probable that this monomania in him took its instant rise at the precise time of his bodily dismemberment.
-Then, in darting at the monster, knife in hand, he had but given loose to a sudden, passionate, corporal animosity; and when he received the stroke that tore him, he probably but felt the agonizing bodily laceration, but nothing more. Yet, when by this collision forced to turn towards home, and for long months of days and weeks, Ahab and anguish lay stretched together in one hammock, rounding in mid winter that dreary, howling Patagonian Cape; then it was, that his torn body and gashed soul bled into one another; and so interfusing, made him mad.
-That it was only then, on the homeward voyage, after the encounter, that the final monomania seized him?
-Egyptian chest, and was moreover intensified by his delirium, that his mates were forced to lace him fast, even there, as he sailed, raving in his hammock. In a strait-jacket, he swung to the mad rockings of the gales. And, when running into more sufferable latitudes, the ship, with mild stun’sails spread, floated across the tranquil tropics, and, to all appearances.
-[img]{e_THEME}BS_Gaming_03/install/2864175_assassins_creed_syndicate_thames_river.jpg[/img]
-That it was only then, on the homeward voyage, after the encounter, that the final monomania seized him, seems all but certain from the fact that, at intervals during the passage, he was a raving lunatic; and, though unlimbed of a leg, yet such vital strength yet lurked in his Egyptian chest, and was moreover intensified by his delirium, that his mates were forced to lace him fast, even there, as he sailed, raving in his hammock. In a strait-jacket, he swung to the mad rockings of the gales. And, when running into more sufferable latitudes, the ship, with mild stun’sails spread, floated across the tranquil tropics, and, to all appearances, the old man’s delirium seemed left behind him with the Cape Horn swells.
-Human madness is oftentimes a cunning and most feline thing. When you think it fled, it may have but become transfigured into some still subtler form. Ahab’s full lunacy subsided not, but deepeningly contracted; like the unabated Hudson, when that noble Northman flows narrowly, but unfathomably through the Highland gorge.
-To that one end, did now possess a thousand fold more potency than ever he had sanely brought to bear upon any one reasonable object.
-God the direful madness was now gone; even then, Ahab, in his hidden self, raved on. Human madness is oftentimes a cunning and most feline thing. When you think it fled, it may have but become transfigured into some still subtler form. Ahab’s full lunacy subsided not, but deepeningly contracted; like the unabated Hudson, when that noble Northman flows narrowly, but unfathomably through the Highland gorge.
-[img]{e_THEME}BS_Gaming_03/install/assassin_creed_syndicate_evie_gamescom_6.jpg[/img]
-But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness had been left behind; so in that broad madness, not one jot of his great natural intellect had perished. That before living agent, now became the living instrument. If such a furious trope may stand, his special lunacy stormed his general sanity, and carried it, and turned all its concentred cannon upon its own mad mark. I knew the Indians would soon discover that they were on the wrong trail and that the search for me would be renewed in the right direction as soon as they located my tracks. I had gone but a short distance further when what seemed to be an excellent trail opened up around the face of a high cliff. The trail was level and quite broad and led upward and in the general direction I wished to go. The cliff arose for several hundred feet on my right, and on my left was an equal and nearly perpendicular drop to the bottom of a rocky ravine.
-</field>
-			<field name="page_author">1</field>
-			<field name="page_datestamp">1507140807</field>
-			<field name="page_rating_flag">1</field>
-			<field name="page_comment_flag">1</field>
-			<field name="page_password"></field>
-			<field name="page_class">0</field>
-			<field name="page_ip_restrict"></field>
-			<field name="page_template">review</field>
-			<field name="page_order">0</field>
-			<field name="page_fields">{
-    "gameplay": "8\/10",
-    "graphics": "6\/10",
-    "sound": "8\/10",
-    "eop": "7\/10",
-    "good": "[list]\r\n[*]Excellent world design allows organic discovery of missions with open-ended solutions\r\n[*]London looks gorgeous\r\n[*]The rope launcher tool is a game-changer for traversal and stealth\r\n[\/list]",
-    "bad": "[list]\r\n[*]Final boss battle is frustrating and kills the drama\r\n[*]Sometimes controls can be imprecise\r\n[\/list]",
-    "score": "7",
-    "image1": "{e_THEME}BS_Gaming_03/install/acs_join_the_family.jpg"
-}</field>
-			<field name="menu_name">assassins</field>
-			<field name="menu_title">Assassin’s Creed Syndicate Review</field>
-			<field name="menu_text">As I made my way across Westminster, zipping between rooftops with my rope launcher, a notice popped up indicating I was approaching a bounty hunt. The objective was simple–kill an important member of my rival gang–and I decided the children could wait a bit longer. I was in and out of the mission in under a minute after dropping hanging barrels on gang members, throwing down a smoke bomb and taking out the leader with a gun to the head. I ziplined out, stopping only once more to change my outfit to one that held more throwing knives, before dropping by a black market stall for a refill and dashing towards the factory. The children of London needed me.</field>
-			<field name="menu_image">{e_THEME}BS_Gaming_03/install/acs_join_the_family.jpg</field>
-			<field name="menu_icon"></field>
-			<field name="menu_template">grid</field>
-			<field name="menu_class">0</field>
-			<field name="menu_button_url"></field>
-			<field name="menu_button_text"></field>
-		</item>
-		<item>
-			<field name="page_id">2</field>
-			<field name="page_title">Dragon Quest Heroes: The World Tree’s Woe and the Blight Below</field>
-			<field name="page_sef">dragon-quest-heroes-the-world-trees-woe-and-the-blight-below</field>
-			<field name="page_chapter">2</field>
-			<field name="page_metakeys">review,game,dragon</field>
-			<field name="page_metadscr"></field>
-			<field name="page_text">Blighted by the night, vanquishing the plight by the children of the light. No video game character conveys endearment and sadism in a single expression as well as the Blue Slimes.
-In Dragon Quest Heroes: The World’s Tree Woe and the Blight Below, these iconic teardrop-shaped blobs have never looked more adorable and homicidal, which is what makes killing them en masse one of this game’s greatest pleasures. It’s one of many delights aptly delivered by a collaboration that is one part Dynasty Warriors, one part Dragon Quest. As a hack-and-slasher with countless enemy encounters, character growth, and a shopping list of quests, it was joy to be reminded how much both series have in common.
-As a contrast to all the dimension hopping that made up much of last year’s Hyrule Warriors (a Dynasty Warriors take on The Legend of Zelda universe), this Dragon Quest spin-off takes the reverse approach. Instead of protagonists jumping to various worlds in older Dragon Quest games, adventurers from those games come into the new world established in Dragon Quest Heroes.
-[img]{e_THEME}BS_Gaming_03/install/2947931_0001d.jpg[/img]
-Welcoming these otherworldly guests is a new foursome comprising of two co-protagonists whose default names are Aurora and Luceus, the boisterous King Doric, and an skilled inventor named Isla. I have always admired the mainline series for defying traditional fantasy RPG party formations and archetypes and this new team could easily carry a mainline Dragon Quest installment. That’s a bold statement especially when Aurora and Luceus are two sides of the same coin. Their complementary personalities are best showcased during the cutscenes where your see Luceus’ analytical side and Aurora’s impatience to jump into battle. Aside from a momentary interlude where you’re forced to use one of the guest adventurers, you can have a wholly enjoyable time relying solely on these new characters while ignoring the rest of the roster.
-It’s a varied cast where each warrior easily proves their worth over the course of a single battle. The only thing better than seeing 3D models of characters like Dragon Quest IV’s Alena and Kiryl is hearing them speak for the first time. Just as it was momentous to have voice acting in a Final Fantasy game in 2001 with Final Fantasy X, so too was the introduction of dialogue in Dragon Quest VIII ten years ago. Hearing much of the cast speak in English accents in Journey of the Cursed King created a rare connection to the Tolkienian roots of JRPGs. Having Yungus’ cockney accent reprised in Dragon Quest Heroes–by the original voice actor no less–only makes this reunion all the more special.
-This mingling of heroes from other worlds helps distract from the story’s laughably generic premise of light versus dark. Even the two co-leaders are named Children of the Light. The story starts off on an uncommonly cheerful note, even by Dragon Quest standards, where humans and monsters are happily co-existing. Due to a spell by a dark wizard named Velasco, the monsters are suddenly reminded that they’re supposed to hate humans. The ensuing chaos and unrest gives the game’s heroes more than enough to deal with, let alone reason to investigate why their non-human friends suddenly turned on them. It’s a good thing the story has its share of twists and guest character interactions to compensate for this otherwise plain narrative.
-[img]{e_THEME}BS_Gaming_03/install/2947928_0003.jpg[/img]
-It is not the least among the strange things bred by the intense artificialness of sea-usages, that while in the open air of the deck some officers will, upon provocation, bear themselves boldly and defyingly enough towards their commander; yet, ten to one, let those very officers the next moment go down to their customary dinner in that same commander’s cabin, and straightway their inoffensive, not to say deprecatory and humble air towards him, as he sits at the head of the table; this is marvellous, sometimes most comical. Wherefore this difference? A problem? Perhaps not. To have been Belshazzar, King of Babylon; and to have been Belshazzar, not haughtily but courteously, therein certainly must have been some touch of mundane grandeur. But he who in the rightly regal and intelligent spirit presides over his own private dinner-table of invited guests, that man’s unchallenged power and dominion of individual influence for the time; that man’s royalty of state transcends Belshazzar’s, for Belshazzar was not the greatest. Who has but once dined his friends, has tasted what it is to be Caesar. It is a witchery of social czarship which there is no withstanding. Now, if to this consideration you superadd the official supremacy of a ship-master, then, by inference, you will derive the cause of that peculiarity of sea-life just mentioned.
-</field>
-			<field name="page_author">1</field>
-			<field name="page_datestamp">1507143049</field>
-			<field name="page_rating_flag">1</field>
-			<field name="page_comment_flag">1</field>
-			<field name="page_password"></field>
-			<field name="page_class">0</field>
-			<field name="page_ip_restrict"></field>
-			<field name="page_template">review</field>
-			<field name="page_order">0</field>
-			<field name="page_fields">{
-    "gameplay": "5\/10",
-    "graphics": "8\/10",
-    "sound": "9\/10",
-    "eop": "6\/10",
-    "good": "[list]\r\n[*]Excellent world design allows organic discovery of missions with open-ended solutions\r\n[*]London looks gorgeous\r\n[*]The rope launcher tool is a game-changer for traversal and stealth\r\n[\/list]",
-    "bad": "[list]\r\n[*]Final boss battle is frustrating and kills the drama\r\n[*]Sometimes controls can be imprecise\r\n[\/list]",
-    "score": "6",
-    "image1": "{e_THEME}BS_Gaming_03/install/dq_770x500.jpg"
-}</field>
-			<field name="menu_name">dragon-quest-heroes</field>
-			<field name="menu_title">Dragon Quest Heroes: The World Tree’s Woe and the Blight Below</field>
-			<field name="menu_text">Blighted by the night, vanquishing the plight by the children of the light. No video game character conveys endearment and sadism in a single expression as well as the Blue Slimes.
-In Dragon Quest Heroes: The World’s Tree Woe and the Blight Below, these iconic teardrop-shaped blobs have never looked more adorable and homicidal, which is what makes killing them en masse one of this game’s greatest pleasures. It’s one of many delights aptly delivered by a collaboration that is one part Dynasty Warriors, one part Dragon Quest. As a hack-and-slasher with countless enemy encounters, character growth, and a shopping list of quests, it was joy to be reminded how much both series have in common.</field>
-			<field name="menu_image">{e_THEME}BS_Gaming_03/install/dq_770x500.jpg</field>
-			<field name="menu_icon"></field>
-			<field name="menu_template">grid</field>
-			<field name="menu_class">0</field>
-			<field name="menu_button_url"></field>
-			<field name="menu_button_text"></field>
-		</item>
-		<item>
-			<field name="page_id">4</field>
-			<field name="page_title">Forza Motorsport 7</field>
-			<field name="page_sef">forza-motorsport-7</field>
-			<field name="page_chapter">2</field>
-			<field name="page_metakeys">game,review</field>
-			<field name="page_metadscr"></field>
-			<field name="page_text"><![CDATA[In Forza Motorsport 7, the familiarity of driving your favorite cars on beloved tracks goes hand in hand with the joys of discovery. It&#039;s about owning sporty cars priced just out of reach in real life, whether that&#039;s a Mazda RX-8 or an Infinity Q60. There&#039;s exhilaration in taking those sweet rides down roads you&#039;ve visited countless times and still finding something new around familiar bends. And whether you&#039;re preoccupied with a pack of assertive Drivatars or fiercer real-life competitors, Forza 7--much like the other installments in developer Turn 10&#039;s mainline racing series--is decidedly abundant in different ways to compete.
-The first thing you&#039;ll notice about Forza 7 is that it strips away the often amusing glorification and ostentatiousness of motorsport that decorated the series&#039; last few games. Granted, I loved the dulcet voice over of Jeremy Clarkson when he dispensed with insight and trivia on cars and courses. Forza 7 relies less on wooing you with superficial spectacles and instead lets the cars and courses speak for themselves. This break from the ceremonious aspects of motorsport is a welcome one, especially when all you want to do is race.
-The career mode alone--dubbed Forza Driver&#039;s Cup--encourages you to get down to business in a wide array of competitions spread across six championship series. Since you don&#039;t need to enter all the races to win the cup, you&#039;re offered the flexibility to compete with the types of cars you&#039;re most used to. That said, the opening races effectively remind you of Forza 7&#039;s vehicle variety, encouraging you to play outside your comfort zone. You can spend a dozen hours beelining for the cup, or more than double that if you want to get first in every race. There&#039;s no clear theme to distinguish one series over another, but it&#039;s easy to go along with Turn 10&#039;s seemingly arbitrary playlists of tournaments, given the wide variety of cars and courses lining your journey.
-Even after you&#039;ve raised the final trophy in the Forza Driver&#039;s Cup, the quest to build a respectable collection of cars goes on. As always, the draw of browsing the hundreds of cars in Forza is the tease of purchasing a new model like the 2017 Nissan GT-R or scratching that nostalgic itch with a Pacer X from the now-defunct American Motors Corporation. And while the recent withdrawal of Lexus and Toyota production models from racing games leaves a void in this robust roster, Turn 10 helps cushion the blow with a hearty selection of Porsches, a manufacturer that was missing from the launch version of Forza 6.
-[img]{e_THEME}BS_Gaming_03/install/3297232_0001.png[/img]
-Competition takes many forms in Forza 7. The friends-as-AI Drivatars return as a pleasing alternative to age-old CPU racing behaviors like rubber banding. Online you&#039;ll find, more often than not, disorderly strangers who are as impolite as they are careless. Your best hope of winning is placing near the front of the starting grid. The alternative is, of course, participating in a private race, provided you can convince other friends and Forza players--ideally enough to fill a 24-car grid--to play fair and do their best at avoiding crashes. For the least chaotic approach to measuring and comparing greatness, Rivals presents a host of tough yet worthwhile asynchronous contests where you attempt to beat other players&#039; lap times. Unfortunately, the traditional Forza outlets of aggression like zombie or tag are not available in the launch version of Forza 7. The same goes for Forzathon and Leagues modes, unique timed events that enhance the replay value of Forza Motorsport 6 and Forza Horizon 3.
-Like many Forza Motorsports before it, Forza 7&#039;s greatest strength is its diversity of driving experiences, which says something for a series that relies mostly on circuit races, rather than adding point-to-point and off-road competition. The challenge of weaving a Mini Cooper through traffic at 45 miles per hour can be as thrilling as navigating your way through the various slopes and dips in Dubai Circuit of the Emirates. These moments are made all the more rewarding thanks to the 122 finely detailed and authentic track configurations spread across its 32 locations.
-[img]{e_THEME}BS_Gaming_03/install/3297234_0003.png[/img]
-The last couple Forza Motorsports, along with Forza 7, are engrossing due to their true-to-life tracks and how surrounding environments are enhanced by changes in weather and time of day. Yet whereas Forza 6 had a premade rain condition for select tracks, Forza 7 has an impressive 16 variations of inclimate weather like thunderclouds and summer drizzle. Road Atlanta on an overcast day can exude the secluded quaintness of a course in the U.K. like the Top Gear Test Track. Suzuka--one of the oldest circuits in video games, dating back to Pole Position II--has never looked as good as when it&#039;s accentuated by the sun as it breaks through clouds during an early morning race. The ability to set multiple changing weather states in a single match further adds character to these riveting tours. The right combination of car and weather conditions can give you a newfound appreciation for a track you&#039;ve raced on hundreds of times in other games.
-What has always set Forza Motorsport apart from other racing sims is the depth of its newcomer-friendly accessibility options. Forza 7 continues this tradition with an array of adjustable assists and difficulty settings. Naturally, many of Forza 7&#039;s challenges arise when you&#039;ve tweaked your settings just right so first place wins are hard fought. And with the return of mod cards--originally introduced in Forza Motorsport 6--you can self-impose other performance incentives for greater rewards. It&#039;s mildly gratifying to receive bonus currency for great passing or cornering even if the game didn&#039;t notice you shoved a couple cars when executing these supposedly graceful maneuvers.
-[img]{e_THEME}BS_Gaming_03/install/3297243_0022.png[/img]
-Mods are unlocked as part of Forza 7&#039;s blind card system, known as Prize Crates. These packs evenly mix practical items like cars and mods with cosmetic goods such as badges and driver outfits. When you spend most of the game encased in a car&#039;s cockpit, these detailed jumpsuits and helmets might seem like throwaway gear, but when you see your decorated driver in a convertible or the pre-race menu, envy blooms. After opening a dozen packs, I felt like I broke even, feeling elation when spending little to win a rare car, as well as heartbreak for buying the most expensive crate and ending up with only common items. While cars are now organized by loot-inspired rarity--based on their price ranges--you can still buy cars no matter the rarity without relying on the uncertainty of chance with the Prize Crates. And it should be added that having access to the Ultimate Edition gave me a VIP mod that doubled my earned XP over five races. While this perk temporarily accelerated my progression, it did not impact the quality of my overall experience.
-
-By the time I had logged a couple dozen hours in Forza 7, the confluence of environmental and driving realism unexpectedly inspired me to recreate real-life racing events like the famous 1996 Zanardi pass at Laguna Seca. These are the kinds of experiments that Forza 7 inspires, thanks in part to the game&#039;s variety and flexibility. Even with an imperfect roster and a selection of modes that doesn&#039;t compare to the comprehensiveness of Forza 6 at launch, Forza Motorsport 7 is still a feature-rich and competition-diverse bundle of racing events that keep you coming back for more. The ability to control the weather to create rich, painterly cloudy backdrops goes a long way in making up for the lack of zombie modes and the Toyota MR2.]]></field>
-			<field name="page_author">1</field>
-			<field name="page_datestamp">1507474469</field>
-			<field name="page_rating_flag">1</field>
-			<field name="page_comment_flag">1</field>
-			<field name="page_password"></field>
-			<field name="page_class">0</field>
-			<field name="page_ip_restrict"></field>
-			<field name="page_template">review</field>
-			<field name="page_order">0</field>
-			<field name="page_fields">{
-    "gameplay": "8\/10",
-    "graphics": "7\/10",
-    "sound": "9\/10",
-    "eop": "8\/10",
-    "good": "Impressive selection of rain scenarios add beauty to the courses\r\nLighter emphasis on automotive fetishization compared to previous Forzas \r\nWide variety of competitive racing options \r\nFeatures the solid controls and high accessibility Forza Motorsport is known for \r\nPrize Crates aptly tempt users without feeling like a mandatory feature",
-    "bad": "No zombie, tag, League, and Forzathon modes available at launch \r\nMultiplayer with strangers isn't fun when you start at the back of the pack",
-    "score": "8",
-    "image1": "{e_THEME}BS_Gaming_03/install/3297248_0016.png"
-}</field>
-			<field name="menu_name">forza-motorsport-7</field>
-			<field name="menu_title">Forza Motorsport 7</field>
-			<field name="menu_text"><![CDATA[In Forza Motorsport 7, the familiarity of driving your favorite cars on beloved tracks goes hand in hand with the joys of discovery. It&#039;s about owning sporty cars priced just out of reach in real life, whether that&#039;s a Mazda RX-8 or an Infinity Q60. There&#039;s exhilaration in taking those sweet rides down roads you&#039;ve visited countless times and still finding something new around familiar bends. And whether you&#039;re preoccupied with a pack of assertive Drivatars or fiercer real-life competitors, Forza 7--much like the other installments in developer Turn 10&#039;s mainline racing series--is decidedly abundant in different ways to compete.]]></field>
-			<field name="menu_image">{e_THEME}BS_Gaming_03/install/3297248_0016.png</field>
-			<field name="menu_icon"></field>
-			<field name="menu_template">grid</field>
-			<field name="menu_class">0</field>
-			<field name="menu_button_url"></field>
-			<field name="menu_button_text"></field>
-		</item>
-		<item>
-			<field name="page_id">3</field>
+			<field name="page_id">10</field>
 			<field name="page_title">Middle-earth: Shadow of War</field>
 			<field name="page_sef">middle-earth-shadow-of-war</field>
 			<field name="page_chapter">2</field>
 			<field name="page_metakeys">game,review</field>
 			<field name="page_metadscr"></field>
 			<field name="page_text"><![CDATA[One of the first people you meet in Middle-earth: Shadow of War is a woman with midnight black hair and a dress torn in intentionally strategic locations. You&#039;ll then learn that she&#039;s a version of Shelob, a giant deadly spider creature. The game explains her mysterious human form in time, and while fans of Lord of the Rings lore might have trouble embracing this unique interpretation of Tolkien storytelling, it shows that Shadow of War is a game that&#039;s willing to take risks with its source material. And, in a way, this example represents the full arc of the game: off-putting in the beginning, disappointing in the end, but seeing how they explain it all is an exciting ride.
+
 Like its predecessor, Shadow of War is populated by powerful Orc Captains that have specific strengths, weaknesses, and personality traits defined by the game&#039;s Nemesis system. The number of fears, special abilities, and beneficial powers are much more robust than the first game, making it important to find a strategic approach to taking down some of the game&#039;s more powerful foes. The amount of information you get about each Orc once you&#039;ve revealed its vulnerabilities can feel almost overwhelming, but you quickly adapt to the game&#039;s shorthand and what traits to look out for.
+
 [img]{e_THEME}BS_Gaming_03/install/3297906_3297855_capture0007.mov.00_04_04_57.still002.jpg[/img]
+
 Your primary goal is to raise an army against the forces of Mordor by recruiting every Orcish leader you meet. These characters strike the perfect balance of humor and absurdity against the dull seriousness of the human cast, and you&#039;ll wish the quirkier denizens of Mordor could be constant companions instead of the brief vignettes that flash across the screen when you either kill or are killed by one. One especially colorful character I met was an Orc prophet who yelled at me about some serpent cult he was a part of; I ended up killing him, but it left a lot of questions in my mind about how Orc religions work.
+
 Most of your time in Mordor is spent killing Orcs. Building off the first game, Shadow of War has a free-flowing combat system that lets you dominate creatures one-on-one but still stay in control when surrounded by a dozen or more adversaries. That momentum slows when too many things are happening on-screen at once, though. When an enemy captain is ready to be coerced over to your side an icon above his head turns green. Incoming attacks can be countered following a flashing prompt, and you have a slew of different abilities to take out legions of enemies. But the chaos of battle can make targeting opponents frustrating.
+
 That&#039;s a shame because Shadow of War&#039;s most memorable moments revolve around its large-scale Siege battles, where you take over Orc-controlled fortresses using your own loyal followers. With an army of Orcs at your back, both pressing the offensive on a castle and protecting it are equally exciting, and the final entrance into the main hall of a fortress for the final fight feels as reverent and grand as walking into a towering cathedral in real life.
+
 In the moment, these tense battles are the core of the Shadow of War experience, but the overarching narrative outside of the broad &quot;tour Mordor, fight Sauron&#039;s forces,&quot; feels directionless. Part of that&#039;s because you don&#039;t spend enough time with any secondary characters (except for Gollum, whose brief appearance is somehow still too long). Characters you meet in the game have relatively short asides that range from the absolutely boring &quot;save some Gondorians&quot; to the furiously funny &quot;learn how fight pits work with Bruz the Orc.&quot; It&#039;s hard to get invested in the stories of less interesting characters, and once you&#039;ve completed a few of their quests, they disappear forever anyway. And, like most open-world games, after you&#039;ve spent a couple hours running around collecting trinkets, it makes an NPC&#039;s entreaty about an imminent enemy invasion feel less immediately pressing.
+
+
 
 [video]r0GYaXk5sqk.youtube[/video]
 
+
+
 But, narrative problems aside, some of the setpieces are breathlessly fun. You ride a drake, team up with some ridiculous Orcs, fight an imposing, flame-winged Balrog, battle the Ringwraiths. It&#039;s a greatest-hits compilation of the most bad-ass moments from The Lord of the Rings. After a slow-building introductory act, the game gains momentum as it crashes toward what seems like a final standoff against the forces of evil. And this fight addresses criticism of the previous game; it&#039;s an epic multi-stage battle that does still have QTEs, but no more than the ones you find while playing through the game normally.
+
 Bafflingly that battle isn&#039;t the end of the game. Shadow of War continues on, but with its momentum drained completely. What should be an exciting climax instead descends into a tedious slog for a cutscene that doesn&#039;t quite feel worth the time and effort. In the game&#039;s actual final act, you cycle through the four fortresses you explored previously for a total of 20 more defending siege battles. If you haven&#039;t upgraded the Orcs you met early in the game--and up until this point, there was no reason to--you have to replace and upgrade your entire retinue of Orcs to match this more powerful invading force.
+
 [blockquote]It&#039;s an entire section that should have been cut or severely truncated, and playing through the repetitious levels felt like padding meant only to make the game last longer.[/blockquote]
+
 The enemies you face level up with each encounter, so you&#039;re also forced into upgrading each castle over and over again, either by building up your current Orc army or finding new fighters and replacing the old. This Sisyphean quest has no corresponding significant characters to keep you company or explain why it&#039;s important to tackle the defense missions in the order you do. It&#039;s not even clear, exactly, why you want to do them at all.
+
 More than once I felt like giving up on this quest thinking I&#039;d stumbled onto some optional side content that was clearly only made for obsessed completionists. But enduring on, I found that finishing every stage unlocks the final cutscene and credits. It did not feel worth it.
+
 It&#039;s an entire section that should have been cut or severely truncated, and playing through the repetitious levels felt like padding meant only to make the game last longer. But although the game&#039;s final act is the most egregious, there are several other systems that Shadow of War fails to justify.
+
 [img]{e_THEME}BS_Gaming_03/install/3297912_3297836_capture0000.mov.00_04_33_31.still002.jpg[/img]
-Almost every item and Orc has some type of associated rarity (which scales from Common to Rare to Epic to Legendary), and with higher rarity comes more abilities. For Orcs, this means that they have additional, more powerful attributes that aren&#039;t available elsewhere. For weapons, it includes perks like &quot;48% chance that a headshot lights enemies on fire.&quot; The buffs are useful, but the effects aren&#039;t so amazing that you&#039;d keep a significantly underpowered weapon or Orc just for its benefits. It feels like a system tacked on purely to add another set of items to collect.]]></field>
+
+Almost every item and Orc has some type of associated rarity (which scales from Common to Rare to Epic to Legendary), and with higher rarity comes more abilities. For Orcs, this means that they have additional, more powerful attributes that aren&#039;t available elsewhere. For weapons, it includes perks like &quot;48% chance that a headshot lights enemies on fire.&quot; The buffs are useful, but the effects aren&#039;t so amazing that you&#039;d keep a significantly underpowered weapon or Orc just for its benefits. It feels like a system tacked on purely to add another set of items to collect.
+		]]></field>
 			<field name="page_author">1</field>
-			<field name="page_datestamp">1507306839</field>
+			<field name="page_datestamp">1512839003</field>
 			<field name="page_rating_flag">1</field>
 			<field name="page_comment_flag">1</field>
 			<field name="page_password"></field>
 			<field name="page_class">0</field>
 			<field name="page_ip_restrict"></field>
 			<field name="page_template">review</field>
-			<field name="page_order">0</field>
+			<field name="page_order">10003</field>
 			<field name="page_fields">{
     "gameplay": "6\/10",
     "graphics": "8\/10",
     "sound": "7\/10",
     "eop": "7\/10",
-    "good": "Epic Siege battles against armies of Orcs \r\nYou fight a Balrog \r\nVaried, exciting new environments \r\nThe storylines for Bruz and most of your Orc companions",
-    "bad": "Shelob \r\nThe entire final act \r\nBloated systems and menus \r\nSide characters' stories end abruptly",
+    "good": "Epic Siege battles against armies of Orcs\r\nYou fight a Balrog \\r\\nVaried, exciting new environments\r\nThe storylines for Bruz and most of your Orc companions\r\n\r\n  ",
+    "bad": "Shelob \\r\\nThe entire final act\r\nBloated systems and menus\r\nSide characters' stories end abruptly",
     "score": "7",
     "image1": "{e_THEME}BS_Gaming_03/install/3297946_3297841_capture0000.mov.00_23_24_16.still001.jpg"
 }</field>
@@ -3550,29 +2458,192 @@ Almost every item and Orc has some type of associated rarity (which scales from 
 			<field name="menu_button_text"></field>
 		</item>
 		<item>
-			<field name="page_id">5</field>
-			<field name="page_title">Est sit amet facilisis magna etiam tempor</field>
-			<field name="page_sef">est-sit-amet-facilisis-magna-etiam-tempor</field>
+			<field name="page_id">12</field>
+			<field name="page_title">Justo nec ultrices dui sapien</field>
+			<field name="page_sef">justo-nec-ultrices-dui-sapien</field>
 			<field name="page_chapter">4</field>
 			<field name="page_metakeys">page,content,article,game</field>
 			<field name="page_metadscr"></field>
-			<field name="page_text">Est sit amet facilisis magna etiam tempor. Id faucibus nisl tincidunt eget nullam. Mattis vulputate enim nulla aliquet porttitor lacus luctus. Tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque nec nam aliquam sem. Nibh praesent tristique magna sit amet. Urna et pharetra pharetra massa massa. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Lectus urna duis convallis convallis tellus id. Placerat orci nulla pellentesque dignissim enim sit. Hac habitasse platea dictumst vestibulum rhoncus est. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.
-[img]{e_THEME}BS_Gaming_03/install/Games_Wallpaper_Full_HD2.jpg[/img]
-A cras semper auctor neque. Venenatis urna cursus eget nunc scelerisque. Amet mauris commodo quis imperdiet massa tincidunt nunc. Sed euismod nisi porta lorem mollis aliquam. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Ultricies tristique nulla aliquet enim tortor at. Sed ullamcorper morbi tincidunt ornare. Integer enim neque volutpat ac tincidunt vitae semper. Vitae tempus quam pellentesque nec. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet. Et pharetra pharetra massa massa ultricies mi quis. Nibh praesent tristique magna sit. Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate.
-[img]{e_THEME}BS_Gaming_03/install/battlefield_4_game_ea_digital_illusions_ce_93159_1366x768.jpg[/img]
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. A arcu cursus vitae congue. Purus ut faucibus pulvinar elementum integer enim neque. Turpis in eu mi bibendum neque. Volutpat ac tincidunt vitae semper quis lectus nulla. Vestibulum lectus mauris ultrices eros. Et odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Mi sit amet mauris commodo quis imperdiet massa tincidunt. Lectus mauris ultrices eros in cursus turpis. Et sollicitudin ac orci phasellus egestas tellus rutrum. Commodo quis imperdiet massa tincidunt. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.
-[newpage]
-[img]{e_THEME}BS_Gaming_03/install/game_wallpapers_9046_9389_hd_wallpapers.jpg[/img]
-Adipiscing enim eu turpis egestas pretium aenean pharetra. Venenatis a condimentum vitae sapien. Aliquam purus sit amet luctus venenatis lectus magna. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Molestie at elementum eu facilisis sed. Lacus vel facilisis volutpat est. Lobortis mattis aliquam faucibus purus in massa tempor. Bibendum at varius vel pharetra vel turpis. Volutpat lacus laoreet non curabitur gravida arcu ac tortor. Lacus sed viverra tellus in hac habitasse platea dictumst. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Vitae congue eu consequat ac felis donec et odio pellentesque.</field>
+			<field name="page_text">Justo nec ultrices dui sapien eget mi proin sed libero. Mattis enim ut tellus elementum sagittis vitae. Mauris augue neque gravida in fermentum et. Malesuada fames ac turpis egestas integer eget. Mauris augue neque gravida in fermentum et sollicitudin ac orci. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Aenean sed adipiscing diam donec adipiscing tristique risus nec. Ac turpis egestas sed tempus urna et. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Congue mauris rhoncus aenean vel. Velit dignissim sodales ut eu sem integer vitae justo eget. Massa placerat duis ultricies lacus sed turpis tincidunt id. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque.
+
+[img]{e_THEME}BS_Gaming_03/install/fc0ea34eabda5eaf8c8394849037aff4.jpg[/img]
+
+Ut etiam sit amet nisl purus in mollis nunc. Consequat nisl vel pretium lectus. Sed enim ut sem viverra aliquet eget sit amet. Venenatis cras sed felis eget velit aliquet sagittis id. Id interdum velit laoreet id donec ultrices tincidunt arcu. Purus gravida quis blandit turpis cursus in hac habitasse. Magnis dis parturient montes nascetur ridiculus mus. Porta nibh venenatis cras sed felis eget velit aliquet sagittis. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Quis imperdiet massa tincidunt nunc pulvinar. Mauris sit amet massa vitae tortor condimentum lacinia quis vel. Imperdiet sed euismod nisi porta lorem mollis aliquam. Nisi scelerisque eu ultrices vitae. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. At erat pellentesque adipiscing commodo elit at. Elementum nisi quis eleifend quam adipiscing vitae. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Volutpat lacus laoreet non curabitur gravida arcu ac.
+
+[img]{e_THEME}BS_Gaming_03/install/e08008c19c8e9e1b0074baf36d699407.jpg[/img]
+
+Enim sit amet venenatis urna cursus eget nunc. Ut aliquam purus sit amet luctus. A cras semper auctor neque vitae tempus quam pellentesque. Massa tincidunt nunc pulvinar sapien et ligula. Imperdiet proin fermentum leo vel. Elementum eu facilisis sed odio. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Integer vitae justo eget magna. Est placerat in egestas erat imperdiet sed. Viverra tellus in hac habitasse.</field>
 			<field name="page_author">1</field>
-			<field name="page_datestamp">1507710717</field>
+			<field name="page_datestamp">1512840720</field>
 			<field name="page_rating_flag">1</field>
 			<field name="page_comment_flag">1</field>
 			<field name="page_password"></field>
 			<field name="page_class">0</field>
 			<field name="page_ip_restrict"></field>
 			<field name="page_template">default</field>
-			<field name="page_order">1</field>
+			<field name="page_order">10005</field>
+			<field name="page_fields">{
+    "image1": "{e_THEME}BS_Gaming_03/install/fc0ea34eabda5eaf8c8394849037aff4.jpg"
+}</field>
+			<field name="menu_name"></field>
+			<field name="menu_title"></field>
+			<field name="menu_text"></field>
+			<field name="menu_image">{e_THEME}BS_Gaming_03/install/fc0ea34eabda5eaf8c8394849037aff4.jpg</field>
+			<field name="menu_icon"></field>
+			<field name="menu_template">default</field>
+			<field name="menu_class">0</field>
+			<field name="menu_button_url"></field>
+			<field name="menu_button_text"></field>
+		</item>
+		<item>
+			<field name="page_id">8</field>
+			<field name="page_title">Dragon Quest Heroes: The World Tree’s Woe and the Blight Below</field>
+			<field name="page_sef">dragon-quest-heroes-the-world-trees-woe-and-the-blight-below</field>
+			<field name="page_chapter">2</field>
+			<field name="page_metakeys">review,game,dragon</field>
+			<field name="page_metadscr"></field>
+			<field name="page_text">Blighted by the night, vanquishing the plight by the children of the light. No video game character conveys endearment and sadism in a single expression as well as the Blue Slimes.
+
+In Dragon Quest Heroes: The World’s Tree Woe and the Blight Below, these iconic teardrop-shaped blobs have never looked more adorable and homicidal, which is what makes killing them en masse one of this game’s greatest pleasures. It’s one of many delights aptly delivered by a collaboration that is one part Dynasty Warriors, one part Dragon Quest. As a hack-and-slasher with countless enemy encounters, character growth, and a shopping list of quests, it was joy to be reminded how much both series have in common.
+
+As a contrast to all the dimension hopping that made up much of last year’s Hyrule Warriors (a Dynasty Warriors take on The Legend of Zelda universe), this Dragon Quest spin-off takes the reverse approach. Instead of protagonists jumping to various worlds in older Dragon Quest games, adventurers from those games come into the new world established in Dragon Quest Heroes.
+
+[img]{e_THEME}BS_Gaming_03/install/2947931_0001d.jpg[/img]
+
+Welcoming these otherworldly guests is a new foursome comprising of two co-protagonists whose default names are Aurora and Luceus, the boisterous King Doric, and an skilled inventor named Isla. I have always admired the mainline series for defying traditional fantasy RPG party formations and archetypes and this new team could easily carry a mainline Dragon Quest installment. That’s a bold statement especially when Aurora and Luceus are two sides of the same coin. Their complementary personalities are best showcased during the cutscenes where your see Luceus’ analytical side and Aurora’s impatience to jump into battle. Aside from a momentary interlude where you’re forced to use one of the guest adventurers, you can have a wholly enjoyable time relying solely on these new characters while ignoring the rest of the roster.
+
+It’s a varied cast where each warrior easily proves their worth over the course of a single battle. The only thing better than seeing 3D models of characters like Dragon Quest IV’s Alena and Kiryl is hearing them speak for the first time. Just as it was momentous to have voice acting in a Final Fantasy game in 2001 with Final Fantasy X, so too was the introduction of dialogue in Dragon Quest VIII ten years ago. Hearing much of the cast speak in English accents in Journey of the Cursed King created a rare connection to the Tolkienian roots of JRPGs. Having Yungus’ cockney accent reprised in Dragon Quest Heroes–by the original voice actor no less–only makes this reunion all the more special.
+
+This mingling of heroes from other worlds helps distract from the story’s laughably generic premise of light versus dark. Even the two co-leaders are named Children of the Light. The story starts off on an uncommonly cheerful note, even by Dragon Quest standards, where humans and monsters are happily co-existing. Due to a spell by a dark wizard named Velasco, the monsters are suddenly reminded that they’re supposed to hate humans. The ensuing chaos and unrest gives the game’s heroes more than enough to deal with, let alone reason to investigate why their non-human friends suddenly turned on them. It’s a good thing the story has its share of twists and guest character interactions to compensate for this otherwise plain narrative.
+
+[img]{e_THEME}BS_Gaming_03/install/2947928_0003.jpg[/img]
+
+It is not the least among the strange things bred by the intense artificialness of sea-usages, that while in the open air of the deck some officers will, upon provocation, bear themselves boldly and defyingly enough towards their commander; yet, ten to one, let those very officers the next moment go down to their customary dinner in that same commander’s cabin, and straightway their inoffensive, not to say deprecatory and humble air towards him, as he sits at the head of the table; this is marvellous, sometimes most comical. Wherefore this difference? A problem? Perhaps not. To have been Belshazzar, King of Babylon; and to have been Belshazzar, not haughtily but courteously, therein certainly must have been some touch of mundane grandeur. But he who in the rightly regal and intelligent spirit presides over his own private dinner-table of invited guests, that man’s unchallenged power and dominion of individual influence for the time; that man’s royalty of state transcends Belshazzar’s, for Belshazzar was not the greatest. Who has but once dined his friends, has tasted what it is to be Caesar. It is a witchery of social czarship which there is no withstanding. Now, if to this consideration you superadd the official supremacy of a ship-master, then, by inference, you will derive the cause of that peculiarity of sea-life just mentioned.</field>
+			<field name="page_author">1</field>
+			<field name="page_datestamp">1512837527</field>
+			<field name="page_rating_flag">1</field>
+			<field name="page_comment_flag">1</field>
+			<field name="page_password"></field>
+			<field name="page_class">0</field>
+			<field name="page_ip_restrict"></field>
+			<field name="page_template">review</field>
+			<field name="page_order">10001</field>
+			<field name="page_fields">{
+    "gameplay": "5\/10",
+    "graphics": "8\/10",
+    "sound": "9\/10",
+    "eop": "6\/10",
+    "good": "[list]\r\nExcellent world design allows organic discovery of missions with open-ended solutions*\r\nLondon looks gorgeous*\r\nThe rope launcher tool is a game-changer for traversal and stealth\r\n[\/list]\r\n\r\n    ",
+    "bad": "[list]\r\nFinal boss battle is frustrating and kills the drama*\r\nSometimes controls can be imprecise\r\n[\/list]",
+    "score": "6",
+    "image1": "{e_THEME}BS_Gaming_03/install/dq_770x500.jpg"
+}</field>
+			<field name="menu_name">dragon-quest-heroes</field>
+			<field name="menu_title">Dragon Quest Heroes: The World Tree’s Woe and the Blight Below</field>
+			<field name="menu_text">Blighted by the night, vanquishing the plight by the children of the light. No video game character conveys endearment and sadism in a single expression as well as the Blue Slimes.
+
+In Dragon Quest Heroes: The World’s Tree Woe and the Blight Below, these iconic teardrop-shaped blobs have never looked more adorable and homicidal, which is what makes killing them en masse one of this game’s greatest pleasures. It’s one of many delights aptly delivered by a collaboration that is one part Dynasty Warriors, one part Dragon Quest. As a hack-and-slasher with countless enemy encounters, character growth, and a shopping list of quests, it was joy to be reminded how much both series have in common.</field>
+			<field name="menu_image">{e_THEME}BS_Gaming_03/install/dq_770x500.jpg</field>
+			<field name="menu_icon"></field>
+			<field name="menu_template">grid</field>
+			<field name="menu_class">0</field>
+			<field name="menu_button_url"></field>
+			<field name="menu_button_text"></field>
+		</item>
+		<item>
+			<field name="page_id">9</field>
+			<field name="page_title">Forza Motorsport 7</field>
+			<field name="page_sef">forza-motorsport-7</field>
+			<field name="page_chapter">2</field>
+			<field name="page_metakeys">game,review</field>
+			<field name="page_metadscr"></field>
+			<field name="page_text"><![CDATA[In Forza Motorsport 7, the familiarity of driving your favorite cars on beloved tracks goes hand in hand with the joys of discovery. It&#039;s about owning sporty cars priced just out of reach in real life, whether that&#039;s a Mazda RX-8 or an Infinity Q60. There&#039;s exhilaration in taking those sweet rides down roads you&#039;ve visited countless times and still finding something new around familiar bends. And whether you&#039;re preoccupied with a pack of assertive Drivatars or fiercer real-life competitors, Forza 7--much like the other installments in developer Turn 10&#039;s mainline racing series--is decidedly abundant in different ways to compete.
+
+The first thing you&#039;ll notice about Forza 7 is that it strips away the often amusing glorification and ostentatiousness of motorsport that decorated the series&#039; last few games. Granted, I loved the dulcet voice over of Jeremy Clarkson when he dispensed with insight and trivia on cars and courses. Forza 7 relies less on wooing you with superficial spectacles and instead lets the cars and courses speak for themselves. This break from the ceremonious aspects of motorsport is a welcome one, especially when all you want to do is race.
+
+The career mode alone--dubbed Forza Driver&#039;s Cup--encourages you to get down to business in a wide array of competitions spread across six championship series. Since you don&#039;t need to enter all the races to win the cup, you&#039;re offered the flexibility to compete with the types of cars you&#039;re most used to. That said, the opening races effectively remind you of Forza 7&#039;s vehicle variety, encouraging you to play outside your comfort zone. You can spend a dozen hours beelining for the cup, or more than double that if you want to get first in every race. There&#039;s no clear theme to distinguish one series over another, but it&#039;s easy to go along with Turn 10&#039;s seemingly arbitrary playlists of tournaments, given the wide variety of cars and courses lining your journey.
+
+Even after you&#039;ve raised the final trophy in the Forza Driver&#039;s Cup, the quest to build a respectable collection of cars goes on. As always, the draw of browsing the hundreds of cars in Forza is the tease of purchasing a new model like the 2017 Nissan GT-R or scratching that nostalgic itch with a Pacer X from the now-defunct American Motors Corporation. And while the recent withdrawal of Lexus and Toyota production models from racing games leaves a void in this robust roster, Turn 10 helps cushion the blow with a hearty selection of Porsches, a manufacturer that was missing from the launch version of Forza 6.
+
+[img]{e_THEME}BS_Gaming_03/install/3297232_0001.png[/img]
+
+Competition takes many forms in Forza 7. The friends-as-AI Drivatars return as a pleasing alternative to age-old CPU racing behaviors like rubber banding. Online you&#039;ll find, more often than not, disorderly strangers who are as impolite as they are careless. Your best hope of winning is placing near the front of the starting grid. The alternative is, of course, participating in a private race, provided you can convince other friends and Forza players--ideally enough to fill a 24-car grid--to play fair and do their best at avoiding crashes. For the least chaotic approach to measuring and comparing greatness, Rivals presents a host of tough yet worthwhile asynchronous contests where you attempt to beat other players&#039; lap times. Unfortunately, the traditional Forza outlets of aggression like zombie or tag are not available in the launch version of Forza 7. The same goes for Forzathon and Leagues modes, unique timed events that enhance the replay value of Forza Motorsport 6 and Forza Horizon 3.
+
+Like many Forza Motorsports before it, Forza 7&#039;s greatest strength is its diversity of driving experiences, which says something for a series that relies mostly on circuit races, rather than adding point-to-point and off-road competition. The challenge of weaving a Mini Cooper through traffic at 45 miles per hour can be as thrilling as navigating your way through the various slopes and dips in Dubai Circuit of the Emirates. These moments are made all the more rewarding thanks to the 122 finely detailed and authentic track configurations spread across its 32 locations.
+
+[img]{e_THEME}BS_Gaming_03/install/3297234_0003.png[/img]
+
+The last couple Forza Motorsports, along with Forza 7, are engrossing due to their true-to-life tracks and how surrounding environments are enhanced by changes in weather and time of day. Yet whereas Forza 6 had a premade rain condition for select tracks, Forza 7 has an impressive 16 variations of inclimate weather like thunderclouds and summer drizzle. Road Atlanta on an overcast day can exude the secluded quaintness of a course in the U.K. like the Top Gear Test Track. Suzuka--one of the oldest circuits in video games, dating back to Pole Position II--has never looked as good as when it&#039;s accentuated by the sun as it breaks through clouds during an early morning race. The ability to set multiple changing weather states in a single match further adds character to these riveting tours. The right combination of car and weather conditions can give you a newfound appreciation for a track you&#039;ve raced on hundreds of times in other games.
+
+What has always set Forza Motorsport apart from other racing sims is the depth of its newcomer-friendly accessibility options. Forza 7 continues this tradition with an array of adjustable assists and difficulty settings. Naturally, many of Forza 7&#039;s challenges arise when you&#039;ve tweaked your settings just right so first place wins are hard fought. And with the return of mod cards--originally introduced in Forza Motorsport 6--you can self-impose other performance incentives for greater rewards. It&#039;s mildly gratifying to receive bonus currency for great passing or cornering even if the game didn&#039;t notice you shoved a couple cars when executing these supposedly graceful maneuvers.
+
+[img]{e_THEME}BS_Gaming_03/install/3297243_0022.png[/img]
+
+Mods are unlocked as part of Forza 7&#039;s blind card system, known as Prize Crates. These packs evenly mix practical items like cars and mods with cosmetic goods such as badges and driver outfits. When you spend most of the game encased in a car&#039;s cockpit, these detailed jumpsuits and helmets might seem like throwaway gear, but when you see your decorated driver in a convertible or the pre-race menu, envy blooms. After opening a dozen packs, I felt like I broke even, feeling elation when spending little to win a rare car, as well as heartbreak for buying the most expensive crate and ending up with only common items. While cars are now organized by loot-inspired rarity--based on their price ranges--you can still buy cars no matter the rarity without relying on the uncertainty of chance with the Prize Crates. And it should be added that having access to the Ultimate Edition gave me a VIP mod that doubled my earned XP over five races. While this perk temporarily accelerated my progression, it did not impact the quality of my overall experience.
+
+
+
+By the time I had logged a couple dozen hours in Forza 7, the confluence of environmental and driving realism unexpectedly inspired me to recreate real-life racing events like the famous 1996 Zanardi pass at Laguna Seca. These are the kinds of experiments that Forza 7 inspires, thanks in part to the game&#039;s variety and flexibility. Even with an imperfect roster and a selection of modes that doesn&#039;t compare to the comprehensiveness of Forza 6 at launch, Forza Motorsport 7 is still a feature-rich and competition-diverse bundle of racing events that keep you coming back for more. The ability to control the weather to create rich, painterly cloudy backdrops goes a long way in making up for the lack of zombie modes and the Toyota MR2.]]></field>
+			<field name="page_author">1</field>
+			<field name="page_datestamp">1512837898</field>
+			<field name="page_rating_flag">1</field>
+			<field name="page_comment_flag">1</field>
+			<field name="page_password"></field>
+			<field name="page_class">0</field>
+			<field name="page_ip_restrict"></field>
+			<field name="page_template">review</field>
+			<field name="page_order">10002</field>
+			<field name="page_fields">{
+    "gameplay": "8\/10",
+    "graphics": "7\/10",
+    "sound": "9\/10",
+    "eop": "8\/10",
+    "good": "Impressive selection of rain scenarios add beauty to the courses\r\nLighter emphasis on automotive fetishization compared to previous Forzas\r\nWide variety of competitive racing options\r\nFeatures the solid controls and high accessibility Forza Motorsport is known for\r\nPrize Crates aptly tempt users without feeling like a mandatory feature\r\n\r\n    ",
+    "bad": "No zombie, tag, League, and Forzathon modes available at launch\r\nMultiplayer with strangers isn't fun when you start at the back of the pack\r\n\r\n   ",
+    "score": "8",
+    "image1": "{e_THEME}BS_Gaming_03/install/3297248_0016.png"
+}</field>
+			<field name="menu_name">forza-motorsport-7</field>
+			<field name="menu_title">Forza Motorsport 7</field>
+			<field name="menu_text"><![CDATA[In Forza Motorsport 7, the familiarity of driving your favorite cars on beloved tracks goes hand in hand with the joys of discovery. It&#039;s about owning sporty cars priced just out of reach in real life, whether that&#039;s a Mazda RX-8 or an Infinity Q60. There&#039;s exhilaration in taking those sweet rides down roads you&#039;ve visited countless times and still finding something new around familiar bends. And whether you&#039;re preoccupied with a pack of assertive Drivatars or fiercer real-life competitors, Forza 7--much like the other installments in developer Turn 10&#039;s mainline racing series--is decidedly abundant in different ways to compete.]]></field>
+			<field name="menu_image">{e_THEME}BS_Gaming_03/install/3297248_0016.png</field>
+			<field name="menu_icon"></field>
+			<field name="menu_template">grid</field>
+			<field name="menu_class">0</field>
+			<field name="menu_button_url"></field>
+			<field name="menu_button_text"></field>
+		</item>
+		<item>
+			<field name="page_id">11</field>
+			<field name="page_title">Est sit amet facilisis magna etiam tempor</field>
+			<field name="page_sef">est-sit-amet-facilisis-magna-etiam-tempor</field>
+			<field name="page_chapter">4</field>
+			<field name="page_metakeys">page,content,article,game</field>
+			<field name="page_metadscr"></field>
+			<field name="page_text">Est sit amet facilisis magna etiam tempor. Id faucibus nisl tincidunt eget nullam. Mattis vulputate enim nulla aliquet porttitor lacus luctus. Tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque nec nam aliquam sem. Nibh praesent tristique magna sit amet. Urna et pharetra pharetra massa massa. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Lectus urna duis convallis convallis tellus id. Placerat orci nulla pellentesque dignissim enim sit. Hac habitasse platea dictumst vestibulum rhoncus est. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.
+
+[img]{e_THEME}BS_Gaming_03/install/Games_Wallpaper_Full_HD2.jpg[/img]
+
+A cras semper auctor neque. Venenatis urna cursus eget nunc scelerisque. Amet mauris commodo quis imperdiet massa tincidunt nunc. Sed euismod nisi porta lorem mollis aliquam. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Ultricies tristique nulla aliquet enim tortor at. Sed ullamcorper morbi tincidunt ornare. Integer enim neque volutpat ac tincidunt vitae semper. Vitae tempus quam pellentesque nec. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet. Et pharetra pharetra massa massa ultricies mi quis. Nibh praesent tristique magna sit. Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate.
+
+[img]{e_THEME}BS_Gaming_03/install/battlefield_4_game_ea_digital_illusions_ce_93159_1366x768.jpg[/img]
+
+Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. A arcu cursus vitae congue. Purus ut faucibus pulvinar elementum integer enim neque. Turpis in eu mi bibendum neque. Volutpat ac tincidunt vitae semper quis lectus nulla. Vestibulum lectus mauris ultrices eros. Et odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Mi sit amet mauris commodo quis imperdiet massa tincidunt. Lectus mauris ultrices eros in cursus turpis. Et sollicitudin ac orci phasellus egestas tellus rutrum. Commodo quis imperdiet massa tincidunt. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.
+
+[newpage]
+
+[img]{e_THEME}BS_Gaming_03/install/game_wallpapers_9046_9389_hd_wallpapers.jpg[/img]
+
+Adipiscing enim eu turpis egestas pretium aenean pharetra. Venenatis a condimentum vitae sapien. Aliquam purus sit amet luctus venenatis lectus magna. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Molestie at elementum eu facilisis sed. Lacus vel facilisis volutpat est. Lobortis mattis aliquam faucibus purus in massa tempor. Bibendum at varius vel pharetra vel turpis. Volutpat lacus laoreet non curabitur gravida arcu ac tortor. Lacus sed viverra tellus in hac habitasse platea dictumst. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Vitae congue eu consequat ac felis donec et odio pellentesque.</field>
+			<field name="page_author">1</field>
+			<field name="page_datestamp">1512840341</field>
+			<field name="page_rating_flag">1</field>
+			<field name="page_comment_flag">1</field>
+			<field name="page_password"></field>
+			<field name="page_class">0</field>
+			<field name="page_ip_restrict"></field>
+			<field name="page_template">default</field>
+			<field name="page_order">10004</field>
 			<field name="page_fields">{
     "image1": "{e_THEME}BS_Gaming_03/install/Assassins_Creed_Revelations.jpg"
 }</field>
@@ -3587,35 +2658,62 @@ Adipiscing enim eu turpis egestas pretium aenean pharetra. Venenatis a condiment
 			<field name="menu_button_text"></field>
 		</item>
 		<item>
-			<field name="page_id">6</field>
-			<field name="page_title">Justo nec ultrices dui sapien</field>
-			<field name="page_sef">justo-nec-ultrices-dui-sapien</field>
-			<field name="page_chapter">4</field>
-			<field name="page_metakeys">page,content,article,game</field>
+			<field name="page_id">7</field>
+			<field name="page_title">Assassin’s Creed Syndicate Review</field>
+			<field name="page_sef">assassins-creed-syndicate-review</field>
+			<field name="page_chapter">2</field>
+			<field name="page_metakeys">review,game,assassins</field>
 			<field name="page_metadscr"></field>
-			<field name="page_text">Justo nec ultrices dui sapien eget mi proin sed libero. Mattis enim ut tellus elementum sagittis vitae. Mauris augue neque gravida in fermentum et. Malesuada fames ac turpis egestas integer eget. Mauris augue neque gravida in fermentum et sollicitudin ac orci. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Aenean sed adipiscing diam donec adipiscing tristique risus nec. Ac turpis egestas sed tempus urna et. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Congue mauris rhoncus aenean vel. Velit dignissim sodales ut eu sem integer vitae justo eget. Massa placerat duis ultricies lacus sed turpis tincidunt id. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque.
-[img]{e_THEME}BS_Gaming_03/install/fc0ea34eabda5eaf8c8394849037aff4.jpg[/img]
-Ut etiam sit amet nisl purus in mollis nunc. Consequat nisl vel pretium lectus. Sed enim ut sem viverra aliquet eget sit amet. Venenatis cras sed felis eget velit aliquet sagittis id. Id interdum velit laoreet id donec ultrices tincidunt arcu. Purus gravida quis blandit turpis cursus in hac habitasse. Magnis dis parturient montes nascetur ridiculus mus. Porta nibh venenatis cras sed felis eget velit aliquet sagittis. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Quis imperdiet massa tincidunt nunc pulvinar. Mauris sit amet massa vitae tortor condimentum lacinia quis vel. Imperdiet sed euismod nisi porta lorem mollis aliquam. Nisi scelerisque eu ultrices vitae. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. At erat pellentesque adipiscing commodo elit at. Elementum nisi quis eleifend quam adipiscing vitae. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Volutpat lacus laoreet non curabitur gravida arcu ac.
-[img]{e_THEME}BS_Gaming_03/install/e08008c19c8e9e1b0074baf36d699407.jpg[/img]
-Enim sit amet venenatis urna cursus eget nunc. Ut aliquam purus sit amet luctus. A cras semper auctor neque vitae tempus quam pellentesque. Massa tincidunt nunc pulvinar sapien et ligula. Imperdiet proin fermentum leo vel. Elementum eu facilisis sed odio. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Integer vitae justo eget magna. Est placerat in egestas erat imperdiet sed. Viverra tellus in hac habitasse.</field>
+			<field name="page_text">As I made my way across Westminster, zipping between rooftops with my rope launcher, a notice popped up indicating I was approaching a bounty hunt. The objective was simple–kill an important member of my rival gang–and I decided the children could wait a bit longer. I was in and out of the mission in under a minute after dropping hanging barrels on gang members, throwing down a smoke bomb and taking out the leader with a gun to the head. I ziplined out, stopping only once more to change my outfit to one that held more throwing knives, before dropping by a black market stall for a refill and dashing towards the factory. The children of London needed me.
+
+His three boats stove around him, and oars and men both whirling in the eddies; one captain, seizing the line-knife from his broken prow, had dashed at the whale, as an Arkansas duellist at his foe, blindly seeking with a six inch blade to reach the fathom-deep life of the whale. That captain was Ahab. And then it was, that suddenly sweeping his sickle-shaped lower jaw beneath him, Moby Dick had reaped away Ahab’s leg, as a mower a blade of grass in the field. No turbaned Turk, no hired Venetian or Malay, could have smote him with more seeming malice. Small reason was there to doubt, then, that ever since that almost fatal encounter, Ahab had cherished a wild vindictiveness against the whale, all the more fell for that in his frantic morbidness he at last came to identify with him, not only all his bodily woes, but all his intellectual and spiritual exasperations.
+
+It is not probable that this monomania in him took its instant rise at the precise time of his bodily dismemberment.
+
+Then, in darting at the monster, knife in hand, he had but given loose to a sudden, passionate, corporal animosity; and when he received the stroke that tore him, he probably but felt the agonizing bodily laceration, but nothing more. Yet, when by this collision forced to turn towards home, and for long months of days and weeks, Ahab and anguish lay stretched together in one hammock, rounding in mid winter that dreary, howling Patagonian Cape; then it was, that his torn body and gashed soul bled into one another; and so interfusing, made him mad.
+
+That it was only then, on the homeward voyage, after the encounter, that the final monomania seized him?
+
+Egyptian chest, and was moreover intensified by his delirium, that his mates were forced to lace him fast, even there, as he sailed, raving in his hammock. In a strait-jacket, he swung to the mad rockings of the gales. And, when running into more sufferable latitudes, the ship, with mild stun’sails spread, floated across the tranquil tropics, and, to all appearances.
+
+[img]{e_THEME}BS_Gaming_03/install/2864175_assassins_creed_syndicate_thames_river.jpg[/img]
+
+That it was only then, on the homeward voyage, after the encounter, that the final monomania seized him, seems all but certain from the fact that, at intervals during the passage, he was a raving lunatic; and, though unlimbed of a leg, yet such vital strength yet lurked in his Egyptian chest, and was moreover intensified by his delirium, that his mates were forced to lace him fast, even there, as he sailed, raving in his hammock. In a strait-jacket, he swung to the mad rockings of the gales. And, when running into more sufferable latitudes, the ship, with mild stun’sails spread, floated across the tranquil tropics, and, to all appearances, the old man’s delirium seemed left behind him with the Cape Horn swells.
+
+Human madness is oftentimes a cunning and most feline thing. When you think it fled, it may have but become transfigured into some still subtler form. Ahab’s full lunacy subsided not, but deepeningly contracted; like the unabated Hudson, when that noble Northman flows narrowly, but unfathomably through the Highland gorge.
+
+To that one end, did now possess a thousand fold more potency than ever he had sanely brought to bear upon any one reasonable object.
+
+God the direful madness was now gone; even then, Ahab, in his hidden self, raved on. Human madness is oftentimes a cunning and most feline thing. When you think it fled, it may have but become transfigured into some still subtler form. Ahab’s full lunacy subsided not, but deepeningly contracted; like the unabated Hudson, when that noble Northman flows narrowly, but unfathomably through the Highland gorge.
+
+[img]{e_THEME}BS_Gaming_03/install/assassin_creed_syndicate_evie_gamescom_6.jpg[/img]
+
+But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness had been left behind; so in that broad madness, not one jot of his great natural intellect had perished. That before living agent, now became the living instrument. If such a furious trope may stand, his special lunacy stormed his general sanity, and carried it, and turned all its concentred cannon upon its own mad mark. I knew the Indians would soon discover that they were on the wrong trail and that the search for me would be renewed in the right direction as soon as they located my tracks. I had gone but a short distance further when what seemed to be an excellent trail opened up around the face of a high cliff. The trail was level and quite broad and led upward and in the general direction I wished to go. The cliff arose for several hundred feet on my right, and on my left was an equal and nearly perpendicular drop to the bottom of a rocky ravine.</field>
 			<field name="page_author">1</field>
-			<field name="page_datestamp">1507712897</field>
+			<field name="page_datestamp">1512836303</field>
 			<field name="page_rating_flag">1</field>
 			<field name="page_comment_flag">1</field>
 			<field name="page_password"></field>
 			<field name="page_class">0</field>
 			<field name="page_ip_restrict"></field>
-			<field name="page_template">default</field>
-			<field name="page_order">2</field>
+			<field name="page_template">review</field>
+			<field name="page_order">10000</field>
 			<field name="page_fields">{
-    "image1": "{e_THEME}BS_Gaming_03/install/ecdf8ddb3aafe0356408b715e9191ea0.jpg"
+    "gameplay": "8\/10",
+    "graphics": "6\/10",
+    "sound": "8\/10",
+    "eop": "7\/10",
+    "good": "[list]\r\nExcellent world design allows organic discovery of missions with open-ended solutions*\r\nLondon looks gorgeous*\r\nThe rope launcher tool is a game-changer for traversal and stealth\r\n[\/list]\r\n\r\n  ",
+    "bad": "[list]\r\nFinal boss battle is frustrating and kills the drama*\r\nSometimes controls can be imprecise\r\n[\/list]\r\n\r\n    ",
+    "score": "7",
+    "image1": "{e_THEME}BS_Gaming_03/install/acs_join_the_family.jpg"
 }</field>
-			<field name="menu_name"></field>
-			<field name="menu_title"></field>
-			<field name="menu_text"></field>
-			<field name="menu_image">{e_THEME}BS_Gaming_03/install/fc0ea34eabda5eaf8c8394849037aff4.jpg</field>
+			<field name="menu_name">assassins</field>
+			<field name="menu_title">Assassin’s Creed Syndicate Review</field>
+			<field name="menu_text">As I made my way across Westminster, zipping between rooftops with my rope launcher, a notice popped up indicating I was approaching a bounty hunt. The objective was simple–kill an important member of my rival gang–and I decided the children could wait a bit longer. I was in and out of the mission in under a minute after dropping hanging barrels on gang members, throwing down a smoke bomb and taking out the leader with a gun to the head. I ziplined out, stopping only once more to change my outfit to one that held more throwing knives, before dropping by a black market stall for a refill and dashing towards the factory. The children of London needed me.</field>
+			<field name="menu_image">{e_THEME}BS_Gaming_03/install/acs_join_the_family.jpg</field>
 			<field name="menu_icon"></field>
-			<field name="menu_template">default</field>
+			<field name="menu_template">grid</field>
 			<field name="menu_class">0</field>
 			<field name="menu_button_url"></field>
 			<field name="menu_button_text"></field>
@@ -3625,10 +2723,10 @@ Enim sit amet venenatis urna cursus eget nunc. Ut aliquam purus sit amet luctus.
 		<item>
 			<field name="chapter_id">1</field>
 			<field name="chapter_parent">0</field>
-			<field name="chapter_name">Review</field>
-			<field name="chapter_sef">review</field>
-			<field name="chapter_meta_description"></field>
-			<field name="chapter_meta_keywords">review</field>
+			<field name="chapter_name">General</field>
+			<field name="chapter_sef">general</field>
+			<field name="chapter_meta_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tempor odio. Quisque volutpat lorem nec lectus congue suscipit. In hac habitasse platea dictumst. Etiam odio nisi, egestas vitae amet.</field>
+			<field name="chapter_meta_keywords"></field>
 			<field name="chapter_manager">254</field>
 			<field name="chapter_icon"></field>
 			<field name="chapter_order">1</field>
@@ -3646,8 +2744,8 @@ Enim sit amet venenatis urna cursus eget nunc. Ut aliquam purus sit amet luctus.
 			<field name="chapter_parent">1</field>
 			<field name="chapter_name">Games Review</field>
 			<field name="chapter_sef">games-review</field>
-			<field name="chapter_meta_description"></field>
-			<field name="chapter_meta_keywords">review,games</field>
+			<field name="chapter_meta_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nunc ac neque egestas ullamcorper. In convallis semper hendrerit. Etiam non dolor nisl, varius facilisis dui. Nunc egestas massa nunc.</field>
+			<field name="chapter_meta_keywords"></field>
 			<field name="chapter_manager">254</field>
 			<field name="chapter_icon"></field>
 			<field name="chapter_order">11</field>
@@ -3690,7 +2788,7 @@ Enim sit amet venenatis urna cursus eget nunc. Ut aliquam purus sit amet luctus.
     "bad": {
         "title": "The Bad",
         "type": "bbarea",
-        "writeParms": "",
+        "writeParms": "rows=4",
         "help": ""
     },
     "score": {
@@ -3751,6 +2849,25 @@ Enim sit amet venenatis urna cursus eget nunc. Ut aliquam purus sit amet luctus.
     }
 }</field>
 			<field name="chapter_image">{e_THEME}BS_Gaming_03/install/news14.jpg</field>
+		</item>
+	</dbTable>
+	<dbTable name="polls">
+		<item>
+			<field name="poll_id">1</field>
+			<field name="poll_datestamp">1506429594</field>
+			<field name="poll_start_datestamp">0</field>
+			<field name="poll_end_datestamp">0</field>
+			<field name="poll_admin_id">1</field>
+			<field name="poll_title">Like this theme?</field>
+			<field name="poll_options">YesNo</field>
+			<field name="poll_votes">20</field>
+			<field name="poll_ip"></field>
+			<field name="poll_type">1</field>
+			<field name="poll_comment">1</field>
+			<field name="poll_allow_multiple">0</field>
+			<field name="poll_result_type">0</field>
+			<field name="poll_vote_userclass">253</field>
+			<field name="poll_storage_method">0</field>
 		</item>
 	</dbTable>
 	<dbTable name="rate">
