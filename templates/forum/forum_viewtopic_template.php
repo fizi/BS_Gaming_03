@@ -9,6 +9,8 @@
  */
 
 if (!defined('e107_INIT')) { exit; }
+
+/*
 if(!defined("USER_WIDTH")){ define("USER_WIDTH","width:95%;margin-left:auto;margin-right:auto"); }
 
 $sc_style['LASTEDIT']['pre'] = LAN_FORUM_2016.' ';
@@ -288,7 +290,7 @@ $FORUMDELETEDSTYLE = "<tr>
 	<tr>
 	<td colspan='2'>
 	</td>
-	</tr>";
+	</tr>";*/
 
 
 $FORUM_CRUMB['sitename']['value'] = "<a class='forumlink' href='{SITENAME_HREF}'>{SITENAME}</a>";
@@ -310,6 +312,7 @@ $FORUM_CRUMB['forum']['value'] = "<a class='forumlink' href='{FORUM_HREF}'>{FORU
 
 // New in v2.x - requires a bootstrap theme be loaded.
 // Modified by fizi ************************************************************  
+$FORUM_VIEWTOPIC_TEMPLATE = array();
 
 $FORUM_VIEWTOPIC_TEMPLATE['caption'] 	= "";
 $FORUM_VIEWTOPIC_TEMPLATE['start'] 	= "
@@ -425,8 +428,8 @@ $FORUM_VIEWTOPIC_TEMPLATE['deleted'] = "
 ";
 
 
+$FORUM_VIEWTOPIC_WRAPPER = array();
 
-	
 $FORUM_VIEWTOPIC_WRAPPER['thread']['ATTACHMENTS'] = "<div class='forum-viewtopic-attachments'>{---}</div>";
 $FORUM_VIEWTOPIC_WRAPPER['thread']['CUSTOMTITLE'] = "<span class='forum-viewtopic-customtitle'><small>{---}</small></span>";
 
