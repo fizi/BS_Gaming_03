@@ -194,8 +194,8 @@ $PAGE_TEMPLATE['review']['body'] = '
             </div>
             <div class="review-scores">
               <div class="review-scores-comments">
-                <div class="review-scores-title">{CPAGEFIELDTITLE: name=good}:</div>{CPAGEFIELD: name=good}  
-                <div class="review-scores-title">{CPAGEFIELDTITLE: name=bad}:</div>{CPAGEFIELD: name=bad}       
+                <div class="review-scores-title">{CPAGEFIELDTITLE: name=good}:</div><div class="review-scores-good">{CPAGEFIELD: name=good}</div>  
+                <div class="review-scores-title">{CPAGEFIELDTITLE: name=bad}:</div><div class="review-scores-bad">{CPAGEFIELD: name=bad}</div>       
                 <div class="review-score-number">
                   <div class="rating-item" data-value="{CPAGEFIELD: name=score}"></div>                 
                 </div>
