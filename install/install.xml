@@ -2851,6 +2851,146 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="chapter_image">{e_THEME}BS_Gaming_03/install/news14.jpg</field>
 		</item>
 	</dbTable>
-
+	<dbTable name="polls">
+		<item>
+			<field name="poll_id">1</field>
+			<field name="poll_datestamp">1506429594</field>
+			<field name="poll_start_datestamp">0</field>
+			<field name="poll_end_datestamp">0</field>
+			<field name="poll_admin_id">1</field>
+			<field name="poll_title">Like this theme?</field>
+			<field name="poll_options">Yes{\u0001}No{\u0001}</field>
+			<field name="poll_votes">2{\u0001}0{\u0001}</field>
+			<field name="poll_ip"></field>
+			<field name="poll_type">1</field>
+			<field name="poll_comment">1</field>
+			<field name="poll_allow_multiple">0</field>
+			<field name="poll_result_type">0</field>
+			<field name="poll_vote_userclass">253</field>
+			<field name="poll_storage_method">0</field>
+		</item>
+	</dbTable>
+	<dbTable name="rate">
+		<item>
+			<field name="rate_id">1</field>
+			<field name="rate_table">news</field>
+			<field name="rate_itemid">21</field>
+			<field name="rate_rating">6</field>
+			<field name="rate_votes">1</field>
+			<field name="rate_voters">.1{\u0001}6.</field>
+			<field name="rate_up">0</field>
+			<field name="rate_down">0</field>
+		</item>
+		<item>
+			<field name="rate_id">2</field>
+			<field name="rate_table">news</field>
+			<field name="rate_itemid">20</field>
+			<field name="rate_rating">4</field>
+			<field name="rate_votes">1</field>
+			<field name="rate_voters">.1{\u0001}4.</field>
+			<field name="rate_up">0</field>
+			<field name="rate_down">0</field>
+		</item>
+		<item>
+			<field name="rate_id">3</field>
+			<field name="rate_table">news</field>
+			<field name="rate_itemid">16</field>
+			<field name="rate_rating">8</field>
+			<field name="rate_votes">1</field>
+			<field name="rate_voters">.1{\u0001}8.</field>
+			<field name="rate_up">0</field>
+			<field name="rate_down">0</field>
+		</item>
+		<item>
+			<field name="rate_id">4</field>
+			<field name="rate_table">news</field>
+			<field name="rate_itemid">17</field>
+			<field name="rate_rating">4</field>
+			<field name="rate_votes">1</field>
+			<field name="rate_voters">.1{\u0001}4.</field>
+			<field name="rate_up">0</field>
+			<field name="rate_down">0</field>
+		</item>
+		<item>
+			<field name="rate_id">5</field>
+			<field name="rate_table">page</field>
+			<field name="rate_itemid">3</field>
+			<field name="rate_rating">6</field>
+			<field name="rate_votes">1</field>
+			<field name="rate_voters">.1{\u0001}6.</field>
+			<field name="rate_up">0</field>
+			<field name="rate_down">0</field>
+		</item>
+		<item>
+			<field name="rate_id">6</field>
+			<field name="rate_table">page</field>
+			<field name="rate_itemid">2</field>
+			<field name="rate_rating">6</field>
+			<field name="rate_votes">1</field>
+			<field name="rate_voters">.1{\u0001}6.</field>
+			<field name="rate_up">0</field>
+			<field name="rate_down">0</field>
+		</item>
+		<item>
+			<field name="rate_id">7</field>
+			<field name="rate_table">news</field>
+			<field name="rate_itemid">19</field>
+			<field name="rate_rating">8</field>
+			<field name="rate_votes">1</field>
+			<field name="rate_voters">.1{\u0001}8.</field>
+			<field name="rate_up">0</field>
+			<field name="rate_down">0</field>
+		</item>
+		<item>
+			<field name="rate_id">8</field>
+			<field name="rate_table">user</field>
+			<field name="rate_itemid">1</field>
+			<field name="rate_rating">6</field>
+			<field name="rate_votes">1</field>
+			<field name="rate_voters">.1{\u0001}6.</field>
+			<field name="rate_up">0</field>
+			<field name="rate_down">0</field>
+		</item>
+		<item>
+			<field name="rate_id">9</field>
+			<field name="rate_table">page</field>
+			<field name="rate_itemid">6</field>
+			<field name="rate_rating">10</field>
+			<field name="rate_votes">1</field>
+			<field name="rate_voters">.1{\u0001}10.</field>
+			<field name="rate_up">0</field>
+			<field name="rate_down">0</field>
+		</item>
+		<item>
+			<field name="rate_id">10</field>
+			<field name="rate_table">page</field>
+			<field name="rate_itemid">1</field>
+			<field name="rate_rating">8</field>
+			<field name="rate_votes">1</field>
+			<field name="rate_voters">.1{\u0001}8.</field>
+			<field name="rate_up">0</field>
+			<field name="rate_down">0</field>
+		</item>
+		<item>
+			<field name="rate_id">11</field>
+			<field name="rate_table">comments</field>
+			<field name="rate_itemid">1</field>
+			<field name="rate_rating">0</field>
+			<field name="rate_votes">1</field>
+			<field name="rate_voters">.1.</field>
+			<field name="rate_up">1</field>
+			<field name="rate_down">0</field>
+		</item>
+		<item>
+			<field name="rate_id">12</field>
+			<field name="rate_table">news</field>
+			<field name="rate_itemid">22</field>
+			<field name="rate_rating">10</field>
+			<field name="rate_votes">1</field>
+			<field name="rate_voters">.1{\u0001}10.</field>
+			<field name="rate_up">0</field>
+			<field name="rate_down">0</field>
+		</item>
+	</dbTable>
 	</database>
 </e107Export>
