@@ -71,7 +71,7 @@ $PAGE_TEMPLATE['default']['body'] = '
         </div>
         <div class="default-cpage-share">
           <h3 class="default-cpage-share-title">'.LAN_THEME_60.'</h3>
-          <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{ADMINOPTIONS}{SOCIALSHARE: type=basic}</div>
+          <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{CPAGEEDIT}{SOCIALSHARE: type=basic}</div>
         </div>
         {CPAGERELATED:limit=5&types=page}
       </div>
@@ -213,7 +213,7 @@ $PAGE_TEMPLATE['review']['body'] = '
         </div>
         <div class="default-cpage-share">
           <h3 class="default-cpage-share-title">'.LAN_THEME_60.'</h3>
-          <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{ADMINOPTIONS}{SOCIALSHARE: type=basic}</div>
+          <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{CPAGEEDIT}{SOCIALSHARE: type=basic}</div>
         </div>
         {CPAGERELATED:limit=5&types=page}
       </div>
