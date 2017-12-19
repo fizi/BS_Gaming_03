@@ -184,7 +184,7 @@ $themePref = e107::pref('theme');
 
 if($themePref['left_or_right_menuarea_on_frontpage'] === 'left'){
 
-  $sidebar = "
+  $sidebar_frontpage = "
    <div class='container'>
      <div class='row'>
        <div class='page_content'>
@@ -239,7 +239,7 @@ if($themePref['left_or_right_menuarea_on_frontpage'] === 'left'){
    ";
 }else{
    
-   $sidebar = "
+   $sidebar_frontpage = "
    <div class='container'>
      <div class='row'>
        <div class='page_content'>
@@ -295,7 +295,7 @@ if($themePref['left_or_right_menuarea_on_frontpage'] === 'left'){
 }
 
 // Game 03 theme Homepage layout 
-$LAYOUT['game_03_home'] = $sidebar;
+$LAYOUT['game_03_home'] = $sidebar_frontpage;
   
 
 if($themePref['left_or_right_menuarea'] === 'left'){
