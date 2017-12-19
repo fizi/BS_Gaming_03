@@ -55,7 +55,6 @@ City, State, Country
 		<core name="sitedisclaimer">FIZI Themes Gaming </core>
 		<core name="sitelinks_expandsub">1</core>
 		<core name="sitelogo">{e_THEME}BS_Gaming_03/install/logo.png</core>
-		<core name="sitename">Fizi Gaming III</core>
 		<core name="sitetheme">BS_Gaming_03</core>
 		<core name="sitetheme_custompages"><![CDATA[array (
   'game_03_home' => 
@@ -2664,31 +2663,17 @@ Adipiscing enim eu turpis egestas pretium aenean pharetra. Venenatis a condiment
 			<field name="page_chapter">2</field>
 			<field name="page_metakeys">review,game,assassins</field>
 			<field name="page_metadscr"></field>
-			<field name="page_text">As I made my way across Westminster, zipping between rooftops with my rope launcher, a notice popped up indicating I was approaching a bounty hunt. The objective was simple–kill an important member of my rival gang–and I decided the children could wait a bit longer. I was in and out of the mission in under a minute after dropping hanging barrels on gang members, throwing down a smoke bomb and taking out the leader with a gun to the head. I ziplined out, stopping only once more to change my outfit to one that held more throwing knives, before dropping by a black market stall for a refill and dashing towards the factory. The children of London needed me.
-
-His three boats stove around him, and oars and men both whirling in the eddies; one captain, seizing the line-knife from his broken prow, had dashed at the whale, as an Arkansas duellist at his foe, blindly seeking with a six inch blade to reach the fathom-deep life of the whale. That captain was Ahab. And then it was, that suddenly sweeping his sickle-shaped lower jaw beneath him, Moby Dick had reaped away Ahab’s leg, as a mower a blade of grass in the field. No turbaned Turk, no hired Venetian or Malay, could have smote him with more seeming malice. Small reason was there to doubt, then, that ever since that almost fatal encounter, Ahab had cherished a wild vindictiveness against the whale, all the more fell for that in his frantic morbidness he at last came to identify with him, not only all his bodily woes, but all his intellectual and spiritual exasperations.
-
-It is not probable that this monomania in him took its instant rise at the precise time of his bodily dismemberment.
-
-Then, in darting at the monster, knife in hand, he had but given loose to a sudden, passionate, corporal animosity; and when he received the stroke that tore him, he probably but felt the agonizing bodily laceration, but nothing more. Yet, when by this collision forced to turn towards home, and for long months of days and weeks, Ahab and anguish lay stretched together in one hammock, rounding in mid winter that dreary, howling Patagonian Cape; then it was, that his torn body and gashed soul bled into one another; and so interfusing, made him mad.
-
-That it was only then, on the homeward voyage, after the encounter, that the final monomania seized him?
-
-Egyptian chest, and was moreover intensified by his delirium, that his mates were forced to lace him fast, even there, as he sailed, raving in his hammock. In a strait-jacket, he swung to the mad rockings of the gales. And, when running into more sufferable latitudes, the ship, with mild stun’sails spread, floated across the tranquil tropics, and, to all appearances.
-
-[img]{e_THEME}BS_Gaming_03/install/2864175_assassins_creed_syndicate_thames_river.jpg[/img]
-
-That it was only then, on the homeward voyage, after the encounter, that the final monomania seized him, seems all but certain from the fact that, at intervals during the passage, he was a raving lunatic; and, though unlimbed of a leg, yet such vital strength yet lurked in his Egyptian chest, and was moreover intensified by his delirium, that his mates were forced to lace him fast, even there, as he sailed, raving in his hammock. In a strait-jacket, he swung to the mad rockings of the gales. And, when running into more sufferable latitudes, the ship, with mild stun’sails spread, floated across the tranquil tropics, and, to all appearances, the old man’s delirium seemed left behind him with the Cape Horn swells.
-
-Human madness is oftentimes a cunning and most feline thing. When you think it fled, it may have but become transfigured into some still subtler form. Ahab’s full lunacy subsided not, but deepeningly contracted; like the unabated Hudson, when that noble Northman flows narrowly, but unfathomably through the Highland gorge.
-
-To that one end, did now possess a thousand fold more potency than ever he had sanely brought to bear upon any one reasonable object.
-
-God the direful madness was now gone; even then, Ahab, in his hidden self, raved on. Human madness is oftentimes a cunning and most feline thing. When you think it fled, it may have but become transfigured into some still subtler form. Ahab’s full lunacy subsided not, but deepeningly contracted; like the unabated Hudson, when that noble Northman flows narrowly, but unfathomably through the Highland gorge.
-
-[img]{e_THEME}BS_Gaming_03/install/assassin_creed_syndicate_evie_gamescom_6.jpg[/img]
-
-But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness had been left behind; so in that broad madness, not one jot of his great natural intellect had perished. That before living agent, now became the living instrument. If such a furious trope may stand, his special lunacy stormed his general sanity, and carried it, and turned all its concentred cannon upon its own mad mark. I knew the Indians would soon discover that they were on the wrong trail and that the search for me would be renewed in the right direction as soon as they located my tracks. I had gone but a short distance further when what seemed to be an excellent trail opened up around the face of a high cliff. The trail was level and quite broad and led upward and in the general direction I wished to go. The cliff arose for several hundred feet on my right, and on my left was an equal and nearly perpendicular drop to the bottom of a rocky ravine.</field>
+			<field name="page_text"><![CDATA[[html]<p>As I made my way across Westminster, zipping between rooftops with my rope launcher, a notice popped up indicating I was approaching a bounty hunt. The objective was simple–kill an important member of my rival gang–and I decided the children could wait a bit longer. I was in and out of the mission in under a minute after dropping hanging barrels on gang members, throwing down a smoke bomb and taking out the leader with a gun to the head. I ziplined out, stopping only once more to change my outfit to one that held more throwing knives, before dropping by a black market stall for a refill and dashing towards the factory. The children of London needed me.</p>
+<p>His three boats stove around him, and oars and men both whirling in the eddies; one captain, seizing the line-knife from his broken prow, had dashed at the whale, as an Arkansas duellist at his foe, blindly seeking with a six inch blade to reach the fathom-deep life of the whale. That captain was Ahab. And then it was, that suddenly sweeping his sickle-shaped lower jaw beneath him, Moby Dick had reaped away Ahab’s leg, as a mower a blade of grass in the field. No turbaned Turk, no hired Venetian or Malay, could have smote him with more seeming malice. Small reason was there to doubt, then, that ever since that almost fatal encounter, Ahab had cherished a wild vindictiveness against the whale, all the more fell for that in his frantic morbidness he at last came to identify with him, not only all his bodily woes, but all his intellectual and spiritual exasperations.</p>
+<p>It is not probable that this monomania in him took its instant rise at the precise time of his bodily dismemberment.</p>
+<p>Then, in darting at the monster, knife in hand, he had but given loose to a sudden, passionate, corporal animosity; and when he received the stroke that tore him, he probably but felt the agonizing bodily laceration, but nothing more. Yet, when by this collision forced to turn towards home, and for long months of days and weeks, Ahab and anguish lay stretched together in one hammock, rounding in mid winter that dreary, howling Patagonian Cape; then it was, that his torn body and gashed soul bled into one another; and so interfusing, made him mad.</p>
+<p>That it was only then, on the homeward voyage, after the encounter, that the final monomania seized him?</p>
+<p>Egyptian chest, and was moreover intensified by his delirium, that his mates were forced to lace him fast, even there, as he sailed, raving in his hammock. In a strait-jacket, he swung to the mad rockings of the gales. And, when running into more sufferable latitudes, the ship, with mild stun’sails spread, floated across the tranquil tropics, and, to all appearances.</p>
+<p><img src=&quot;{e_BASE}theme/img/400x0/BS_Gaming_03/install/2864175_assassins_creed_syndicate_thames_river.jpg&quot; alt=&quot;2864175 Assassins Creed Syndicate Thames River&quot; class=&quot;img-rounded rounded bbcode bbcode-img pull-left bbcode-img-left&quot; width=&quot;400&quot; height=&quot;558&quot;> That it was only then, on the homeward voyage, after the encounter, that the final monomania seized him, seems all but certain from the fact that, at intervals during the passage, he was a raving lunatic; and, though unlimbed of a leg, yet such vital strength yet lurked in his Egyptian chest, and was moreover intensified by his delirium, that his mates were forced to lace him fast, even there, as he sailed, raving in his hammock. In a strait-jacket, he swung to the mad rockings of the gales. And, when running into more sufferable latitudes, the ship, with mild stun’sails spread, floated across the tranquil tropics, and, to all appearances, the old man’s delirium seemed left behind him with the Cape Horn swells.</p>
+<p>Human madness is oftentimes a cunning and most feline thing. When you think it fled, it may have but become transfigured into some still subtler form. Ahab’s full lunacy subsided not, but deepeningly contracted; like the unabated Hudson, when that noble Northman flows narrowly, but unfathomably through the Highland gorge.</p>
+<p>To that one end, did now possess a thousand fold more potency than ever he had sanely brought to bear upon any one reasonable object.</p>
+<p>God the direful madness was now gone; even then, Ahab, in his hidden self, raved on. Human madness is oftentimes a cunning and most feline thing. When you think it fled, it may have but become transfigured into some still subtler form. Ahab’s full lunacy subsided not, but deepeningly contracted; like the unabated Hudson, when that noble Northman flows narrowly, but unfathomably through the Highland gorge.&nbsp;</p>
+<p><img src=&quot;{e_BASE}theme/img/400x0/BS_Gaming_03/install/assassin_creed_syndicate_evie_gamescom_6.jpg&quot; alt=&quot;Assassin Creed Syndicate Evie Gamescom 6&quot; class=&quot;img-rounded rounded bbcode bbcode-img bbcode-img-right&quot; width=&quot;400&quot; height=&quot;267&quot;>But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness had been left behind; so in that broad madness, not one jot of his great natural intellect had perished. That before living agent, now became the living instrument. If such a furious trope may stand, his special lunacy stormed his general sanity, and carried it, and turned all its concentred cannon upon its own mad mark. I knew the Indians would soon discover that they were on the wrong trail and that the search for me would be renewed in the right direction as soon as they located my tracks. I had gone but a short distance further when what seemed to be an excellent trail opened up around the face of a high cliff. The trail was level and quite broad and led upward and in the general direction I wished to go. The cliff arose for several hundred feet on my right, and on my left was an equal and nearly perpendicular drop to the bottom of a rocky ravine.</p>[/html]]]></field>
 			<field name="page_author">1</field>
 			<field name="page_datestamp">1512836303</field>
 			<field name="page_rating_flag">1</field>
@@ -2698,19 +2683,19 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="page_ip_restrict"></field>
 			<field name="page_template">review</field>
 			<field name="page_order">10000</field>
-			<field name="page_fields">{
+			<field name="page_fields"><![CDATA[{
     "gameplay": "8\/10",
     "graphics": "6\/10",
     "sound": "8\/10",
     "eop": "7\/10",
-    "good": "[list]\r\nExcellent world design allows organic discovery of missions with open-ended solutions*\r\nLondon looks gorgeous*\r\nThe rope launcher tool is a game-changer for traversal and stealth\r\n[\/list]\r\n\r\n  ",
-    "bad": "[list]\r\nFinal boss battle is frustrating and kills the drama*\r\nSometimes controls can be imprecise\r\n[\/list]\r\n\r\n    ",
+    "good": "[html]<ul class=\"bbcode\">\r\n<li class=\"bbcode  bbcode-list\">Excellent world design allows organic discovery of missions with open-ended solutions<\/li>\r\n<li class=\"bbcode  bbcode-list\">London looks gorgeous<\/li>\r\n<li class=\"bbcode  bbcode-list\">The rope launcher tool is a game-changer for traversal and stealth<\/li>\r\n<\/ul>[\/html]",
+    "bad": "[html]<ul class=\"bbcode\">\r\n<li class=\"bbcode  bbcode-list\">Final boss battle is frustrating and kills the drama<\/li>\r\n<li class=\"bbcode  bbcode-list\">Sometimes controls can be imprecise<\/li>\r\n<\/ul>[\/html]",
     "score": "7",
-    "image1": "{e_THEME}BS_Gaming_03/install/acs_join_the_family.jpg"
-}</field>
+    "image1": "{e_THEME}BS_Gaming_03\/install\/acs_join_the_family.jpg"
+}]]></field>
 			<field name="menu_name">assassins</field>
 			<field name="menu_title">Assassin’s Creed Syndicate Review</field>
-			<field name="menu_text">As I made my way across Westminster, zipping between rooftops with my rope launcher, a notice popped up indicating I was approaching a bounty hunt. The objective was simple–kill an important member of my rival gang–and I decided the children could wait a bit longer. I was in and out of the mission in under a minute after dropping hanging barrels on gang members, throwing down a smoke bomb and taking out the leader with a gun to the head. I ziplined out, stopping only once more to change my outfit to one that held more throwing knives, before dropping by a black market stall for a refill and dashing towards the factory. The children of London needed me.</field>
+			<field name="menu_text"><![CDATA[[html]<p>As I made my way across Westminster, zipping between rooftops with my rope launcher, a notice popped up indicating I was approaching a bounty hunt. The objective was simple–kill an important member of my rival gang–and I decided the children could wait a bit longer. I was in and out of the mission in under a minute after dropping hanging barrels on gang members, throwing down a smoke bomb and taking out the leader with a gun to the head. I ziplined out, stopping only once more to change my outfit to one that held more throwing knives, before dropping by a black market stall for a refill and dashing towards the factory. The children of London needed me.</p>[/html]]]></field>
 			<field name="menu_image">{e_THEME}BS_Gaming_03/install/acs_join_the_family.jpg</field>
 			<field name="menu_icon"></field>
 			<field name="menu_template">grid</field>
@@ -2859,8 +2844,8 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="poll_end_datestamp">0</field>
 			<field name="poll_admin_id">1</field>
 			<field name="poll_title">Like this theme?</field>
-			<field name="poll_options">YesNo</field>
-			<field name="poll_votes">20</field>
+			<field name="poll_options">Yes{\u0001}No{\u0001}</field>
+			<field name="poll_votes">2{\u0001}0{\u0001}</field>
 			<field name="poll_ip"></field>
 			<field name="poll_type">1</field>
 			<field name="poll_comment">1</field>
@@ -2877,7 +2862,7 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="rate_itemid">21</field>
 			<field name="rate_rating">6</field>
 			<field name="rate_votes">1</field>
-			<field name="rate_voters">.16.</field>
+			<field name="rate_voters">.1{\u0001}6.</field>
 			<field name="rate_up">0</field>
 			<field name="rate_down">0</field>
 		</item>
@@ -2887,7 +2872,7 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="rate_itemid">20</field>
 			<field name="rate_rating">4</field>
 			<field name="rate_votes">1</field>
-			<field name="rate_voters">.14.</field>
+			<field name="rate_voters">.1{\u0001}4.</field>
 			<field name="rate_up">0</field>
 			<field name="rate_down">0</field>
 		</item>
@@ -2897,7 +2882,7 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="rate_itemid">16</field>
 			<field name="rate_rating">8</field>
 			<field name="rate_votes">1</field>
-			<field name="rate_voters">.18.</field>
+			<field name="rate_voters">.1{\u0001}8.</field>
 			<field name="rate_up">0</field>
 			<field name="rate_down">0</field>
 		</item>
@@ -2907,7 +2892,7 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="rate_itemid">17</field>
 			<field name="rate_rating">4</field>
 			<field name="rate_votes">1</field>
-			<field name="rate_voters">.14.</field>
+			<field name="rate_voters">.1{\u0001}4.</field>
 			<field name="rate_up">0</field>
 			<field name="rate_down">0</field>
 		</item>
@@ -2917,7 +2902,7 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="rate_itemid">3</field>
 			<field name="rate_rating">6</field>
 			<field name="rate_votes">1</field>
-			<field name="rate_voters">.16.</field>
+			<field name="rate_voters">.1{\u0001}6.</field>
 			<field name="rate_up">0</field>
 			<field name="rate_down">0</field>
 		</item>
@@ -2927,7 +2912,7 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="rate_itemid">2</field>
 			<field name="rate_rating">6</field>
 			<field name="rate_votes">1</field>
-			<field name="rate_voters">.16.</field>
+			<field name="rate_voters">.1{\u0001}6.</field>
 			<field name="rate_up">0</field>
 			<field name="rate_down">0</field>
 		</item>
@@ -2937,7 +2922,7 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="rate_itemid">19</field>
 			<field name="rate_rating">8</field>
 			<field name="rate_votes">1</field>
-			<field name="rate_voters">.18.</field>
+			<field name="rate_voters">.1{\u0001}8.</field>
 			<field name="rate_up">0</field>
 			<field name="rate_down">0</field>
 		</item>
@@ -2947,7 +2932,7 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="rate_itemid">1</field>
 			<field name="rate_rating">6</field>
 			<field name="rate_votes">1</field>
-			<field name="rate_voters">.16.</field>
+			<field name="rate_voters">.1{\u0001}6.</field>
 			<field name="rate_up">0</field>
 			<field name="rate_down">0</field>
 		</item>
@@ -2957,7 +2942,7 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="rate_itemid">6</field>
 			<field name="rate_rating">10</field>
 			<field name="rate_votes">1</field>
-			<field name="rate_voters">.110.</field>
+			<field name="rate_voters">.1{\u0001}10.</field>
 			<field name="rate_up">0</field>
 			<field name="rate_down">0</field>
 		</item>
@@ -2967,7 +2952,7 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="rate_itemid">1</field>
 			<field name="rate_rating">8</field>
 			<field name="rate_votes">1</field>
-			<field name="rate_voters">.18.</field>
+			<field name="rate_voters">.1{\u0001}8.</field>
 			<field name="rate_up">0</field>
 			<field name="rate_down">0</field>
 		</item>
@@ -2987,7 +2972,7 @@ But, as in his narrow-flowing monomania, not one jot of Ahab’s broad madness h
 			<field name="rate_itemid">22</field>
 			<field name="rate_rating">10</field>
 			<field name="rate_votes">1</field>
-			<field name="rate_voters">.110.</field>
+			<field name="rate_voters">.1{\u0001}10.</field>
 			<field name="rate_up">0</field>
 			<field name="rate_down">0</field>
 		</item>

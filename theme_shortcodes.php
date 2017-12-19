@@ -358,18 +358,23 @@ class theme_shortcodes extends e_shortcode {
   
 /*  ----------------------------------- 
     SET VIDEOBACKGROUND ON-OFF
--------------------------------------*/ 
-  function sc_videobg_on_off(){ 
-  
-    $pref = e107::pref('theme', 'set_videobg_on_off');
-      if(!empty($pref)){
-        return $this->sc_videobackground($parm);
-    }
-    e107::getRender()->setStyle('slider');
-    $fb = e107::getParser()->parseTemplate("{FEATUREBOX}", true);
-    e107::getRender()->setStyle('default');
-    return $fb;  
-  }
+-------------------------------------*/
+	function sc_videobg_on_off()
+	{
+
+		$pref = e107::pref('theme', 'set_videobg_on_off');
+
+		if(!empty($pref))
+		{
+			return $this->sc_videobackground();
+		}
+
+		e107::getRender()->setStyle('slider');
+		$fb = e107::getParser()->parseTemplate("{FEATUREBOX}", true);
+		e107::getRender()->setStyle('default');
+
+		return $fb;
+	}
     
 } 
  

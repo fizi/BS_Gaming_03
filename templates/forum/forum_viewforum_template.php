@@ -9,7 +9,7 @@
  */
 
 if (!defined('e107_INIT')) { exit; }
-if(!defined("USER_WIDTH")){ define("USER_WIDTH","width:95%"); }
+/*if(!defined("USER_WIDTH")){ define("USER_WIDTH","width:95%"); }
 
 
 
@@ -262,7 +262,7 @@ if (empty($FORUM_NORMAL_ROW))
 	$FORUM_NORMAL_ROW = "<tr><td class='forumheader'>&nbsp;</td><td colspan='5'  class='forumheader'><span class='mediumtext'><b>".LAN_FORUM_1007."</b></span></td></tr>";
 }
 
-
+*/
 
 
 
@@ -288,6 +288,7 @@ $FORUM_CRUMB['forum']['value'] = "{FORUM_TITLE}";
 
 //TODO Find a good place to put a {SEARCH} dropdown.
 // Modifiey by fizi ************************************************************
+$FORUM_VIEWFORUM_TEMPLATE = array();
 
 $FORUM_VIEWFORUM_TEMPLATE['caption'] = "";
 $FORUM_VIEWFORUM_TEMPLATE['start'] = "

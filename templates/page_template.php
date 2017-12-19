@@ -71,7 +71,7 @@ $PAGE_TEMPLATE['default']['body'] = '
         </div>
         <div class="default-cpage-share">
           <h3 class="default-cpage-share-title">'.LAN_THEME_60.'</h3>
-          <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{ADMINOPTIONS}{SOCIALSHARE: type=basic}</div>
+          <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{CPAGEEDIT}{SOCIALSHARE: type=basic}</div>
         </div>
         {CPAGERELATED:limit=5&types=page}
       </div>
@@ -194,8 +194,8 @@ $PAGE_TEMPLATE['review']['body'] = '
             </div>
             <div class="review-scores">
               <div class="review-scores-comments">
-                <div class="review-scores-title">{CPAGEFIELDTITLE: name=good}:</div>{CPAGEFIELD: name=good}  
-                <div class="review-scores-title">{CPAGEFIELDTITLE: name=bad}:</div>{CPAGEFIELD: name=bad}       
+                <div class="review-scores-title">{CPAGEFIELDTITLE: name=good}:</div><div class="review-scores-good">{CPAGEFIELD: name=good}</div>  
+                <div class="review-scores-title">{CPAGEFIELDTITLE: name=bad}:</div><div class="review-scores-bad">{CPAGEFIELD: name=bad}</div>       
                 <div class="review-score-number">
                   <div class="rating-item" data-value="{CPAGEFIELD: name=score}"></div>                 
                 </div>
@@ -213,7 +213,7 @@ $PAGE_TEMPLATE['review']['body'] = '
         </div>
         <div class="default-cpage-share">
           <h3 class="default-cpage-share-title">'.LAN_THEME_60.'</h3>
-          <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{ADMINOPTIONS}{SOCIALSHARE: type=basic}</div>
+          <div class="default-cpage-share-body">{PRINTICON}{PDFICON}{CPAGEEDIT}{SOCIALSHARE: type=basic}</div>
         </div>
         {CPAGERELATED:limit=5&types=page}
       </div>
